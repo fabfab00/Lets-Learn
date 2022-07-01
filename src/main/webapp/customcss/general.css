@@ -5,8 +5,8 @@
     --bg-secondary-color:#857ec4;
     border-radius: 5px;
     color:white;
-    --bg-default-color:#272738;
-    background-color:var(--bg-default-color);
+    --bg-default-color:white;
+    background-color:white;
     --bg-tertiary-color:#fbd77c;
     --bg-storia:#55595C;
     overflow: auto;
@@ -140,6 +140,20 @@ body{
     border: 1px solid transparent;
     border-radius: 0.25rem;
 }
+.intestazioneNavbar {
+    left: 18.82%;
+    right: 20.76%;
+    top: 20.38%;
+    bottom: 20.38%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 116px;
+    display: flex;
+    align-items: center;
+}
+
+
 
 button, select {
     text-transform: none;
