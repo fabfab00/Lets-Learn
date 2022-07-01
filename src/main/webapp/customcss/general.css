@@ -152,6 +152,23 @@ body{
     display: flex;
     align-items: center;
 }
+.bottoneHomeScreen {
+    box-sizing: border-box;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*right: 0%;*/
+    /*top: 0%;*/
+    /*bottom: 0%;*/
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    width: 376px;
+    height: 122px;
+    color: #000000;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+
 
 
 
