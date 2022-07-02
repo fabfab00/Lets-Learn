@@ -17,7 +17,7 @@ public class ServletScegliMateria extends HttpServlet {
         ArrayList<String> argomenti = new ArrayList<>();
         switch (materia) {
 
-            case "Italiano":
+            case "Grammatica":
                 argomenti.add("Ortografia");
                 argomenti.add("Comunicazione");
                 argomenti.add("Lessico");
@@ -32,18 +32,11 @@ public class ServletScegliMateria extends HttpServlet {
                 argomenti.add("Gli insiemi");
                 path="/WEB-INF/General/Argomento.jsp";
                 break;
-            case "Storia":
+            case "Geostoria":
                 argomenti.add("Fonti Storiche");
                 argomenti.add("Sumeri");
                 argomenti.add("Babilonesi");
                 argomenti.add("Assiri");
-                path="/WEB-INF/General/Argomento.jsp";
-                break;
-            case "Geografia":
-                argomenti.add("L'italia e il suo territorio");
-                argomenti.add("Il settore primario");
-                argomenti.add("Il settore secondario");
-                argomenti.add("Il settore terziario");
                 path="/WEB-INF/General/Argomento.jsp";
                 break;
             case "Scienze":
@@ -51,13 +44,6 @@ public class ServletScegliMateria extends HttpServlet {
                 argomenti.add("Le piante");
                 argomenti.add("Gli animali");
                 argomenti.add("Le rocce");
-                path="/WEB-INF/General/Argomento.jsp";
-                break;
-            case "Educazionecivica":
-                argomenti.add("La Costituzione");
-                argomenti.add("Diritti e doveri ");
-                argomenti.add("Gli Articoli della Costituzione");
-                argomenti.add("Cambiamenti climatici");
                 path="/WEB-INF/General/Argomento.jsp";
                 break;
             default:
