@@ -15,22 +15,23 @@
         <tr></tr>
         </thead>
         <tbody style="--bs-body-font-size: 1;">
+        <form action="${pageContext.request.contextPath}/ServletScegliMateria" method="get">
         <tr>
-            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+            <td><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Italiano" value="Italiano">Italiano</button></td>
             <td></td>
-            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+            <td><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Matematica" value="Matematica">Matematica</button></td>
         </tr>
         <tr>
-            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+            <td><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Scienze" value="Scienze">Scienze</button></td>
             <td><img /></td>
-            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+            <td><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Geografia" value="Geografia">Geografia</button></td>
         </tr>
         <tr>
-            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+            <td><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Storia" value="Storia">Storia</button></td>
             <td></td>
-            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+            <td><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Educazionecivica" value="Educazionecivica">Educazione Civica</button></td>
         </tr>
-
+        </form>
         </tbody>
     </table>
 </div>
