@@ -50,6 +50,7 @@ public class ServletScegliMateria extends HttpServlet {
 
                 break;
         }
+        /*altra prova prova prova*/
         HttpSession session = request.getSession(true);
         session.setAttribute("materia",materia);
         session.setAttribute("argomenti",argomenti);

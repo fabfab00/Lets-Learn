@@ -32,6 +32,7 @@
             color: white;
         }
 
+        /*prova prova prova*/
         .table td {
             border-top: white;
         }
