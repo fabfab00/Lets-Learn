@@ -22,7 +22,7 @@
         </tr>
         <tr>
             <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
-            <td><img /></td>
+            <td><img src="./Immagini/Home.png" width="100%" height="200"></td>
             <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
         </tr>
         <tr>
