@@ -16,25 +16,21 @@
         </thead>
         <tbody style="--bs-body-font-size: 1;">
         <tr>
-            <td><button class="btn btn-primary bottoneHomeScreen" type="button">Button</button></td>
-            <td>Cell 1</td>
-            <td><button class="btn btn-primary bottoneHomeScreen" type="button">Button</button></td>
-        </tr>
-        <tr>
-            <td><button class="btn btn-primary bottoneHomeScreen" type="button">Button</button></td>
-            <td><img /></td>
-            <td><button class="btn btn-primary bottoneHomeScreen" type="button">Button</button></td>
-        </tr>
-        <tr>
-            <td><button class="btn btn-primary bottoneHomeScreen" type="button">Button</button></td>
+            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
             <td></td>
-            <td><button class="btn btn-primary bottoneHomeScreen" type="button" r>Button</button></td>
+            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
         </tr>
         <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
+            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+            <td><img /></td>
+            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
         </tr>
+        <tr>
+            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+            <td></td>
+            <td><a class="btn btn-primary bottoneHomeScreen" type="button" href="">Button</a></td>
+        </tr>
+
         </tbody>
     </table>
 </div>
