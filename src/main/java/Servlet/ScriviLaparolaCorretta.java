@@ -1,4 +1,4 @@
-package com.example.Lets_Learn;
+package Servlet;
 
 public class ScriviLaparolaCorretta {
 

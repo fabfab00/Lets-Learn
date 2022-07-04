@@ -1,4 +1,4 @@
-package com.example.Lets_Learn;
+package Servlet;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
