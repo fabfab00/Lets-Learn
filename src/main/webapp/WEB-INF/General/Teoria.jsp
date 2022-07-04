@@ -1,4 +1,6 @@
-<%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="Classi.Argomento" %>
+<%@ page import="Classi.Card" %><%--
   Created by IntelliJ IDEA.
   User: 129109
   Date: 01/07/2022
@@ -7,6 +9,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<% Argomento argomentoClass = (Argomento) request.getSession().getAttribute("argomentoClass");
+ArrayList<Card> lista = argomentoClass.getListaCard();
+%>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
@@ -15,10 +20,12 @@
     <link rel="stylesheet" href="../customcss/general.css"/>
 </head>
 <body>
+<% for (int i=0; i<lista.size();i++){%>
 <div class="card col-md-3">
     <div class="card-body"><img />
-        <div class="card-footer"><i class="far fa-star"></i><span>Text</span></div>
+        <div class="card-footer"><i class="far fa-star"></i><span><%=lista.get(i).getText()%></span></div>
     </div>
 </div>
+<%}%>
 </body>
 </html>
