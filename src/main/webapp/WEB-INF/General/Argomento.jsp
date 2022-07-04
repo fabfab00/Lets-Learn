@@ -21,12 +21,16 @@
     <ul class="list-unstyled">
         <li></li>
         <% for(int i = 0; i<arg.size();i++){%>
-        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#"><%=arg.get(i)%></a><i class="far fa-star"></i></li>
+        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#" ><%=arg.get(i)%></a><i onclick="ciao()"> <%@include file="/Immagini/Notepad.svg"%></i></li>
         <%}%>
 
     </ul>
 </div>
 
-
+<script>
+    function ciao(){
+    console.log("ciao")
+    }
+</script>
 </body>
 </html>
