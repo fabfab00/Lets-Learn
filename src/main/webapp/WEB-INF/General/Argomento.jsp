@@ -10,6 +10,7 @@
     String materia = (String) request.getSession().getAttribute("materia");
 %>
 <html>
+
 <head>
     <title><%=materia%></title>
     <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css"/>
@@ -17,7 +18,7 @@
 </head>
 <body class="text-center">
 <div class="pageContenent">
-    <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione"><%=materia%></span></div>
+    <div class="contenitoreTitoloSezione"><i onclick="ciao()"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
     <ul class="list-unstyled">
         <li></li>
         <% for(int i = 0; i<arg.size();i++){%>
