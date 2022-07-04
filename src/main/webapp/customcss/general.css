@@ -1,16 +1,14 @@
-
-:root{
-    --active-bg:#fbd77c;
-    --active-color:white;
+:root {
+    --active-bg: #fbd77c;
+    --active-color: white;
     border-radius: 5px;
-    color:white;
-    --bg-default-color:white;
-    background-color:white;
-    --bg-tertiary-color:#fbd77c;
-    --bg-storia:#55595C;
+    color: white;
+    --bg-default-color: white;
+    background-color: white;
+    --bg-tertiary-color: #fbd77c;
+    --bg-storia: #55595C;
     overflow: auto;
 }
-
 
 .bottoneHomeScreen {
     box-sizing: border-box;
@@ -50,15 +48,94 @@
 
 .titoloSezione {
     margin-left: 34px;
-    margin-bottom: 4rem;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 48px;
 }
 
 .contenitoreTitoloSezione {
     text-align: left;
-    height: 3rem;
+    /*height: 3rem;*/
     margin-bottom: 3rem;
+}
+
+.card-footer {
+    /*text-align: left;*/
+    bottom: 5px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(255,255,255,0);
+    border-color: rgba(255,255,255,0);
+}
+
+.footerCard span {
+    margin-left: 10px;
+}
+
+.loginContainer {
+    background-color: var(--active-bg);
+    /*height: 25%;*/
+    width: 530px;
+    position: absolute;
+    top: 30%;
+    border-radius: 15px;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.card {
+    display: inline-block;
+}
+
+.card-body {
+    min-height: 20vh;
+}
+
+.card-columns {
+    text-align: left;
+}
+
+.card {
+    text-align: center;
+}
+
+.loginContainer .closeIcon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.loginFormContainer {
+    width: 98%;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.loginGuide {
+    font-weight: 500;
+}
+
+input {
+    float: left;
+}
+
+.loginFormContainer .row {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contenitoreTitoloSezione i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.titoloSezione {
+    display: inline-block;
+    vertical-align: middle;
 }
