@@ -21,18 +21,18 @@
     <ul class="list-unstyled">
         <li></li>
         <% for(int i = 0; i<arg.size();i++){%>
-        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#" id="<%=i%>" onclick="teoria(<%=materia%>,<%=i%>)" ><%=arg.get(i)%></a><i onclick="esercizi()"> <%@include file="/Immagini/Notepad.svg"%></i></li>
+        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#" id="<%=i%>" onclick="teoria('<%=materia%>','<%=arg.get(i)%>')" ><%=arg.get(i)%></a><i onclick="esercizi()"> <%@include file="/Immagini/Notepad.svg"%></i></li>
         <%}%>
 
     </ul>
 </div>
 
 <script>
-    function teoria(materia,i){
+    function teoria(materia,argomento){
 
-        window.location.replace("./ServletTeoria?materia="+materia+"&argomento="+arg.get(i));
+        window.location.replace("./ServletTeoria?materia="+materia+"&argomento="+argomento);
         console.log("materia: "+materia)
-        console.log("argomento: "+arg.get(i) )
+        console.log("argomento: "+argomento )
     }
     function esercizi(){
         console.log("ciao")
