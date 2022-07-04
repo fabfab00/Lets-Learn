@@ -55,7 +55,7 @@
 
 .contenitoreTitoloSezione {
     text-align: left;
-    height: 3rem;
+    /*height: 3rem;*/
     margin-bottom: 3rem;
 }
 
@@ -130,7 +130,12 @@ input {
     padding-right: 20px;
 }
 
-.contenitoreTitoloSezione * {
+.contenitoreTitoloSezione i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.titoloSezione {
     display: inline-block;
     vertical-align: middle;
 }
