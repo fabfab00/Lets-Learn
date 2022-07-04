@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%ArrayList<String> arg = (ArrayList<String>) request.getSession().getAttribute("argomenti");
     String materia = (String) request.getSession().getAttribute("materia");
-%> <%= arg%>
+%>
 <html>
 <head>
     <title><%=materia%></title>
@@ -20,8 +20,9 @@
     <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione"><%=materia%></span></div>
     <ul class="list-unstyled">
         <li></li>
-        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#">Link</a><i class="far fa-star"></i></li>
-        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#">Link</a><i class="far fa-star iconaEsercizioArgomento"></i></li>
+        <% for(int i = 0; i<arg.size();i++){%>
+        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#"><%=arg.get(i)%></a><i class="far fa-star"></i></li>
+        <%}%>
 
     </ul>
 </div>
