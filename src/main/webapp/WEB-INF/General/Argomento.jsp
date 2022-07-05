@@ -36,7 +36,7 @@
     </ul>
 </div>
 <div id="overlay" style="display: none;justify-content: center;" >
-    <div class="loginContainer"><i class="closeIcon" onclick="close()"><%@include file="/Immagini/Cross.svg"%></i>
+    <div class="loginContainer"><i class="closeIcon" onclick="close()" style="cursor: pointer;"><%@include file="/Immagini/Cross.svg"%></i>
         <div class="loginFormContainer" style="margin-top: 43px;">
             <form>
                 <div class="row" style="margin: 65px -12px 0px;">
@@ -52,6 +52,7 @@
     </div>
 </div>
 <script>
+
     function teoria(materia,argomento){
 
         window.location.replace("./ServletTeoria?materia="+materia+"&argomento="+argomento);
@@ -68,7 +69,6 @@
     function close(){
         console.log("hello")
         document.getElementById("overlay").style.display="none"
-        //window.close()
     }
 
     function continua(nome, password){
