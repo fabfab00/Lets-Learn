@@ -1,4 +1,4 @@
-package Servlet;
+package Classi;
 
 public class ScriviLaparolaCorretta {
 

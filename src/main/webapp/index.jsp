@@ -48,19 +48,22 @@
         <tbody style="--bs-body-font-size: 1;">
         <form action="${pageContext.request.contextPath}/ServletScegliMateria" method="get">
             <tr>
-                <td align="center"><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Grammatica" value="Grammatica">Grammatica</button></td>
+                <td align="center"><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Italiano" value="Italiano">Italiano</button></td>
                 <td></td>
                 <td align="center"><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Matematica" value="Matematica">Matematica</button></td>
             </tr>
             <tr>
-                <td align="center"></td>
+                <td align="center" ><button  class="btn btn-primary bottoneHomeScreen" name="materia" id="Storia" value="Storia">Storia</button></td>
+
                 <td align="center"><img src="./Immagini/Home.png" width="400px" height="250px"></td>
-                <td align="center"></td>
+
+                <td align="center"><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Arte" value="Arte">Arte</button></td>
             </tr>
             <tr>
-                <td align="center"><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Geostoria" value="Geostoria">Geostoria</button></td>
+                <td align="center"><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Geografia" value="Geografia">Geografia</button></td>
                 <td align="center"></td>
                 <td align="center"><button class="btn btn-primary bottoneHomeScreen" name="materia" id="Scienze" value="Scienze">Scienze</button></td>
+
             </tr>
         </form>
         </tbody>
