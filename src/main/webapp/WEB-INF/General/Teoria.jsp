@@ -20,6 +20,7 @@ ArrayList<Card> lista = argomentoClass.getListaCard();
     <link rel="stylesheet" href="./customcss/general.css"/>
 </head>
 <body class="text-center">
+<%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione">ARGOMENTO</span></div>
     <div class="card-columns">
