@@ -27,7 +27,22 @@
 
     </ul>
 </div>
-
+<div id="overlay" style="display: flex;justify-content: center;">
+    <div class="loginContainer"><i class="far fa-star closeIcon"></i>
+        <div class="loginFormContainer" style="margin-top: 43px;">
+            <form>
+                <div class="row" style="margin: 65px -12px 0px;">
+                    <div class="col"><span class="loginGuide">Inserisci <br />Nome Utente<br /></span></div>
+                    <div class="col"><input class="form-control" type="text" placeholder="Nome" style="margin-top: 4px;" /></div>
+                </div>
+                <div class="row" style="margin-bottom: 73px;margin-top: 48px;">
+                    <div class="col"><span class="loginGuide">Inserisci <br />Password<br /></span></div>
+                    <div class="col"><input class="form-control" type="text" placeholder="Password" style="margin-top: 4px;" /></div>
+                </div><button class="btn btn-primary" type="button" style="margin-top: 2%;margin-bottom: 10px;background: #99c7d9;">Continua</button>
+            </form>
+        </div>
+    </div>
+</div>
 <script>
     function teoria(materia,argomento){
 
