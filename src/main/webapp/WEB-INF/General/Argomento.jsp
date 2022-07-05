@@ -40,11 +40,11 @@
         <div class="loginFormContainer" style="margin-top: 43px;">
             <form>
                 <div class="row" style="margin: 65px -12px 0px;">
-                    <div class="col"><span class="loginGuide">Inserisci <br />Nome Utente<br /></span></div>
+                    <div class="col"><span class="loginGuide">Inserisci <br />Nome Utente<br /></span></div>
                     <div class="col"><input id="nome" class="form-control" type="text" placeholder="Nome" style="margin-top: 4px;" /></div>
                 </div>
                 <div class="row" style="margin-bottom: 73px;margin-top: 48px;">
-                    <div class="col"><span class="loginGuide">Inserisci <br />Password<br /></span></div>
+                    <div class="col"><span class="loginGuide">Inserisci <br />Password<br /></span></div>
                     <div class="col"><input id="pw" class="form-control" type="text" placeholder="Password" style="margin-top: 4px;" /></div>
                 </div><button onclick="continua(document.getElementById('nome').value, document.getElementById('pw').value)" class="btn btn-primary" type="button" style="margin-top: 2%;margin-bottom: 10px;background: #99c7d9;">Continua</button>
             </form>
