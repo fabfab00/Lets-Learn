@@ -27,7 +27,7 @@
 
     </ul>
 </div>
-<div id="overlay" style="display: flex;justify-content: center;">
+<div id="overlay" style="display: none;justify-content: center;" >
     <div class="loginContainer"><i class="far fa-star closeIcon"></i>
         <div class="loginFormContainer" style="margin-top: 43px;">
             <form>
@@ -50,9 +50,14 @@
         console.log("materia: "+materia)
         console.log("argomento: "+argomento )
     }
+
     function esercizi(){
+        document.getElementById("overlay").style.display="flex"
         console.log("ciao")
     }
 </script>
+
+
+
 </body>
 </html>
