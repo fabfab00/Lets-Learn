@@ -9,7 +9,8 @@ import java.io.IOException;
 public class ServletEsercizi extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        String materiaString= request.getParameter("materia");
+        String argomentoString = request.getParameter("argomento");
     }
 
     @Override
