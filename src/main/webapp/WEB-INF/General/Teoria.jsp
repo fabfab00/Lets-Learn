@@ -16,16 +16,21 @@ ArrayList<Card> lista = argomentoClass.getListaCard();
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>letsLearn</title>
-    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../customcss/general.css"/>
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./customcss/general.css"/>
 </head>
-<body>
-<% for (int i=0; i<lista.size();i++){%>
-<div class="card col-md-3">
-    <div class="card-body"><img />
-        <div class="card-footer"><i class="far fa-star"></i><span><%=lista.get(i).getText()%></span></div>
+<body class="text-center">
+<div class="pageContenent">
+    <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione">ARGOMENTO</span></div>
+    <div class="card-columns">
+        <% for (int i=0; i<lista.size();i++){%>
+        <div class="card col-md-4">
+            <div class="card-body"><img />
+                <div class="card-footer"><i class="far fa-star"></i><span><%=lista.get(i).getText()%></span></div>
+            </div>
+        </div>
+        <%}%>
     </div>
 </div>
-<%}%>
 </body>
 </html>
