@@ -11,6 +11,14 @@
 %>
 <html>
 
+<script>
+    var MATERIA;
+    var ARGOMENTO;
+    var nomeUtente="Mario88"
+    var pwUtente="Password"
+</script>
+
+
 <head>
     <title><%=materia%></title>
     <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css"/>
@@ -22,12 +30,27 @@
     <ul class="list-unstyled">
         <li></li>
         <% for(int i = 0; i<arg.size();i++){%>
-        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#" id="<%=i%>" onclick="teoria('<%=materia%>','<%=arg.get(i)%>')" ><%=arg.get(i)%></a><i onclick="esercizi()"> <%@include file="/Immagini/Notepad.svg"%></i></li>
+        <li class="rigaListaArgomento"><a class="btn bottoneArgomento" href="#" id="<%=i%>" onclick="teoria('<%=materia%>','<%=arg.get(i)%>')" ><%=arg.get(i)%></a><i onclick="esercizi('<%=materia%>','<%=arg.get(i)%>')"> <%@include file="/Immagini/Notepad.svg"%></i></li>
         <%}%>
 
     </ul>
 </div>
-
+<div id="overlay" style="display: none;justify-content: center;" >
+    <div class="loginContainer"><i class="closeIcon" onclick="close()"><%@include file="/Immagini/Cross.svg"%></i>
+        <div class="loginFormContainer" style="margin-top: 43px;">
+            <form>
+                <div class="row" style="margin: 65px -12px 0px;">
+                    <div class="col"><span class="loginGuide">Inserisci <br />Nome Utente<br /></span></div>
+                    <div class="col"><input id="nome" class="form-control" type="text" placeholder="Nome" style="margin-top: 4px;" /></div>
+                </div>
+                <div class="row" style="margin-bottom: 73px;margin-top: 48px;">
+                    <div class="col"><span class="loginGuide">Inserisci <br />Password<br /></span></div>
+                    <div class="col"><input id="pw" class="form-control" type="text" placeholder="Password" style="margin-top: 4px;" /></div>
+                </div><button onclick="continua(document.getElementById('nome').value, document.getElementById('pw').value)" class="btn btn-primary" type="button" style="margin-top: 2%;margin-bottom: 10px;background: #99c7d9;">Continua</button>
+            </form>
+        </div>
+    </div>
+</div>
 <script>
     function teoria(materia,argomento){
 
@@ -35,9 +58,32 @@
         console.log("materia: "+materia)
         console.log("argomento: "+argomento )
     }
-    function esercizi(){
-        console.log("ciao")
+
+    function esercizi(materia, argomento){
+        document.getElementById("overlay").style.display="flex"
+        MATERIA=materia;
+        ARGOMENTO=argomento;
     }
+
+    function close(){
+        console.log("hello")
+        document.getElementById("overlay").style.display="none"
+        //window.close()
+    }
+
+    function continua(nome, password){
+        if(nome===nomeUtente && password===pwUtente) {
+            console.log(nome)
+            console.log(password)
+            window.location.replace("./ServletEsercizi?materia="+MATERIA+"&argomento="+ARGOMENTO);
+        }else{
+            alert("Nome utente o password errati")
+        }
+    }
+
 </script>
+
+
+
 </body>
 </html>
