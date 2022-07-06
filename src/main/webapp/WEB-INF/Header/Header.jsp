@@ -16,7 +16,7 @@
         <a href="index.jsp"><img height="90px" src="./Immagini/Home.png"/></a>
         <div id="navcol-1" class="collapse navbar-collapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active intestazioneNavbar" href="#" style="font-size: 93px;padding: 0px;color: white;margin-left: 10px"><%=materia%></a></li>
+                <li class="nav-item"><a class="nav-link active intestazioneNavbar" href="#" style="font-size: 93px;padding: 0px;color: white;margin-left: 10px">problem</a></li>
             </ul>
         </div>
         <div id = "headerIconContainer">
