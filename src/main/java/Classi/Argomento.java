@@ -26,4 +26,12 @@ public class Argomento {
     public void setListaCard(ArrayList<Card> listaCard) {
         this.listaCard = listaCard;
     }
+
+    @Override
+    public String toString() {
+        return "Argomento{" +
+                "nome='" + nome + '\'' +
+                ", listaCard=" + listaCard +
+                '}';
+    }
 }
