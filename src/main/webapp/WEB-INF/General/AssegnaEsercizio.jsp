@@ -19,6 +19,7 @@
         <input type="checkbox" />
         <span class="checkmark"></span>
     </label>
+    <button class="btn btn-primary btn-continua" type="button">Inizia</button>
 </div>
 
 </body>
