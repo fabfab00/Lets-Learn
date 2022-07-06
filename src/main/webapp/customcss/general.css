@@ -96,6 +96,7 @@ body {
 
 .card-body {
     min-height: 20vh;
+    padding:0;
 }
 
 .card-columns {
@@ -251,6 +252,11 @@ input {
     width: 56px;
     float: left;
     margin-right: 40px;
+}
+.card-body img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 64px;
 }
 .btn-primary {
     background: #99C7D9;
