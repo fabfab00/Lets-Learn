@@ -261,4 +261,16 @@ input {
 .btn-primary {
     background: #99C7D9;
 }
+.btn-continua {
+    position: absolute;
+    bottom: 10%;
+    width: 265px;
+    height: 70px;
+    left: 41%;
+    font-size: 40px;
+    font-weight: 450;
+    align-items: center;
+}
+
+
 
