@@ -4,30 +4,30 @@ import java.util.ArrayList;
 
 public class EserciziPerArgomento {
     private String nomeArgomento;
-    private ArrayList<AssociaImmagineConParola> associaImmagineConParolaArrayList;
-    private ArrayList<AssociaLeFrasiTraDiloro> associaLeFrasiTraDiloroArrayList;
-    private ArrayList<ScriviLaparolaCorretta> scriviLaparolaCorrettaArrayList;
+    private ArrayList<AssociaImmagineConParola> EsercizioAssociaImmagineConParola;
+    private ArrayList<AssociaLeFrasiTraDiloro> EsercizioAssociaLeFrasiTraDiLoro;
+    private ArrayList<ScriviLaparolaCorretta> EsercizioScriviLaParolaCorretta;
 
-    public EserciziPerArgomento(String nomeArgomento, ArrayList<AssociaImmagineConParola> associaImmagineConParolaArrayList, ArrayList<AssociaLeFrasiTraDiloro> associaLeFrasiTraDiloroArrayList, ArrayList<ScriviLaparolaCorretta> scriviLaparolaCorrettaArrayList) {
+    public EserciziPerArgomento(String nomeArgomento, ArrayList<AssociaImmagineConParola> esercizioAssociaImmagineConParola, ArrayList<AssociaLeFrasiTraDiloro> esercizioAssociaLeFrasiTraDiLoro, ArrayList<ScriviLaparolaCorretta> esercizioScriviLaParolaCorretta) {
         this.nomeArgomento = nomeArgomento;
-        this.associaImmagineConParolaArrayList = associaImmagineConParolaArrayList;
-        this.associaLeFrasiTraDiloroArrayList = associaLeFrasiTraDiloroArrayList;
-        this.scriviLaparolaCorrettaArrayList = scriviLaparolaCorrettaArrayList;
+        EsercizioAssociaImmagineConParola = esercizioAssociaImmagineConParola;
+        EsercizioAssociaLeFrasiTraDiLoro = esercizioAssociaLeFrasiTraDiLoro;
+        EsercizioScriviLaParolaCorretta = esercizioScriviLaParolaCorretta;
     }
 
     public String getNomeArgomento() {
         return nomeArgomento;
     }
 
-    public ArrayList<AssociaImmagineConParola> getAssociaImmagineConParolaArrayList() {
-        return associaImmagineConParolaArrayList;
+    public ArrayList<AssociaImmagineConParola> getEsercizioAssociaImmagineConParola() {
+        return EsercizioAssociaImmagineConParola;
     }
 
-    public ArrayList<AssociaLeFrasiTraDiloro> getAssociaLeFrasiTraDiloroArrayList() {
-        return associaLeFrasiTraDiloroArrayList;
+    public ArrayList<AssociaLeFrasiTraDiloro> getEsercizioAssociaLeFrasiTraDiLoro() {
+        return EsercizioAssociaLeFrasiTraDiLoro;
     }
 
-    public ArrayList<ScriviLaparolaCorretta> getScriviLaparolaCorrettaArrayList() {
-        return scriviLaparolaCorrettaArrayList;
+    public ArrayList<ScriviLaparolaCorretta> getEsercizioScriviLaParolaCorretta() {
+        return EsercizioScriviLaParolaCorretta;
     }
 }
