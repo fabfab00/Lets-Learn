@@ -23,17 +23,69 @@ public class DatabaseTeoria {
 
     }
 
-    private void creaItaliano(){
-        ArrayList<Card> ortografia = new ArrayList<>();
-        ortografia.add(new Card("Prova1","../webapp/WEB-INF/Image/Prova1.jpg"));
-        ortografia.add(new Card("Prova2","../webapp/WEB-INF/Image/Prova1.jpg"));
-        ArrayList<Card> comunincazione = new ArrayList<>();
-        comunincazione.add(new Card("Prova3","../webapp/WEB-INF/Image/Prova1.jpg"));
-        comunincazione.add(new Card("Prova4","../webapp/WEB-INF/Image/Prova1.jpg"));
-        italiano.add(new Argomento("Ortografia",ortografia));
-        italiano.add(new Argomento("Comunicazione",comunincazione));
+    private void creaItaliano(){}
+
+    private void creaGeografia(){
+        ArrayList<Card> luoghi = new ArrayList<>();
+        luoghi.add(new Card("Aeroporto","./ImmaginiCard/Geografia/LuoghiCittadini/aereoporto.png"));
+        luoghi.add(new Card("Albergo","./ImmaginiCard/Geografia/LuoghiCittadini/albergo.png"));
+        luoghi.add(new Card("Banca","./ImmaginiCard/Geografia/LuoghiCittadini/banca.png"));
+        luoghi.add(new Card("Bar","./ImmaginiCard/Geografia/LuoghiCittadini/bar.png"));
+        luoghi.add(new Card("Biblioteca","./ImmaginiCard/Geografia/LuoghiCittadini/biblioteca.png"));
+        luoghi.add(new Card("Centro commerciale","./ImmaginiCard/Geografia/LuoghiCittadini/centrocommerciale.png"));
+        luoghi.add(new Card("Chiesa","./ImmaginiCard/Geografia/LuoghiCittadini/chiesa.png"));
+        luoghi.add(new Card("Edicola","./ImmaginiCard/Geografia/LuoghiCittadini/edicola.png"));
+        luoghi.add(new Card("Farmacia","./ImmaginiCard/Geografia/LuoghiCittadini/farmacia.png"));
+        luoghi.add(new Card("Libreria","./ImmaginiCard/Geografia/LuoghiCittadini/libreria.png"));
+        luoghi.add(new Card("Negozio frutta e verdura","./ImmaginiCard/Geografia/LuoghiCittadini/negozioFruttaVerdura.png"));
+        luoghi.add(new Card("Ospedale","./ImmaginiCard/Geografia/LuoghiCittadini/ospedale.png"));
+        luoghi.add(new Card("Panetteria","./ImmaginiCard/Geografia/LuoghiCittadini/panetteria.png"));
+        luoghi.add(new Card("Pasticceria","./ImmaginiCard/Geografia/LuoghiCittadini/pasticceria.png"));
+        luoghi.add(new Card("Pescheria","./ImmaginiCard/Geografia/LuoghiCittadini/pescheria.png"));
+        luoghi.add(new Card("Pizzeria","./ImmaginiCard/Geografia/LuoghiCittadini/pizzeria.png"));
+        luoghi.add(new Card("Ristorante","./ImmaginiCard/Geografia/LuoghiCittadini/ristorante.png"));
+        luoghi.add(new Card("Scuola","./ImmaginiCard/Geografia/LuoghiCittadini/scuola.png"));
+        luoghi.add(new Card("Supermercato","./ImmaginiCard/Geografia/LuoghiCittadini/supermercato.png"));
+
+        ArrayList<Card> paesaggi = new ArrayList<>();
+        paesaggi.add(new Card("Bosco","./ImmaginiCard/Geografia/Paesaggi/bosco.png"));
+        paesaggi.add(new Card("Cascata","./ImmaginiCard/Geografia/Paesaggi/cascata.png"));
+        paesaggi.add(new Card("Collina","./ImmaginiCard/Geografia/Paesaggi/collina.png"));
+        paesaggi.add(new Card("Fiume","./ImmaginiCard/Geografia/Paesaggi/fiume.png"));
+        paesaggi.add(new Card("Ghiacciaio","./ImmaginiCard/Geografia/Paesaggi/ghiacciaio.png"));
+        paesaggi.add(new Card("Lago","./ImmaginiCard/Geografia/Paesaggi/lago.png"));
+        paesaggi.add(new Card("Mare","./ImmaginiCard/Geografia/Paesaggi/mare.png"));
+        paesaggi.add(new Card("Montagna","./ImmaginiCard/Geografia/Paesaggi/montagna.png"));
+        paesaggi.add(new Card("Pianura","./ImmaginiCard/Geografia/Paesaggi/pianura.png"));
+        paesaggi.add(new Card("Scogli","./ImmaginiCard/Geografia/Paesaggi/scogli.png"));
+        paesaggi.add(new Card("Spiaggia","./ImmaginiCard/Geografia/Paesaggi/spiaggia.png"));
+        paesaggi.add(new Card("Vulcano","./ImmaginiCard/Geografia/Paesaggi/vulcano.png"));
+
+        ArrayList<Card> pianeti = new ArrayList<>();
+        pianeti.add(new Card("Mercurio","./ImmaginiCard/Geografia/Pianeti/mercurio.png"));
+        pianeti.add(new Card("Venere","./ImmaginiCard/Geografia/Pianeti/venere.png"));
+        pianeti.add(new Card("Terra","./ImmaginiCard/Geografia/Pianeti/terra.png"));
+        pianeti.add(new Card("Marte","./ImmaginiCard/Geografia/Pianeti/marte.png"));
+        pianeti.add(new Card("Giove","./ImmaginiCard/Geografia/Pianeti/giove.png"));
+        pianeti.add(new Card("Urano","./ImmaginiCard/Geografia/Pianeti/urano.png"));
+        pianeti.add(new Card("Nettuno","./ImmaginiCard/Geografia/Pianeti/nettuno.png"));
+        pianeti.add(new Card("Plutone","./ImmaginiCard/Geografia/Pianeti/plutone.png"));
+
+        ArrayList<Card> posizioni = new ArrayList<>();
+        posizioni.add(new Card("Al centro","./ImmaginiCard/Geografia/Posizioni/alCentro.png"));
+        posizioni.add(new Card("Davanti","./ImmaginiCard/Geografia/Posizioni/davanti.png"));
+        posizioni.add(new Card("Dentro","./ImmaginiCard/Geografia/Posizioni/dentro.png"));
+        posizioni.add(new Card("Dietro","./ImmaginiCard/Geografia/Posizioni/dietro.png"));
+        posizioni.add(new Card("Sopra","./ImmaginiCard/Geografia/Posizioni/sopra.png"));
+        posizioni.add(new Card("Sotto","./ImmaginiCard/Geografia/Posizioni/sotto.png"));
+        posizioni.add(new Card("Vicino","./ImmaginiCard/Geografia/Posizioni/vicino.png"));
+
+        geografia.add(new Argomento("Posizioni",posizioni));
+        geografia.add(new Argomento("Pianeti",pianeti));
+        geografia.add(new Argomento("Paesaggi",paesaggi));
+        geografia.add(new Argomento("Luoghi cittadini",luoghi));
+
     }
-    private void creaGeografia(){}
 
     private void creaStoria(){}
 
