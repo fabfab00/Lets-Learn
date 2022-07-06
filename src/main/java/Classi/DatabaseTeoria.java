@@ -41,7 +41,41 @@ public class DatabaseTeoria {
 
     private void creaScienze(){}
 
-    private void creaArte(){}
+    private void creaArte(){
+        ArrayList<Card> colori = new ArrayList<>();
+        colori.add(new Card("Arancione","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Azzurro","Image/Arte/Colori/azzurro.png"));
+        colori.add(new Card("Bianco","Image/Arte/Colori/bianco.png"));
+        colori.add(new Card("Blu","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Giallo","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Grigio","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Marrone","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Nero","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Rosa","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Rosso","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Verde Chiaro","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Verde Scuro","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Viola","Image/Arte/Colori/arancione.png"));
+
+        ArrayList<Card> materialeScolastico = new ArrayList<>();
+        materialeScolastico.add(new Card("Astuccio","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Calcolatrice","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Gesso","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Gomma","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Libro","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Matita","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Matite Colorate","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Penna","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Quaderni","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Righello","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Temperino","Image/Arte/MaterialeScolastico/astuccio.png"));
+        materialeScolastico.add(new Card("Zaino","Image/Arte/MaterialeScolastico/astuccio.png"));
+        arte.add(new Argomento("Colori",colori));
+        arte.add(new Argomento("Materiale Scolastico",materialeScolastico));
+
+
+
+    }
 
 
     public ArrayList<Argomento> getItaliano() {
@@ -78,4 +112,6 @@ public class DatabaseTeoria {
         }
         return null;
     } //Marty tvb <3
+
+
 }
