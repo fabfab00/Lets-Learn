@@ -26,7 +26,7 @@ ArrayList<Card> lista = argomentoClass.getListaCard();
     <div class="card-columns">
         <% for (int i=0; i<lista.size();i++){%>
         <div class="card col-md-4">
-            <div class="card-body"><img src="../Image/Arte/Colori/arancione.png">
+            <div class="card-body"><img src="<%=lista.get(i).getPathImage()%>">
                 <div class="card-footer"><i class="far fa-star"></i><span><%=lista.get(i).getText()%></span></div>
             </div>
         </div>

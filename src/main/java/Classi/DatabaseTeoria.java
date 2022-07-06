@@ -43,19 +43,19 @@ public class DatabaseTeoria {
 
     private void creaArte(){
         ArrayList<Card> colori = new ArrayList<>();
-        colori.add(new Card("Arancione","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Azzurro","Image/Arte/Colori/azzurro.png"));
-        colori.add(new Card("Bianco","Image/Arte/Colori/bianco.png"));
-        colori.add(new Card("Blu","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Giallo","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Grigio","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Marrone","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Nero","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Rosa","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Rosso","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Verde Chiaro","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Verde Scuro","Image/Arte/Colori/arancione.png"));
-        colori.add(new Card("Viola","Image/Arte/Colori/arancione.png"));
+        colori.add(new Card("Arancione","./ImmaginiCard/Arte/Colori/arancione.png"));
+        colori.add(new Card("Azzurro","./ImmaginiCard/Arte/Colori/azzurro.png"));
+        colori.add(new Card("Bianco","./ImmaginiCard/Arte/Colori/bianco.png"));
+        colori.add(new Card("Blu","./ImmaginiCard/Arte/Colori/blu.png"));
+        colori.add(new Card("Giallo","./ImmaginiCard/Arte/Colori/giallo.png"));
+        colori.add(new Card("Grigio","./ImmaginiCard/Arte/Colori/grigio.png"));
+        colori.add(new Card("Marrone","./ImmaginiCard/Arte/Colori/marrone.png"));
+        colori.add(new Card("Nero","./ImmaginiCard/Arte/Colori/nero.png"));
+        colori.add(new Card("Rosa","./ImmaginiCard/Arte/Colori/rosa.png"));
+        colori.add(new Card("Rosso","./ImmaginiCard/Arte/Colori/rosso.png"));
+        colori.add(new Card("Verde Chiaro","./ImmaginiCard/Arte/Colori/verdeChiaro.png"));
+        colori.add(new Card("Verde Scuro","./ImmaginiCard/Arte/Colori/verdeScuro.png"));
+        colori.add(new Card("Viola","./ImmaginiCard/Arte/Colori/viola.png"));
 
         ArrayList<Card> materialeScolastico = new ArrayList<>();
         materialeScolastico.add(new Card("Astuccio","Image/Arte/MaterialeScolastico/astuccio.png"));
