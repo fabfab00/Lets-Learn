@@ -39,7 +39,7 @@
 </div>
 <div id="overlay" style="display: none;justify-content: center;" onclick="close()">
     <div class="loginContainer">
-        <i class="closeIcon" style="cursor: pointer;" onclick="close()">
+        <i onclick="close()" class="closeIcon" style="cursor: pointer;" >
             <%@include file="/Immagini/Cross.svg"%>
         </i>
         <div class="loginFormContainer" style="margin-top: 43px;">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="row" style="margin-bottom: 73px;margin-top: 48px;">
                     <div class="col"><span class="loginGuide">Inserisci <br />Password<br /></span></div>
-                    <div class="col"><input id="pw" class="form-control" type="text" placeholder="Password" style="margin-top: 4px;" /></div>
+                    <div class="col"><input id="pw" class="form-control" type="password" placeholder="Password" style="margin-top: 4px;" /></div>
                 </div><button onclick="continua(document.getElementById('nome').value, document.getElementById('pw').value)" class="btn btn-primary" type="button" style="margin-top: 2%;margin-bottom: 10px;background: #99c7d9;">Continua</button>
             </form>
         </div>
@@ -72,7 +72,6 @@
     }
 
     function close(){
-        console.log("hello")
         document.getElementById("overlay").style.display="none"
     }
 

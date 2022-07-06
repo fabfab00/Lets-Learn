@@ -13,13 +13,17 @@
     <link rel="stylesheet" href="./customcss/general.css"/>
 </head>
 <body>
+<%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
+
     <div class="contenitoreTitoloSezione"><span class="titoloSezione">Scegli Esercizi</span></div>
     <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Label
         <input type="checkbox" />
         <span class="checkmark"></span>
     </label>
-    <button class="btn btn-primary btn-continua" type="button">Inizia</button>
+    <form action="${pageContext.request.contextPath}/ServletAvviaPrimoEsercizio" method="get">
+    <button class="btn btn-primary btn-continua" type="submit">Inizia</button>
+    </form>
 </div>
 
 </body>

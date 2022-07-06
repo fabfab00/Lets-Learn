@@ -22,7 +22,7 @@ ArrayList<Card> lista = argomentoClass.getListaCard();
 <body class="text-center">
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
-    <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione">ARGOMENTO</span></div>
+    <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione"><%=argomentoClass.getNome()%></span></div>
     <div class="card-columns">
         <% for (int i=0; i<lista.size();i++){%>
         <div class="card col-md-4">
