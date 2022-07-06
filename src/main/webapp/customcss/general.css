@@ -252,3 +252,7 @@ input {
     float: left;
     margin-right: 40px;
 }
+.btn-primary {
+    background: #99C7D9;
+}
+
