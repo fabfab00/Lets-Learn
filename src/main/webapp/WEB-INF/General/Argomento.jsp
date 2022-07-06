@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./customcss/general.css"/>
 </head>
 <body class="text-center">
+<%@include file="/WEB-INF/Header/Header.jsp"%>
+
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione"><i onclick="ciao()"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
     <ul class="list-unstyled">
@@ -35,8 +37,11 @@
 
     </ul>
 </div>
-<div id="overlay" style="display: none;justify-content: center;" >
-    <div class="loginContainer"><i class="closeIcon" onclick="close()"><%@include file="/Immagini/Cross.svg"%></i>
+<div id="overlay" style="display: none;justify-content: center;" onclick="close()">
+    <div class="loginContainer">
+        <i class="closeIcon" style="cursor: pointer;" onclick="close()">
+            <%@include file="/Immagini/Cross.svg"%>
+        </i>
         <div class="loginFormContainer" style="margin-top: 43px;">
             <form>
                 <div class="row" style="margin: 65px -12px 0px;">
@@ -52,6 +57,7 @@
     </div>
 </div>
 <script>
+
     function teoria(materia,argomento){
 
         window.location.replace("./ServletTeoria?materia="+materia+"&argomento="+argomento);
@@ -68,7 +74,6 @@
     function close(){
         console.log("hello")
         document.getElementById("overlay").style.display="none"
-        //window.close()
     }
 
     function continua(nome, password){

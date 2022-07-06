@@ -11,6 +11,12 @@
     <title>SvolgiEsercizio</title>
 </head>
 <body>
-
+    <div class="pageContenent">
+        <div class="contenitoreTitoloSezione"><span class="titoloSezione">Scegli Esercizi</span></div>
+        <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Label
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+        </label>
+    </div>
 </body>
 </html>

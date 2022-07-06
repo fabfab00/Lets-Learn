@@ -16,11 +16,11 @@ public class Database {
 
     private void creaGrammatica(){
         ArrayList<Card> ortografia = new ArrayList<>();
-        ortografia.add(new Card("Prova1", "Image/Prova1.jpg"));
-        ortografia.add(new Card("Prova2", "Image/Prova1.jpg"));
+        ortografia.add(new Card("Prova1","../webapp/WEB-INF/Image/Prova1.jpg"));
+        ortografia.add(new Card("Prova2","../webapp/WEB-INF/Image/Prova1.jpg"));
         ArrayList<Card> comunincazione = new ArrayList<>();
-        comunincazione.add(new Card("Prova3", "Image/Prova1.jpg"));
-        comunincazione.add(new Card("Prova4", "Image/Prova1.jpg"));
+        comunincazione.add(new Card("Prova3","../webapp/WEB-INF/Image/Prova1.jpg"));
+        comunincazione.add(new Card("Prova4","../webapp/WEB-INF/Image/Prova1.jpg"));
         grammatica.add(new Argomento("Ortografia",ortografia));
         grammatica.add(new Argomento("Comunicazione",comunincazione));
     }

@@ -17,33 +17,47 @@ public class ServletScegliMateria extends HttpServlet {
         ArrayList<String> argomenti = new ArrayList<>();
         switch (materia) {
 
-            case "Grammatica":
-                argomenti.add("Ortografia");
-                argomenti.add("Comunicazione");
-                argomenti.add("Lessico");
-                argomenti.add("Morfologia");
+            case "Italiano":
+                argomenti.add("Alfabeto");
+                argomenti.add("Verbi");
+                argomenti.add("Alimenti");
+                argomenti.add("Persone e Mestieri");
                 path="/WEB-INF/General/Argomento.jsp";
 
                 break;
             case "Matematica":
                 argomenti.add("I numeri");
-                argomenti.add("Le misure");
-                argomenti.add("Geometria");
-                argomenti.add("Gli insiemi");
+                argomenti.add("Forme geometriche");
+                argomenti.add("Simboli");
+                argomenti.add("Tecnologia");
                 path="/WEB-INF/General/Argomento.jsp";
                 break;
-            case "Geostoria":
-                argomenti.add("Fonti Storiche");
-                argomenti.add("Sumeri");
-                argomenti.add("Babilonesi");
-                argomenti.add("Assiri");
+            case "Geografia":
+                argomenti.add("Pianeti");
+                argomenti.add("Posizioni");
+                argomenti.add("Paesaggi");
+                argomenti.add("Luoghi cittadini");
                 path="/WEB-INF/General/Argomento.jsp";
                 break;
             case "Scienze":
-                argomenti.add("Il metodo scientifico");
-                argomenti.add("Le piante");
-                argomenti.add("Gli animali");
-                argomenti.add("Le rocce");
+                argomenti.add("Piante");
+                argomenti.add("Animali");
+                argomenti.add("Sport");
+                argomenti.add("Parti del corpo");
+                path="/WEB-INF/General/Argomento.jsp";
+                break;
+            case "Storia":
+                argomenti.add("Mesi e Stagioni");
+                argomenti.add("Giorni");
+                argomenti.add("Orologio");
+                argomenti.add("Festivita");
+                path="/WEB-INF/General/Argomento.jsp";
+                break;
+            case "Arte":
+                argomenti.add("Colori");
+                argomenti.add("Strumenti musicali");
+                argomenti.add("Vestiti");
+                argomenti.add("Materiale scolastico");
                 path="/WEB-INF/General/Argomento.jsp";
                 break;
             default:
