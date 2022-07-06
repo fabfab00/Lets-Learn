@@ -9,6 +9,8 @@
 <html>
 <head>
     <title>AssegnaEsercizio</title>
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./customcss/general.css"/>
 </head>
 <body>
 <div class="pageContenent">
