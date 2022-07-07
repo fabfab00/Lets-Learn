@@ -17,7 +17,15 @@
 <div class="pageContenent">
 
     <div class="contenitoreTitoloSezione"><span class="titoloSezione">Scegli Esercizi</span></div>
-    <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Label
+    <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Associa Immagine Con Parola
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+    </label>
+    <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Associa Le Frasi Tra Di Loro
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+    </label>
+    <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Scrivi La Parola Corretta
         <input type="checkbox" />
         <span class="checkmark"></span>
     </label>
