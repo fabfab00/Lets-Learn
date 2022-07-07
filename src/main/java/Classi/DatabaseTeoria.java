@@ -20,7 +20,126 @@ public class DatabaseTeoria {
         creaStoria();
     }
 
-    private void creaItaliano(){}
+    private void creaItaliano(){
+        ArrayList<Card> alfabeto = new ArrayList<>();
+        ArrayList<Card> alimenti = new ArrayList<>();
+        ArrayList<Card> personeMestieri = new ArrayList<>();
+        ArrayList<Card> verbi = new ArrayList<>();
+
+        alfabeto.add(new Card("a","./ImmaginiCard/Italiano/Alfabeto/a.png"));
+        alfabeto.add(new Card("bi","./ImmaginiCard/Italiano/Alfabeto/b.png"));
+        alfabeto.add(new Card("ci","./ImmaginiCard/Italiano/Alfabeto/c.png"));
+        alfabeto.add(new Card("di","./ImmaginiCard/Italiano/Alfabeto/d.png"));
+        alfabeto.add(new Card("e","./ImmaginiCard/Italiano/Alfabeto/e.png"));
+        alfabeto.add(new Card("effe","./ImmaginiCard/Italiano/Alfabeto/f.png"));
+        alfabeto.add(new Card("gi","./ImmaginiCard/Italiano/Alfabeto/g.png"));
+        alfabeto.add(new Card("acca","./ImmaginiCard/Italiano/Alfabeto/h.png"));
+        alfabeto.add(new Card("i","./ImmaginiCard/Italiano/Alfabeto/i.png"));
+        alfabeto.add(new Card("elle","./ImmaginiCard/Italiano/Alfabeto/l.png"));
+        alfabeto.add(new Card("emme","./ImmaginiCard/Italiano/Alfabeto/m.png"));
+        alfabeto.add(new Card("enne","./ImmaginiCard/Italiano/Alfabeto/n.png"));
+        alfabeto.add(new Card("o","./ImmaginiCard/Italiano/Alfabeto/o.png"));
+        alfabeto.add(new Card("pi","./ImmaginiCard/Italiano/Alfabeto/p.png"));
+        alfabeto.add(new Card("qu","./ImmaginiCard/Italiano/Alfabeto/q.png"));
+        alfabeto.add(new Card("erre","./ImmaginiCard/Italiano/Alfabeto/r.png"));
+        alfabeto.add(new Card("esse","./ImmaginiCard/Italiano/Alfabeto/s.png"));
+        alfabeto.add(new Card("ti","./ImmaginiCard/Italiano/Alfabeto/t.png"));
+        alfabeto.add(new Card("u","./ImmaginiCard/Italiano/Alfabeto/u.png"));
+        alfabeto.add(new Card("vi","./ImmaginiCard/Italiano/Alfabeto/v.png"));
+        alfabeto.add(new Card("zeta","./ImmaginiCard/Italiano/Alfabeto/z.png"));
+
+        alimenti.add(new Card("Acqua","./ImmaginiCard/Italiano/Alimenti/acqua.png"));
+        alimenti.add(new Card("Arachidi","./ImmaginiCard/Italiano/Alimenti/arachidi.png"));
+        alimenti.add(new Card("Burro","./ImmaginiCard/Italiano/Alimenti/burro.png"));
+        alimenti.add(new Card("Caffe","./ImmaginiCard/Italiano/Alimenti/caffe.png"));
+        alimenti.add(new Card("Caramelle","./ImmaginiCard/Italiano/Alimenti/caramelle.png"));
+        alimenti.add(new Card("Cioccolato","./ImmaginiCard/Italiano/Alimenti/cioccolato.png"));
+        alimenti.add(new Card("Cocco","./ImmaginiCard/Italiano/Alimenti/cocco.png"));
+        alimenti.add(new Card("Farina","./ImmaginiCard/Italiano/Alimenti/farina.png"));
+        alimenti.add(new Card("Formaggio","./ImmaginiCard/Italiano/Alimenti/formaggio.png"));
+        alimenti.add(new Card("Frutta","./ImmaginiCard/Italiano/Alimenti/frutta.png"));
+        alimenti.add(new Card("Latte","./ImmaginiCard/Italiano/Alimenti/latte.png"));
+        alimenti.add(new Card("Miele","./ImmaginiCard/Italiano/Alimenti/miele.png"));
+        alimenti.add(new Card("Pane","./ImmaginiCard/Italiano/Alimenti/pane.png"));
+        alimenti.add(new Card("Panino","./ImmaginiCard/Italiano/Alimenti/panino.png"));
+        alimenti.add(new Card("Pasta","./ImmaginiCard/Italiano/Alimenti/pasta.png"));
+        alimenti.add(new Card("Patatine","./ImmaginiCard/Italiano/Alimenti/patatine.png"));
+        alimenti.add(new Card("Pesce","./ImmaginiCard/Italiano/Alimenti/pesce.png"));
+        alimenti.add(new Card("Pizza","./ImmaginiCard/Italiano/Alimenti/pizza.png"));
+        alimenti.add(new Card("Pollo","./ImmaginiCard/Italiano/Alimenti/pollo.png"));
+        alimenti.add(new Card("Riso","./ImmaginiCard/Italiano/Alimenti/riso.png"));
+        alimenti.add(new Card("Sale e Pepe","./ImmaginiCard/Italiano/Alimenti/saleEpepe.png"));
+        alimenti.add(new Card("Torta","./ImmaginiCard/Italiano/Alimenti/torta.png"));
+        alimenti.add(new Card("Uova","./ImmaginiCard/Italiano/Alimenti/uova.png"));
+        alimenti.add(new Card("Verdura","./ImmaginiCard/Italiano/Alimenti/verdura.png"));
+
+        personeMestieri.add(new Card("Artista","./ImmaginiCard/Italiano/PersoneMestieri/artista.png"));
+        personeMestieri.add(new Card("Atleta","./ImmaginiCard/Italiano/PersoneMestieri/atleta.png"));
+        personeMestieri.add(new Card("Attore","./ImmaginiCard/Italiano/PersoneMestieri/attore.png"));
+        personeMestieri.add(new Card("Avvocato","./ImmaginiCard/Italiano/PersoneMestieri/avvocato.png"));
+        personeMestieri.add(new Card("Barbiere","./ImmaginiCard/Italiano/PersoneMestieri/barbiere.png"));
+        personeMestieri.add(new Card("Calciatore","./ImmaginiCard/Italiano/PersoneMestieri/calciatore.png"));
+        personeMestieri.add(new Card("Cameriere","./ImmaginiCard/Italiano/PersoneMestieri/cameriere.png"));
+        personeMestieri.add(new Card("Casalinga","./ImmaginiCard/Italiano/PersoneMestieri/casalinga.png"));
+        personeMestieri.add(new Card("Commesso","./ImmaginiCard/Italiano/PersoneMestieri/commesso.png"));
+        personeMestieri.add(new Card("Cuoco","./ImmaginiCard/Italiano/PersoneMestieri/cuoco.png"));
+        personeMestieri.add(new Card("Dottore","./ImmaginiCard/Italiano/PersoneMestieri/dottore.png"));
+        personeMestieri.add(new Card("Impiegato","./ImmaginiCard/Italiano/PersoneMestieri/impiegato.png"));
+        personeMestieri.add(new Card("Ingegnere","./ImmaginiCard/Italiano/PersoneMestieri/ingegnere.png"));
+        personeMestieri.add(new Card("Maestra","./ImmaginiCard/Italiano/PersoneMestieri/maestra.png"));
+        personeMestieri.add(new Card("Meccanico","./ImmaginiCard/Italiano/PersoneMestieri/meccanico.png"));
+        personeMestieri.add(new Card("Militare","./ImmaginiCard/Italiano/PersoneMestieri/militare.png"));
+        personeMestieri.add(new Card("Muratore","./ImmaginiCard/Italiano/PersoneMestieri/muratore.png"));
+        personeMestieri.add(new Card("Musicista","./ImmaginiCard/Italiano/PersoneMestieri/musicista.png"));
+        personeMestieri.add(new Card("Parrucchiere","./ImmaginiCard/Italiano/PersoneMestieri/parrucchiere.png"));
+        personeMestieri.add(new Card("Pilota","./ImmaginiCard/Italiano/PersoneMestieri/pilota.png"));
+        personeMestieri.add(new Card("Politico","./ImmaginiCard/Italiano/PersoneMestieri/politico.png"));
+        personeMestieri.add(new Card("Poliziotto","./ImmaginiCard/Italiano/PersoneMestieri/poliziotto.png"));
+        personeMestieri.add(new Card("Pompiere","./ImmaginiCard/Italiano/PersoneMestieri/pompiere.png"));
+        personeMestieri.add(new Card("Programmatore","./ImmaginiCard/Italiano/PersoneMestieri/programmatore.png"));
+        personeMestieri.add(new Card("Scienziato","./ImmaginiCard/Italiano/PersoneMestieri/scienziato.png"));
+        personeMestieri.add(new Card("Scrittore","./ImmaginiCard/Italiano/PersoneMestieri/scrittore.png"));
+
+        verbi.add(new Card("Abbracciare","./ImmaginiCard/Italiano/Verbi/abbracciare.png"));
+        verbi.add(new Card("Aiutare","./ImmaginiCard/Italiano/Verbi/aiutare.png"));
+        verbi.add(new Card("Allenarsi","./ImmaginiCard/Italiano/Verbi/allenarsi.png"));
+        verbi.add(new Card("Ascoltare","./ImmaginiCard/Italiano/Verbi/ascoltare.png"));
+        verbi.add(new Card("Ballare","./ImmaginiCard/Italiano/Verbi/ballare.png"));
+        verbi.add(new Card("Comprare","./ImmaginiCard/Italiano/Verbi/comprare.png"));
+        verbi.add(new Card("Cucinare","./ImmaginiCard/Italiano/Verbi/cucinare.png"));
+        verbi.add(new Card("Dormire","./ImmaginiCard/Italiano/Verbi/dormire.png"));
+        verbi.add(new Card("Guidare","./ImmaginiCard/Italiano/Verbi/guidare.png"));
+        verbi.add(new Card("Lavorare","./ImmaginiCard/Italiano/Verbi/lavorare.png"));
+        verbi.add(new Card("Leggere","./ImmaginiCard/Italiano/Verbi/leggere.png"));
+        verbi.add(new Card("Litigare","./ImmaginiCard/Italiano/Verbi/litigare.png"));
+        verbi.add(new Card("Mangiare","./ImmaginiCard/Italiano/Verbi/mangiare.png"));
+        verbi.add(new Card("Pagare","./ImmaginiCard/Italiano/Verbi/pagare.png"));
+        verbi.add(new Card("Parlare","./ImmaginiCard/Italiano/Verbi/parlare.png"));
+        verbi.add(new Card("Pensare","./ImmaginiCard/Italiano/Verbi/pensare.png"));
+        verbi.add(new Card("Pregare","./ImmaginiCard/Italiano/Verbi/pregare.png"));
+        verbi.add(new Card("Pulire","./ImmaginiCard/Italiano/Verbi/pulire.png"));
+        verbi.add(new Card("Rilassarsi","./ImmaginiCard/Italiano/Verbi/rilassarsi.png"));
+        verbi.add(new Card("Scegliere","./ImmaginiCard/Italiano/Verbi/scegliere.png"));
+        verbi.add(new Card("Scrivere","./ImmaginiCard/Italiano/Verbi/scrivere.png"));
+        verbi.add(new Card("Sgridare","./ImmaginiCard/Italiano/Verbi/sgridare.png"));
+        verbi.add(new Card("Sperare","./ImmaginiCard/Italiano/Verbi/sperare.png"));
+        verbi.add(new Card("Spingere","./ImmaginiCard/Italiano/Verbi/spingere.png"));
+        verbi.add(new Card("Spostare","./ImmaginiCard/Italiano/Verbi/spostare.png"));
+        verbi.add(new Card("Starnutire","./ImmaginiCard/Italiano/Verbi/starnutire.png"));
+        verbi.add(new Card("Svegliarsi","./ImmaginiCard/Italiano/Verbi/svegliarsi.png"));
+        verbi.add(new Card("Truccarsi","./ImmaginiCard/Italiano/Verbi/truccarsi.png"));
+        verbi.add(new Card("Usare il pc","./ImmaginiCard/Italiano/Verbi/usarePC.png"));
+        verbi.add(new Card("Vedere","./ImmaginiCard/Italiano/Verbi/vedere.png"));
+        verbi.add(new Card("Vestirsi","./ImmaginiCard/Italiano/Verbi/vestirsi.png"));
+
+
+
+        italiano.add(new Argomento("Verbi",verbi));
+        italiano.add(new Argomento("Persone e Mestieri",personeMestieri));
+        italiano.add(new Argomento("Alfabeto",alfabeto));
+        italiano.add(new Argomento("Alimenti",alimenti));
+
+    }
 
     private void creaGeografia(){
         ArrayList<Card> luoghi = new ArrayList<>();
