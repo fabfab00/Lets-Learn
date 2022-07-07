@@ -11,7 +11,8 @@
     <h4>Titolo Esercizio</h4>
     <form>
         <ul class="list-group lista-domande">
-            <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" /><!--Inizio singola domanda-->
+            <li class="list-group-item"><!--Inizio singola domanda-->
+                <input class="invisible-checkbox" type="checkbox" />
                 <div></div>
                 <span>List Group Item 1</span>
             </li><!--Fine singola domanda-->
