@@ -6,11 +6,24 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>EsercizioAssociaImmagineConParola</title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="immaginiRispostaMultipla">
+    <img class="float-start" /><!--Singolo questionario-->
+    <h4>Titolo Esercizio</h4>
+    <form>
+        <ul class="list-group lista-domande">
+            <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" /><!--Inizio singola domanda-->
+                <div></div>
+                <span>List Group Item 1</span>
+            </li><!--Fine singola domanda-->
+            <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <div></div><span>List Group Item 1</span>
+            </li>
+            <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <div></div><span>List Group Item 1</span>
+            </li>
+            <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <div></div><span>List Group Item 1</span>
+            </li>
+        </ul>
+    </form>
+</div>
