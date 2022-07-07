@@ -70,7 +70,7 @@ public class DatabaseTeoria {
         alimenti.add(new Card("Riso","./ImmaginiCard/Italiano/Alimenti/riso.png"));
         alimenti.add(new Card("Sale e Pepe","./ImmaginiCard/Italiano/Alimenti/saleEpepe.png"));
         alimenti.add(new Card("Torta","./ImmaginiCard/Italiano/Alimenti/torta.png"));
-        alimenti.add(new Card("Uova","./ImmaginiCard/Italiano/Alimenti/uova.png"));
+        alimenti.add(new Card("Uova","./ImmaginiCard/Italiano/Alimenti/uovo.png"));
         alimenti.add(new Card("Verdura","./ImmaginiCard/Italiano/Alimenti/verdura.png"));
 
         personeMestieri.add(new Card("Artista","./ImmaginiCard/Italiano/PersoneMestieri/artista.png"));
