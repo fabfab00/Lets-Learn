@@ -21,7 +21,7 @@
 
 <head>
     <title><%=materia%></title>
-    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="./customcss/general.css"/>
 </head>
 <body class="text-center">
