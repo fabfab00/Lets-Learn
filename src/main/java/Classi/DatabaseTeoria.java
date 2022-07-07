@@ -18,9 +18,6 @@ public class DatabaseTeoria {
         creaMatematica();
         creaScienze();
         creaStoria();
-
-
-
     }
 
     private void creaItaliano(){}
