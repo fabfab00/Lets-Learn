@@ -23,9 +23,9 @@
             </div>
             <!--Includere gli esercizi-->
 
-            <!--<form action="${pageContext.request.contextPath}/ServletAvviaPrimoEsercizio" method="get">
+            <form action="${pageContext.request.contextPath}/ServletAvviaPrimoEsercizio" method="get">
                 <button class="btn btn-primary btn-continua" type="submit">Inizia</button>
-            </form>-->
+            </form>
         </div>
     </body>
 </html>
