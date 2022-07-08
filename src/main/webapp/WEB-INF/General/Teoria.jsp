@@ -16,7 +16,7 @@ ArrayList<Card> lista = argomentoClass.getListaCard();
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>letsLearn</title>
-    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="./customcss/general.css"/>
 </head>
 <body class="text-center">
@@ -25,7 +25,7 @@ ArrayList<Card> lista = argomentoClass.getListaCard();
     <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione"><%=argomentoClass.getNome()%></span></div>
     <div class="card-columns">
         <% for (int i=0; i<lista.size();i++){%>
-        <div class="card col-md-4">
+        <div class="card col-md-2">
             <div class="card-body"><img src="<%=lista.get(i).getPathImage()%>">
                 <div class="card-footer"><i class="far fa-star"></i><span><%=lista.get(i).getText()%></span></div>
             </div>

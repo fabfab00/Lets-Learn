@@ -1,4 +1,6 @@
-<%--
+<%@ page import="Classi.AssociaLeFrasiTraDiloro" %>
+<%@ page import="Classi.AssociaImmagineConParola" %>
+<%@ page import="Classi.ScriviLaparolaCorretta" %><%--
   Created by IntelliJ IDEA.
   User: 129109
   Date: 01/07/2022
@@ -9,9 +11,14 @@
 <html>
     <head>
         <title>SvolgiEsercizio</title>
-        <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="./customcss/general.css"/>
     </head>
+    <%
+    AssociaLeFrasiTraDiloro associaLeFrasiTraDiloro= (AssociaLeFrasiTraDiloro) request.getAttribute("associaLeFrasiTraDiloro");
+    AssociaImmagineConParola associaImmagineConParola= (AssociaImmagineConParola) request.getAttribute("associaImmagineConParola");
+    ScriviLaparolaCorretta scriviLaparolaCorretta= (ScriviLaparolaCorretta) request.getAttribute("scriviLaparolaCorretta");
+    %>
     <body>
     <%@include file="/WEB-INF/Header/Header.jsp"%>
         <div class="pageContenent">
@@ -22,6 +29,8 @@
                 <span class="titoloSezione">Argomento</span>
             </div>
             <!--Includere gli esercizi-->
+
+            <%@include file="/WEB-INF/Partials/EsercizioAssociaImmagineConParola.jsp"%>
 
             <form action="${pageContext.request.contextPath}/ServletAvviaPrimoEsercizio" method="get">
                 <button class="btn btn-primary btn-continua" type="submit">Inizia</button>
