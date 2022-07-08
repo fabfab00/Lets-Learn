@@ -37,9 +37,9 @@
 
     </ul>
 </div>
-<div id="overlay" style="display: none;justify-content: center;" onclick="close()">
+<div id="overlay" style="display: none;justify-content: center;">
     <div class="loginContainer">
-        <i onclick="close()" class="closeIcon" style="cursor: pointer;" >
+        <i id="xyz" onclick="close()" class="closeIcon" style="cursor: pointer;" >
             <%@include file="/Immagini/Cross.svg"%>
         </i>
         <div class="loginFormContainer" style="margin-top: 43px;">
@@ -69,6 +69,12 @@
         document.getElementById("overlay").style.display="flex"
         MATERIA=materia;
         ARGOMENTO=argomento;
+    }
+
+    var buttonX=document.getElementById("xyz");
+
+    buttonX.onclick=function () {
+        close();
     }
 
     function close(){

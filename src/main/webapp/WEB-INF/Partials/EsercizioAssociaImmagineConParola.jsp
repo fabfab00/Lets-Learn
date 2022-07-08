@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="immaginiRispostaMultipla">
-    <img class="float-start" src="associaImmagineConParola.getImage();" /><!--Singolo questionario-->
+    <img class="float-start" src="<%=associaImmagineConParola.getImage()%>" /><!--Singolo questionario-->
     <h4>Associa Immagine Con Parola</h4>
     <form>
         <ul class="list-group lista-domande">
