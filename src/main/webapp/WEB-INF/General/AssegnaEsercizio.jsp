@@ -1,4 +1,6 @@
-<%--
+<%@ page import="Classi.AssociaLeFrasiTraDiloro" %>
+<%@ page import="Classi.AssociaImmagineConParola" %>
+<%@ page import="Classi.ScriviLaparolaCorretta" %><%--
   Created by IntelliJ IDEA.
   User: 129109
   Date: 01/07/2022
@@ -13,6 +15,17 @@
     <link rel="stylesheet" href="./customcss/general.css"/>
 </head>
 <body>
+
+<%
+    AssociaLeFrasiTraDiloro associaLeFrasiTraDiloro= (AssociaLeFrasiTraDiloro) request.getAttribute("associaLeFrasiTraDiloro");
+    AssociaImmagineConParola associaImmagineConParola= (AssociaImmagineConParola) request.getAttribute("associaImmagineConParola");
+    ScriviLaparolaCorretta scriviLaparolaCorretta= (ScriviLaparolaCorretta) request.getAttribute("scriviLaparolaCorretta");
+    request.getSession().setAttribute("associaLeFrasiTraDiloro", associaLeFrasiTraDiloro);
+    request.getSession().setAttribute("associaImmagineConParola", associaImmagineConParola);
+    request.getSession().setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta);
+
+%>
+
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
 

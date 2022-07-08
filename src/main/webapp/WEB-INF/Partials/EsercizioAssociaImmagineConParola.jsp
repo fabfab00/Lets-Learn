@@ -7,24 +7,26 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="immaginiRispostaMultipla">
-    <img class="float-start" /><!--Singolo questionario-->
-    <h4>Titolo Esercizio</h4>
+    <img class="float-start" src="associaImmagineConParola.getImage();" /><!--Singolo questionario-->
+    <h4>Associa Immagine Con Parola</h4>
     <form>
         <ul class="list-group lista-domande">
             <li class="list-group-item"><!--Inizio singola domanda-->
                 <input class="invisible-checkbox" type="checkbox" />
                 <div></div>
-                <span>List Group Item 1</span>
+                <span><%=associaImmagineConParola.getWord().get(0)%></span>
+
             </li><!--Fine singola domanda-->
             <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
-                <div></div><span>List Group Item 1</span>
+                <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
             </li>
             <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
-                <div></div><span>List Group Item 1</span>
+                <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
             </li>
             <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
-                <div></div><span>List Group Item 1</span>
+                <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
             </li>
         </ul>
     </form>
 </div>
+
