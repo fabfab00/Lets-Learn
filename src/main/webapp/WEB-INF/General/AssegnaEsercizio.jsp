@@ -49,6 +49,16 @@ String materia = (String) request.getAttribute("argomento");
     <button class="btn btn-primary btn-continua" type="submit">Inizia</button>
     </form>
 </div>
-
+<script>
+    function checkboxes(){
+        var inputElems = document.getElementsByTagName("input"),
+            count = 0;
+        for (var i=0; i<inputElems.length; i++) {
+            if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
+                count++;
+                alert(count);
+            }
+        }}
+</script>
 </body>
 </html>
