@@ -18,6 +18,7 @@
     AssociaLeFrasiTraDiloro associaLeFrasiTraDiloro= (AssociaLeFrasiTraDiloro) request.getAttribute("associaLeFrasiTraDiloro");
     AssociaImmagineConParola associaImmagineConParola= (AssociaImmagineConParola) request.getAttribute("associaImmagineConParola");
     ScriviLaparolaCorretta scriviLaparolaCorretta= (ScriviLaparolaCorretta) request.getAttribute("scriviLaparolaCorretta");
+    associaLeFrasiTraDiloro.getList1().get(0);
     %>
     <body>
     <%@include file="/WEB-INF/Header/Header.jsp"%>
@@ -29,8 +30,9 @@
                 <span class="titoloSezione">Argomento</span>
             </div>
             <!--Includere gli esercizi-->
+            <%//@include file="/WEB-INF/Partials/EsercizioAssociaImmagineConParola.jsp"%>
 
-            <%@include file="/WEB-INF/Partials/EsercizioAssociaImmagineConParola.jsp"%>
+            <%@include file="/WEB-INF/Partials/EsercizioAssociaLeFrasiTraDiLoro.jsp"%>
 
             <form action="${pageContext.request.contextPath}/ServletAvviaPrimoEsercizio" method="get">
                 <button class="btn btn-primary btn-continua" type="submit">Inizia</button>
