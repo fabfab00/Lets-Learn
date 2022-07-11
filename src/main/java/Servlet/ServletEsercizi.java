@@ -30,6 +30,7 @@ public class ServletEsercizi extends HttpServlet {
                 request.setAttribute("associaImmagineConParola", associaImmagineConParola.get(0));
                 request.setAttribute("associaLeFrasiTraDiloro", associaLeFrasiTraDiloro.get(0));
                 request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta.get(0));
+                request.setAttribute("argomento", argomentoString);
                 break;
             case "Storia":
                 arrayList=databaseEsercizi.getStoria();
@@ -40,6 +41,7 @@ public class ServletEsercizi extends HttpServlet {
                 request.setAttribute("associaImmagineConParola", associaImmagineConParola.get(0));
                 request.setAttribute("associaLeFrasiTraDiloro", associaLeFrasiTraDiloro.get(0));
                 request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta.get(0));
+                request.setAttribute("argomento", argomentoString);
                 break;
             case "Geografia" :
                 arrayList=databaseEsercizi.getGeografia();
@@ -50,6 +52,7 @@ public class ServletEsercizi extends HttpServlet {
                 request.setAttribute("associaImmagineConParola", associaImmagineConParola.get(0));
                 request.setAttribute("associaLeFrasiTraDiloro", associaLeFrasiTraDiloro.get(0));
                 request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta.get(0));
+                request.setAttribute("argomento", argomentoString);
                 break;
             case "Matematica" :
                 arrayList=databaseEsercizi.getMatematica();
@@ -60,6 +63,7 @@ public class ServletEsercizi extends HttpServlet {
                 request.setAttribute("associaImmagineConParola", associaImmagineConParola.get(0));
                 request.setAttribute("associaLeFrasiTraDiloro", associaLeFrasiTraDiloro.get(0));
                 request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta.get(0));
+                request.setAttribute("argomento", argomentoString);
                 break;
             case "Arte" :
                 arrayList=databaseEsercizi.getArte();
@@ -70,6 +74,7 @@ public class ServletEsercizi extends HttpServlet {
                 request.setAttribute("associaImmagineConParola", associaImmagineConParola.get(0));
                 request.setAttribute("associaLeFrasiTraDiloro", associaLeFrasiTraDiloro.get(0));
                 request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta.get(0));
+                request.setAttribute("argomento", argomentoString);
                 break;
             case "Scienze" :
                 arrayList=databaseEsercizi.getScienze();
@@ -80,6 +85,7 @@ public class ServletEsercizi extends HttpServlet {
                 request.setAttribute("associaImmagineConParola", associaImmagineConParola.get(0));
                 request.setAttribute("associaLeFrasiTraDiloro", associaLeFrasiTraDiloro.get(0));
                 request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta.get(0));
+                request.setAttribute("argomento", argomentoString);
                 break;
             default: break;
         }

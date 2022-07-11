@@ -7,6 +7,9 @@
   Time: 10:09
   To change this template use File | Settings | File Templates.
 --%>
+<%
+String materia = (String) request.getAttribute("argomento");
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
