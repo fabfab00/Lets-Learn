@@ -8,6 +8,7 @@
 <canvas id="canvas" height="100%" width="100%" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;"></canvas>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione"><span class="titoloSezione">Scegli Esercizi</span></div>
+    <form>
     <div><img style="width: 552px;height: 302px;margin-bottom: 78px;" src="<%=associaLeFrasiTraDiloro.getImage()%>"/>
         <ul class="list-unstyled">
             <li>
@@ -36,4 +37,5 @@
             </li>
         </ul>
     </div>
+    </form>
 </div>
