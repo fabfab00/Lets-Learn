@@ -7,6 +7,9 @@
   Time: 10:09
   To change this template use File | Settings | File Templates.
 --%>
+<%
+String materia = (String) request.getAttribute("argomento");
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -46,6 +49,16 @@
     <button class="btn btn-primary btn-continua" type="submit">Inizia</button>
     </form>
 </div>
-
+<script>
+    function checkboxes(){
+        var inputElems = document.getElementsByTagName("input"),
+            count = 0;
+        for (var i=0; i<inputElems.length; i++) {
+            if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
+                count++;
+                alert(count);
+            }
+        }}
+</script>
 </body>
 </html>

@@ -51,6 +51,7 @@ public class DatabaseEsercizi {
         coloriAssociaLeFrasiTraDiLoro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Colori/verdeChiaro.png",verdeList1,verdeList2,1,1));
         arte.add(new EserciziPerArgomento("Colori",coloriAssociaImmagineConParola,coloriAssociaLeFrasiTraDiLoro,coloriScriviLaParolaCorretta));
 
+
     }
 
     public ArrayList<EserciziPerArgomento> getItaliano() {

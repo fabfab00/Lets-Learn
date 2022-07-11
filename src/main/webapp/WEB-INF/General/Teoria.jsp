@@ -11,6 +11,7 @@
 <html>
 <% Argomento argomentoClass = (Argomento) request.getSession().getAttribute("argomentoClass");
 ArrayList<Card> lista = argomentoClass.getListaCard();
+String materia = argomentoClass.getNome();
 %>
 <head>
     <meta charset="utf-8" />

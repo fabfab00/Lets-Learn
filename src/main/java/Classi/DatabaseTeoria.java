@@ -203,11 +203,223 @@ public class DatabaseTeoria {
 
     }
 
-    private void creaStoria(){}
+    private void creaStoria(){
+        ArrayList<Card> civilta = new ArrayList<>();
+        ArrayList<Card> divinitaGreche = new ArrayList<>();
+        ArrayList<Card> orario = new ArrayList<>();
+        ArrayList<Card> tempo = new ArrayList<>();
 
-    private void creaMatematica(){}
+        civilta.add(new Card("Africani","./ImmaginiCard/Storia/Civilta/africani.png"));
+        civilta.add(new Card("Antichi greci","./ImmaginiCard/Storia/Civilta/antichiGreci.png"));
+        civilta.add(new Card("Antichi romani","./ImmaginiCard/Storia/Civilta/antichiRomani.png"));
+        civilta.add(new Card("Cinesi","./ImmaginiCard/Storia/Civilta/cinesi.png"));
+        civilta.add(new Card("Coreani","./ImmaginiCard/Storia/Civilta/coreani.png"));
+        civilta.add(new Card("Egiziani","./ImmaginiCard/Storia/Civilta/egiziani.png"));
+        civilta.add(new Card("Francesi","./ImmaginiCard/Storia/Civilta/francesi.png"));
+        civilta.add(new Card("Giapponesi","./ImmaginiCard/Storia/Civilta/giapponesi.png"));
+        civilta.add(new Card("Indiani d'America","./ImmaginiCard/Storia/Civilta/indianiAmerica.png"));
+        civilta.add(new Card("Inglesi","./ImmaginiCard/Storia/Civilta/inglesi.png"));
+        civilta.add(new Card("Maya","./ImmaginiCard/Storia/Civilta/maya.png"));
+        civilta.add(new Card("Russi","./ImmaginiCard/Storia/Civilta/russi.png"));
+        civilta.add(new Card("Spagnoli","./ImmaginiCard/Storia/Civilta/spagnoli.png"));
+        civilta.add(new Card("Statunitensi","./ImmaginiCard/Storia/Civilta/statunitensi.png"));
+        civilta.add(new Card("Tedeschi","./ImmaginiCard/Storia/Civilta/tedeschi.png"));
+        civilta.add(new Card("Thailandesi","./ImmaginiCard/Storia/Civilta/thailandia.png"));
+        civilta.add(new Card("Vichinghi","./ImmaginiCard/Storia/Civilta/vichinghi.png"));
 
-    private void creaScienze(){}
+        divinitaGreche.add(new Card("Ade","./ImmaginiCard/Storia/DivinitaGreche/ade.png"));
+        divinitaGreche.add(new Card("Afrodite","./ImmaginiCard/Storia/DivinitaGreche/afrodite.png"));
+        divinitaGreche.add(new Card("Apollo","./ImmaginiCard/Storia/DivinitaGreche/apollo.png"));
+        divinitaGreche.add(new Card("Ares","./ImmaginiCard/Storia/DivinitaGreche/ares.png"));
+        divinitaGreche.add(new Card("Artemide","./ImmaginiCard/Storia/DivinitaGreche/artemide.png"));
+        divinitaGreche.add(new Card("Atena","./ImmaginiCard/Storia/DivinitaGreche/atena.png"));
+        divinitaGreche.add(new Card("Demetra","./ImmaginiCard/Storia/DivinitaGreche/demetra.png"));
+        divinitaGreche.add(new Card("Dioniso","./ImmaginiCard/Storia/DivinitaGreche/dioniso.png"));
+        divinitaGreche.add(new Card("Efesto","./ImmaginiCard/Storia/DivinitaGreche/efesto.png"));
+        divinitaGreche.add(new Card("Era","./ImmaginiCard/Storia/DivinitaGreche/era.png"));
+        divinitaGreche.add(new Card("Ermes","./ImmaginiCard/Storia/DivinitaGreche/ermes.png"));
+        divinitaGreche.add(new Card("Poseidone","./ImmaginiCard/Storia/DivinitaGreche/poseidone.png"));
+        divinitaGreche.add(new Card("Zeus","./ImmaginiCard/Storia/DivinitaGreche/zeus.png"));
+
+        orario.add(new Card("Mezzanotte o mezzogiorno","./ImmaginiCard/Storia/Orario/mezzanotte.png"));
+        orario.add(new Card("L'una o le tredici","./ImmaginiCard/Storia/Orario/uno.png"));
+        orario.add(new Card("Le due o le quattordici","./ImmaginiCard/Storia/Orario/due.png"));
+        orario.add(new Card("Le tre o le quindici","./ImmaginiCard/Storia/Orario/tre.png"));
+        orario.add(new Card("Le quattro o le sedici","./ImmaginiCard/Storia/Orario/quattro.png"));
+        orario.add(new Card("Le cinque o le diciassette","./ImmaginiCard/Storia/Orario/cinque.png"));
+        orario.add(new Card("Le sei o le diciotto","./ImmaginiCard/Storia/Orario/sei.png"));
+        orario.add(new Card("Le sette o le diciannove","./ImmaginiCard/Storia/Orario/sette.png"));
+        orario.add(new Card("Le otto o le venti","./ImmaginiCard/Storia/Orario/otto.png"));
+        orario.add(new Card("Le nove o le ventuno","./ImmaginiCard/Storia/Orario/nove.png"));
+        orario.add(new Card("Le dieci o le ventidue","./ImmaginiCard/Storia/Orario/dieci.png"));
+        orario.add(new Card("Le undici o le ventitrè","./ImmaginiCard/Storia/Orario/undici.png"));
+
+
+        tempo.add(new Card("Primavera","./ImmaginiCard/Storia/Tempo/primavera.png"));
+        tempo.add(new Card("Estate","./ImmaginiCard/Storia/Tempo/estate.png"));
+        tempo.add(new Card("Autunno","./ImmaginiCard/Storia/Tempo/autunno.png"));
+        tempo.add(new Card("Inverno","./ImmaginiCard/Storia/Tempo/inverno.png"));
+        tempo.add(new Card("Mattina","./ImmaginiCard/Storia/Tempo/mattina.png"));
+        tempo.add(new Card("Pomeriggio","./ImmaginiCard/Storia/Tempo/pomeriggio.png"));
+        tempo.add(new Card("Sera","./ImmaginiCard/Storia/Tempo/sera.png"));
+        tempo.add(new Card("Notte","./ImmaginiCard/Storia/Tempo/notte.png"));
+
+
+        storia.add(new Argomento("Civiltà",civilta));
+        storia.add(new Argomento("Divinità greche",divinitaGreche));
+        storia.add(new Argomento("Orario",orario));
+        storia.add(new Argomento("Tempo",tempo));
+
+    }
+
+    private void creaMatematica(){
+        ArrayList<Card> formeGeometriche = new ArrayList<>();
+        ArrayList<Card> numeri = new ArrayList<>();
+        ArrayList<Card> simboli = new ArrayList<>();
+        ArrayList<Card> tecnologie = new ArrayList<>();
+
+        formeGeometriche.add(new Card("Cerchio","./ImmaginiCard/Matematica/FormeGeometrice/cerchio.png"));
+        formeGeometriche.add(new Card("Decagono","./ImmaginiCard/Matematica/FormeGeometrice/decagono.png"));
+        formeGeometriche.add(new Card("Esagono","./ImmaginiCard/Matematica/FormeGeometrice/esagono.png"));
+        formeGeometriche.add(new Card("Ettagono","./ImmaginiCard/Matematica/FormeGeometrice/ettagono.png"));
+        formeGeometriche.add(new Card("Ottagono","./ImmaginiCard/Matematica/FormeGeometrice/ottagono.png"));
+        formeGeometriche.add(new Card("Parallelogramma","./ImmaginiCard/Matematica/FormeGeometrice/parallellogramma.png"));
+        formeGeometriche.add(new Card("Pentagono","./ImmaginiCard/Matematica/FormeGeometrice/pentagono.png"));
+        formeGeometriche.add(new Card("Quadrato","./ImmaginiCard/Matematica/FormeGeometrice/quadrato.png"));
+        formeGeometriche.add(new Card("Rettangolo","./ImmaginiCard/Matematica/FormeGeometrice/cerchio.png"));
+        formeGeometriche.add(new Card("Rombo","./ImmaginiCard/Matematica/FormeGeometrice/rombo.png"));
+        formeGeometriche.add(new Card("Trapezio","./ImmaginiCard/Matematica/FormeGeometrice/trapezio.png"));
+        formeGeometriche.add(new Card("Triangolo","./ImmaginiCard/Matematica/FormeGeometrice/triangolo.png"));
+
+        numeri.add(new Card("Zero","./ImmaginiCard/Matematica/Numeri/zero.png"));
+        numeri.add(new Card("Uno","./ImmaginiCard/Matematica/Numeri/uno.png"));
+        numeri.add(new Card("Due","./ImmaginiCard/Matematica/Numeri/due.png"));
+        numeri.add(new Card("Tre","./ImmaginiCard/Matematica/Numeri/tre.png"));
+        numeri.add(new Card("Quattro","./ImmaginiCard/Matematica/Numeri/quattro.png"));
+        numeri.add(new Card("Cinque","./ImmaginiCard/Matematica/Numeri/cinque.png"));
+        numeri.add(new Card("Sei","./ImmaginiCard/Matematica/Numeri/sei.png"));
+        numeri.add(new Card("Sette","./ImmaginiCard/Matematica/Numeri/sette.png"));
+        numeri.add(new Card("Otto","./ImmaginiCard/Matematica/Numeri/otto.png"));
+        numeri.add(new Card("Nove","./ImmaginiCard/Matematica/Numeri/nove.png"));
+
+        simboli.add(new Card("Diviso","./ImmaginiCard/Matematica/Simboli/diviso.png"));
+        simboli.add(new Card("Euro","./ImmaginiCard/Matematica/Simboli/euro.png"));
+        simboli.add(new Card("Infinito","./ImmaginiCard/Matematica/Simboli/infinito.png"));
+        simboli.add(new Card("Maggiore","./ImmaginiCard/Matematica/Simboli/maggiore.png"));
+        simboli.add(new Card("Minore","./ImmaginiCard/Matematica/Simboli/minore.png"));
+        simboli.add(new Card("Parentesi graffe","./ImmaginiCard/Matematica/Simboli/parentesiGraffe.png"));
+        simboli.add(new Card("Parentesi quadre","./ImmaginiCard/Matematica/Simboli/parentesiQuadre.png"));
+        simboli.add(new Card("Parentesi tonde","./ImmaginiCard/Matematica/Simboli/parentesiTonde.png"));
+        simboli.add(new Card("Per","./ImmaginiCard/Matematica/Simboli/per.png"));
+        simboli.add(new Card("Percentuale","./ImmaginiCard/Matematica/Simboli/percentuale.png"));
+        simboli.add(new Card("Più","./ImmaginiCard/Matematica/Simboli/piu.png"));
+        simboli.add(new Card("Punto Esclamativo","./ImmaginiCard/Matematica/Simboli/puntoEsclamativo.png"));
+        simboli.add(new Card("Punto interrogativo","./ImmaginiCard/Matematica/Simboli/puntoInterrogativo.png"));
+        simboli.add(new Card("Radice quadrata","./ImmaginiCard/Matematica/Simboli/radiceQuadrata.png"));
+        simboli.add(new Card("Uguale","./ImmaginiCard/Matematica/Simboli/uguale.png"));
+
+        tecnologie.add(new Card("Auricolari","./ImmaginiCard/Matematica/Tecnologie/auricolari.png"));
+        tecnologie.add(new Card("Automobile","./ImmaginiCard/Matematica/Tecnologie/automobile.png"));
+        tecnologie.add(new Card("Computer","./ImmaginiCard/Matematica/Tecnologie/computer.png"));
+        tecnologie.add(new Card("Computer portatile","./ImmaginiCard/Matematica/Tecnologie/computerPortatile.png"));
+        tecnologie.add(new Card("Cuffie","./ImmaginiCard/Matematica/Tecnologie/cuffie.png"));
+        tecnologie.add(new Card("Lavagna Multimediale","./ImmaginiCard/Matematica/Tecnologie/lavagnaMultimediale.png"));
+        tecnologie.add(new Card("Moto","./ImmaginiCard/Matematica/Tecnologie/moto.png"));
+        tecnologie.add(new Card("Sveglia digitale","./ImmaginiCard/Matematica/Tecnologie/svegliaDigitale.png"));
+        tecnologie.add(new Card("Sveglia analogica","./ImmaginiCard/Matematica/Tecnologie/svegliAnalogica.png"));
+        tecnologie.add(new Card("Tastiera","./ImmaginiCard/Matematica/Tecnologie/tastiera.png"));
+        tecnologie.add(new Card("Vespa","./ImmaginiCard/Matematica/Tecnologie/vespa.png"));
+
+
+        matematica.add(new Argomento("Forme Geometriche",formeGeometriche));
+        matematica.add(new Argomento("I Numeri",numeri));
+        matematica.add(new Argomento("Simboli",simboli));
+        matematica.add(new Argomento("Tecnologia",tecnologie));
+
+    }
+
+    private void creaScienze(){
+        ArrayList<Card> Piante = new ArrayList<>();
+        ArrayList<Card> Animali = new ArrayList<>();
+        ArrayList<Card> Sport = new ArrayList<>();
+        ArrayList<Card> partiDelCorpo = new ArrayList<>();
+
+        Piante.add(new Card("Bambu","./ImmaginiCard/Scienze/Piante/bambu.png"));
+        Piante.add(new Card("Cactus","./ImmaginiCard/Scienze/Piante/cactus.png"));
+        Piante.add(new Card("Ciliegio","./ImmaginiCard/Scienze/Piante/ciliegio.png"));
+        Piante.add(new Card("Prezzemolo","./ImmaginiCard/Scienze/Piante/img.png"));
+        Piante.add(new Card("Margherita","./ImmaginiCard/Scienze/Piante/margherita.png"));
+        Piante.add(new Card("Menta","./ImmaginiCard/Scienze/Piante/menta.png"));
+        Piante.add(new Card("Orchidea","./ImmaginiCard/Scienze/Piante/orchidea.png"));
+        Piante.add(new Card("Papavero","./ImmaginiCard/Scienze/Piante/papavero.png"));
+        Piante.add(new Card("Pino","./ImmaginiCard/Scienze/Piante/pino.png"));
+        Piante.add(new Card("Rosa","./ImmaginiCard/Scienze/Piante/rosa.png"));
+        Piante.add(new Card("Rosmarino","./ImmaginiCard/Scienze/Piante/rosmarino.png"));
+        Piante.add(new Card("Salice piangente","./ImmaginiCard/Scienze/Piante/salicePiangente.png"));
+        Piante.add(new Card("Tulipano","./ImmaginiCard/Scienze/Piante/tulipano.png"));
+        Piante.add(new Card("Ulivo","./ImmaginiCard/Scienze/Piante/ulivo.png"));
+
+
+
+        Animali.add(new Card("Cammello","./ImmaginiCard/Scienze/Animali/cammello.png"));
+        Animali.add(new Card("Cane","./ImmaginiCard/Scienze/Animali/cane.png"));
+        Animali.add(new Card("Coniglio","./ImmaginiCard/Scienze/Animali/coniglio.png"));
+        Animali.add(new Card("Elefante","./ImmaginiCard/Scienze/Animali/elefante.png"));
+        Animali.add(new Card("Fenicottero","./ImmaginiCard/Scienze/Animali/fenicottero.png"));
+        Animali.add(new Card("Gallina","./ImmaginiCard/Scienze/Animali/gallina.png"));
+        Animali.add(new Card("Gallo","./ImmaginiCard/Scienze/Animali/gallo.png"));
+        Animali.add(new Card("Gatto","./ImmaginiCard/Scienze/Animali/gatto.png"));
+        Animali.add(new Card("Giraffa","./ImmaginiCard/Scienze/Animali/giraffa.png"));
+        Animali.add(new Card("Leone","./ImmaginiCard/Scienze/Animali/leone.png"));
+        Animali.add(new Card("Mucca","./ImmaginiCard/Scienze/Animali/mucca.png"));
+        Animali.add(new Card("Pappagallo","./ImmaginiCard/Scienze/Animali/pappagallo.png"));
+        Animali.add(new Card("Pecora","./ImmaginiCard/Scienze/Animali/pecora.png"));
+        Animali.add(new Card("Pulcino","./ImmaginiCard/Scienze/Animali/pulcino.png"));
+        Animali.add(new Card("Rana","./ImmaginiCard/Scienze/Animali/rana.png"));
+        Animali.add(new Card("Scimmia","./ImmaginiCard/Scienze/Animali/scimmia.png"));
+        Animali.add(new Card("Serpente","./ImmaginiCard/Scienze/Animali/serpente.png"));
+        Animali.add(new Card("Tartaruga","./ImmaginiCard/Scienze/Animali/tartaruga.png"));
+        Animali.add(new Card("Tigre","./ImmaginiCard/Scienze/Animali/tiger.png"));
+        Animali.add(new Card("Topo","./ImmaginiCard/Scienze/Animali/topo.png"));
+        Animali.add(new Card("Volpe","./ImmaginiCard/Scienze/Animali/volpe.png"));
+        Animali.add(new Card("Zebra","./ImmaginiCard/Scienze/Animali/zebra.png"));
+
+        Sport.add(new Card("Calcio", "./ImmaginiCard/Scienze/Sports/calcio.png"));
+        Sport.add(new Card("Ciclismo", "./ImmaginiCard/Scienze/Sports/ciclismo.png"));
+        Sport.add(new Card("Danza", "./ImmaginiCard/Scienze/Sports/danza.png"));
+        Sport.add(new Card("Nuoto", "./ImmaginiCard/Scienze/Sports/nuoto.png"));
+        Sport.add(new Card("Pallacanestro", "./ImmaginiCard/Scienze/Sports/pallacanestro.png"));
+        Sport.add(new Card("Pallavolo", "./ImmaginiCard/Scienze/Sports/pallavolo.png"));
+        Sport.add(new Card("Pattinaggio Artistico", "./ImmaginiCard/Scienze/Sports/pattinaggioArtistico.png"));
+        Sport.add(new Card("Scherma", "./ImmaginiCard/Scienze/Sports/scherma.png"));
+        Sport.add(new Card("Sci", "./ImmaginiCard/Scienze/Sports/sci.png"));
+        Sport.add(new Card("Tennis", "./ImmaginiCard/Scienze/Sports/tennis.png"));
+
+        partiDelCorpo.add(new Card("braccio","./ImmaginiCard/Scienze/PartiCorpo/braccio.png"));
+        partiDelCorpo.add(new Card("collo","./ImmaginiCard/Scienze/PartiCorpo/collo.png"));
+        partiDelCorpo.add(new Card("dita","./ImmaginiCard/Scienze/PartiCorpo/dita.png"));
+        partiDelCorpo.add(new Card("fronte","./ImmaginiCard/Scienze/PartiCorpo/fronte.png"));
+        partiDelCorpo.add(new Card("gamba","./ImmaginiCard/Scienze/PartiCorpo/gamba.png"));
+        partiDelCorpo.add(new Card("ginocchio","./ImmaginiCard/Scienze/PartiCorpo/ginocchio.png"));
+        partiDelCorpo.add(new Card("guance","./ImmaginiCard/Scienze/PartiCorpo/guance.png"));
+        partiDelCorpo.add(new Card("labbra","./ImmaginiCard/Scienze/PartiCorpo/labbra.png"));
+        partiDelCorpo.add(new Card("lingua","./ImmaginiCard/Scienze/PartiCorpo/lingua.png"));
+        partiDelCorpo.add(new Card("mano","./ImmaginiCard/Scienze/PartiCorpo/mano.png"));
+        partiDelCorpo.add(new Card("naso","./ImmaginiCard/Scienze/PartiCorpo/naso.png"));
+        partiDelCorpo.add(new Card("occhio","./ImmaginiCard/Scienze/PartiCorpo/occhio.png"));
+        partiDelCorpo.add(new Card("orecchio","./ImmaginiCard/Scienze/PartiCorpo/orecchio.png"));
+        partiDelCorpo.add(new Card("pancia","./ImmaginiCard/Scienze/PartiCorpo/pancia.png"));
+        partiDelCorpo.add(new Card("petto","./ImmaginiCard/Scienze/PartiCorpo/petto.png"));
+        partiDelCorpo.add(new Card("piedi","./ImmaginiCard/Scienze/PartiCorpo/piedi.png"));
+        partiDelCorpo.add(new Card("schiena","./ImmaginiCard/Scienze/PartiCorpo/schiena.png"));
+        partiDelCorpo.add(new Card("spalla","./ImmaginiCard/Scienze/PartiCorpo/spalla.png"));
+
+
+        scienze.add(new Argomento("Piante",Piante));
+        scienze.add(new Argomento("Animali",Animali));
+        scienze.add(new Argomento("Sport",Sport));
+        scienze.add(new Argomento("Parti del corpo",partiDelCorpo));
+  }
 
     private void creaArte(){
 

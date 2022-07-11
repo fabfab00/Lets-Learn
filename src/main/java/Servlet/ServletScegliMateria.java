@@ -47,10 +47,10 @@ public class ServletScegliMateria extends HttpServlet {
                 path="/WEB-INF/General/Argomento.jsp";
                 break;
             case "Storia":
-                argomenti.add("Mesi e Stagioni");
-                argomenti.add("Giorni");
-                argomenti.add("Orologio");
-                argomenti.add("Festivita");
+                argomenti.add("Civiltà");
+                argomenti.add("Divinità greche");
+                argomenti.add("Orario");
+                argomenti.add("Tempo");
                 path="/WEB-INF/General/Argomento.jsp";
                 break;
             case "Arte":
