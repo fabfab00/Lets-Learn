@@ -9,8 +9,23 @@
 <html>
 <head>
     <title>ConclusioneEsercizio</title>
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../customcss/general.css"/>
 </head>
-<body>
+<body class="text-center">
+    <div class="pageContenent">
+        <div class="contenitoreTitoloSezione" style="text-align: center">
+            <span class="titoloSezione">Esercizio Concluso</span>
+        </div>
+        <div>
+            <form style="align-content: center;">
+                <i style="display:inline-flex;width: 552px;height: 302px;margin-bottom: 78px;"><%@include file="/Immagini/CallTeacher.svg"%></i>
+                <div>
+                    <button class="btn btn-primary btn-continua" type="submit">Correggi</button>
 
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
