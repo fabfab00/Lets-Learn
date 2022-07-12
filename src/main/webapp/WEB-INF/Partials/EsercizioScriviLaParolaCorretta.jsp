@@ -5,12 +5,8 @@
   Time: 10:11
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>EsercizioScriviLaParolaCorretta</title>
-</head>
-<body>
-
-</body>
-</html>
+<div><img style="width: 552px;height: 302px;margin-bottom: 78px;" />
+    <form style="align-content: center;">
+        <div style="width: 40%;align-self: center;position: relative;left: 30%;font-size: 40px;"><label class="form-label">Label</label><input class="form-control text-center" type="text" style="font-size: 40px;" /></div>
+    </form>
+</div>
