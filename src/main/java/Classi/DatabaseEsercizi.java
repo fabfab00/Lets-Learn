@@ -105,9 +105,68 @@ public class DatabaseEsercizi {
         verdeList1.add("Il rumore e': ");
         ArrayList<String> verdeList2 = new ArrayList<>();
         verdeList2.add(" verde chiaro");
-        verdeList2.add(" blu ");
-        coloriAssociaLeFrasiTraDiLoro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Colori/verdeChiaro.png",verdeList1,verdeList2,1,1));
+        verdeList1.add(" blu ");
+        coloriAssociaLeFrasiTraDiLoro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Colori/verdeChiaro.png",verdeList1,verdeList2,0,0));
         arte.add(new EserciziPerArgomento("Colori",coloriAssociaImmagineConParola,coloriAssociaLeFrasiTraDiLoro,coloriScriviLaParolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> matScolasticoAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> pennaList = new ArrayList<>();
+        pennaList.add("Astuccio");
+        pennaList.add("Penna");
+        pennaList.add("Matita");
+        pennaList.add("Righello");
+        matScolasticoAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Arte/MaterialeScolastico/penna.png",pennaList,1));
+        ArrayList<AssociaLeFrasiTraDiloro> matScolasticoAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> gessoList1 = new ArrayList<>();
+        gessoList1.add("Il colore è: ");
+        gessoList1.add("Il materiale scolastico è: ");
+        ArrayList<String> gessoList2 = new ArrayList<>();
+        gessoList2.add("gesso");
+        gessoList2.add("temperino");
+        matScolasticoAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/MaterialeScolastico/gesso.png",gessoList1,gessoList2,1,0));
+        ArrayList<ScriviLaparolaCorretta> matScolasticoScriviLaparolaCorretta = new ArrayList<>();
+        matScolasticoScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Arte/MaterialeScolastico/zaino.png","Zaino"));
+        arte.add(new EserciziPerArgomento("Materiale Scolastico",matScolasticoAssociaImmagineConParola,matScolasticoAssociaLeFrasiTraDiloro,matScolasticoScriviLaparolaCorretta));
+
+
+        ArrayList<AssociaImmagineConParola> musicaAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> armonicaList = new ArrayList<>();
+        armonicaList.add("Armonica");
+        armonicaList.add("Sassofono");
+        armonicaList.add("Violino");
+        armonicaList.add("Chitarra elettrica");
+        musicaAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Arte/Musica/armonica.png",armonicaList,0));
+        ArrayList<AssociaLeFrasiTraDiloro> musicaAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> pianoforteList1 = new ArrayList<>();
+        pianoforteList1.add("Lo strumento è");
+        pianoforteList1.add("Il materiale scolastico è ");
+        ArrayList<String> pianoforteList2 = new ArrayList<>();
+        pianoforteList2.add("Flauto");
+        pianoforteList2.add("Pianoforte");
+        musicaAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Musica/pianoforte.png",pianoforteList1,pianoforteList2,0,1));
+        ArrayList<ScriviLaparolaCorretta> musicaScriviLaParolaCorretta = new ArrayList<>();
+        musicaScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Arte/Musica/arpa.png","Arpa"));
+        arte.add(new EserciziPerArgomento("Musica",musicaAssociaImmagineConParola,musicaAssociaLeFrasiTraDiloro,musicaScriviLaParolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> vestitiAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> felpaList = new ArrayList<>();
+        felpaList.add("Abito");
+        felpaList.add("Cappotto");
+        felpaList.add("Felpa");
+        felpaList.add("Jeans");
+        vestitiAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Arte/Vestiti/felpa.png",felpaList,2));
+        ArrayList<AssociaLeFrasiTraDiloro> vestitiAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> gonnaList1 = new ArrayList<>();
+        ArrayList<String> gonnaList2 = new ArrayList<>();
+        gonnaList1.add("Il colore è");
+        gonnaList1.add("il vestito è");
+        gonnaList2.add("maglione");
+        gonnaList2.add("gonna");
+        vestitiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Vestiti/gonna.png",gonnaList1,gonnaList2,1,1));
+        ArrayList<ScriviLaparolaCorretta> vestitiScriviLaparolaCorretta = new ArrayList<>();
+        vestitiScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Arte/Vestiti/pantaloni.png","Pantaloni"));
+        arte.add(new EserciziPerArgomento("Vestiti",vestitiAssociaImmagineConParola,vestitiAssociaLeFrasiTraDiloro,vestitiScriviLaparolaCorretta));
+
 
     }
 
