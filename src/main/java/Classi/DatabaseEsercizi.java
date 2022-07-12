@@ -20,13 +20,177 @@ public class DatabaseEsercizi {
         creaEserciziStoria();
     }
 
-    public void creaEserciziItaliano(){}
+    public void creaEserciziItaliano(){
+
+        ArrayList<AssociaImmagineConParola> alfabetoAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> pList = new ArrayList<>();
+        pList.add("M");
+        pList.add("A");
+        pList.add("P");
+        pList.add("F");
+        alfabetoAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Italiano/Alfabeto/p.png", pList,2));
+        ArrayList<ScriviLaparolaCorretta> alfabetoScriviLaparolaCorretta = new ArrayList<>();
+        alfabetoScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Italiano/Alfabeto/s.png","S"));
+        ArrayList<AssociaLeFrasiTraDiloro> alfabetoAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> gList1 = new ArrayList<>();
+        gList1.add("La persona e': ");
+        gList1.add("La lettera e': ");
+        ArrayList<String> gList2 = new ArrayList<>();
+        gList2.add(" V");
+        gList2.add(" G");
+        alfabetoAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Italiano/Alfabeto/g.png", gList1, gList2, 1, 1));
+        italiano.add(new EserciziPerArgomento("Alfabeto", alfabetoAssociaImmagineConParola, alfabetoAssociaLeFrasiTraDiloro, alfabetoScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> alimentiAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> tortaList = new ArrayList<>();
+        tortaList.add("Torta");
+        tortaList.add("Caffe'");
+        tortaList.add("Pasta");
+        tortaList.add("Caramelle");
+        alimentiAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Italiano/Alimenti/torta.png", tortaList, 0));
+        ArrayList<ScriviLaparolaCorretta> alimentiScriviLaparolaCorretta = new ArrayList<>();
+        alimentiScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Italiano/Alimenti/pollo.png", "Pollo"));
+        ArrayList<AssociaLeFrasiTraDiloro> alimentiAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> mieleList1 = new ArrayList<>();
+        mieleList1.add("L'alimento e': ");
+        mieleList1.add("La pianta e': ");
+        ArrayList<String> mieleList2 = new ArrayList<>();
+        mieleList2.add(" miele");
+        mieleList2.add(" burro");
+        alimentiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Italiano/Alimenti/miele.png", mieleList1, mieleList2, 0, 0));
+        italiano.add(new EserciziPerArgomento("Alimenti", alimentiAssociaImmagineConParola, alimentiAssociaLeFrasiTraDiloro, alimentiScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> personeAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> programmatoreList = new ArrayList<>();
+        programmatoreList.add("Attore");
+        programmatoreList.add("Casalinga");
+        programmatoreList.add("Militare");
+        programmatoreList.add("Programmatore");
+        personeAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Italiano/PersoneMestieri/programmatore.png", programmatoreList, 3));
+        ArrayList<ScriviLaparolaCorretta> personeScriviLaparolaCorretta = new ArrayList<>();
+        personeScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Italiano/PersoneMestieri/cuoco.png", "Cuoco"));
+        ArrayList<AssociaLeFrasiTraDiloro> personeAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> pompiereList1 = new ArrayList<>();
+        pompiereList1.add("Il mestiere e': ");
+        pompiereList1.add("Il numero e': ");
+        ArrayList<String> pompiereList2 = new ArrayList<>();
+        pompiereList2.add(" commesso");
+        pompiereList2.add(" pompiere");
+        alimentiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Italiano/PersoneMestieri/pompiere.png", pompiereList1, pompiereList2, 0, 1));
+        italiano.add(new EserciziPerArgomento("Persone e Mestieri", personeAssociaImmagineConParola, personeAssociaLeFrasiTraDiloro, personeScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> verbiAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> rilassarsiList = new ArrayList<>();
+        rilassarsiList.add("Mangiare");
+        rilassarsiList.add("Rilassarsi");
+        rilassarsiList.add("Guidare");
+        rilassarsiList.add("Spostare");
+        verbiAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Italiano/Verbi/rilassarsi.png", rilassarsiList, 1));
+        ArrayList<ScriviLaparolaCorretta> verbiScriviLaparolaCorretta = new ArrayList<>();
+        verbiScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Italiano/Verbi/ballare.png", "Ballare"));
+        ArrayList<AssociaLeFrasiTraDiloro> verbiAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> abbracciareList1 = new ArrayList<>();
+        abbracciareList1.add("Il tempo e': ");
+        abbracciareList1.add("Il verbo e': ");
+        ArrayList<String> abbracciareList2 = new ArrayList<>();
+        abbracciareList2.add(" abbracciare");
+        abbracciareList2.add(" pregare");
+        verbiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Italiano/Verbi/abbracciare.png", abbracciareList1, abbracciareList2, 1, 0));
+        italiano.add(new EserciziPerArgomento("Verbi", verbiAssociaImmagineConParola, verbiAssociaLeFrasiTraDiloro, verbiScriviLaparolaCorretta));
+    }
 
     public void creaEserciziMatematica(){}
 
     public void creaEserciziScienze(){}
 
-    public void creaEserciziStoria(){}
+    public void creaEserciziStoria(){
+        ArrayList<AssociaImmagineConParola> civiltaAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> inglesiList = new ArrayList<>();
+        inglesiList.add("Africani");
+        inglesiList.add("Cinesi");
+        inglesiList.add("Inglesi");
+        inglesiList.add("Giapponesi");
+        civiltaAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Storia/Civilta/inglesi.png",inglesiList,2));
+        ArrayList<AssociaLeFrasiTraDiloro> civiltaAssociaLeFrasiTraDiloro =new ArrayList<>();
+        ArrayList<String> coreaniList1 = new ArrayList<>();
+        coreaniList1.add("Questi sono");
+        coreaniList1.add("Gli oggetti sono");
+        ArrayList<String> coreaniList2 = new ArrayList<>();
+        coreaniList2.add("coreani");
+        coreaniList2.add("africani");
+        civiltaAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Storia/Civilta/coreani.png",coreaniList1,coreaniList2,0,0));
+        ArrayList<ScriviLaparolaCorretta> civiltaScriviLaParolaCorretta = new ArrayList<>();
+        civiltaScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Storia/Civilta/spagnoli.png","Spagnoli"));
+        storia.add(new EserciziPerArgomento("Civiltà",civiltaAssociaImmagineConParola,civiltaAssociaLeFrasiTraDiloro,civiltaScriviLaParolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> divinitaAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> eraList = new ArrayList<>();
+        eraList.add("Era");
+        eraList.add("Apollo");
+        eraList.add("Zeus");
+        eraList.add("Poseidone");
+        divinitaAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Storia/DivinitaGreche/era.png",eraList,0));
+        ArrayList<AssociaLeFrasiTraDiloro> divinitaAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> atenaList1 = new ArrayList<>();
+        atenaList1.add("La divinità è: ");
+        atenaList1.add("La civiltà è: ");
+        ArrayList<String> atenaList2 = new ArrayList<>();
+        atenaList2.add("Dionioso");
+        atenaList2.add("Atena");
+        divinitaAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Storia/DivinitaGreche/atena.png",atenaList1,atenaList2,0,1));
+        ArrayList<ScriviLaparolaCorretta> divinitaScriviLaparolaCorretta = new ArrayList<>();
+        divinitaScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Storia/DivinitaGreche/poseidone.png","Poseidone"));
+        storia.add(new EserciziPerArgomento("Divinità Greche",divinitaAssociaImmagineConParola,divinitaAssociaLeFrasiTraDiloro,divinitaScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> orarioAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> dueList = new ArrayList<>();
+        dueList.add("Tre/Quindici");
+        dueList.add("Due/Quattordici");
+        dueList.add("Cinque/Diciassette");
+        dueList.add("Undici/Ventitrè");
+        orarioAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Storia/Orario/due.png",dueList,1));
+        ArrayList<AssociaLeFrasiTraDiloro> orarioAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> treList1 = new ArrayList<>();
+        treList1.add("La divinità è: ");
+        treList1.add("L'orario e': ");
+        ArrayList<String> treList2 = new ArrayList<>();
+        treList2.add("Tre/Quindici");
+        treList2.add("Sette/Diciannove");
+        orarioAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Storia/Orario/tre.png",treList1,treList2,1,0));
+        ArrayList<ScriviLaparolaCorretta> orarioScriviLaparolaCorretta = new ArrayList<>();
+        orarioScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Storia/Orario/otto.png","Otto/Venti"));
+        storia.add(new EserciziPerArgomento("Orario",orarioAssociaImmagineConParola,orarioAssociaLeFrasiTraDiloro,orarioScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> tempoAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> invernoList = new ArrayList<>();
+        dueList.add("Autunno");
+        dueList.add("Estate");
+        dueList.add("Primavera");
+        dueList.add("Inverno");
+        tempoAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Storia/Tempo/inverno.png",invernoList,3));
+        ArrayList<AssociaLeFrasiTraDiloro> tempoAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> pomeriggioList1 = new ArrayList<>();
+        treList1.add("La civiltà è");
+        treList1.add("Il tempo è");
+        ArrayList<String> pomeriggioList2 = new ArrayList<>();
+        treList2.add("notte");
+        treList2.add("pomeriggio");
+        tempoAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Storia/Tempo/pomeriggio.png",pomeriggioList1,pomeriggioList2,1,1));
+        ArrayList<ScriviLaparolaCorretta> tempoScriviLaparolaCorretta = new ArrayList<>();
+        tempoScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Storia/Tempo/mattina.png","Mattina"));
+        storia.add(new EserciziPerArgomento("Tempo",tempoAssociaImmagineConParola,tempoAssociaLeFrasiTraDiloro,tempoScriviLaparolaCorretta));
+
+
+
+
+
+
+
+
+
+
+
+    }
 
     public void creaEserciziGeografia(){
 
