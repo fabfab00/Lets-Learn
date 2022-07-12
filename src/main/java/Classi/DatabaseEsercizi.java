@@ -86,6 +86,25 @@ public class DatabaseEsercizi {
         marteList2.add(" Urano");
         pianetiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Geografia/Paesaggi/marte.png", marteList1, marteList2, 1, 0));
         geografia.add(new EserciziPerArgomento("Pianeti", pianetiAssociaImmagineConParola, pianetiAssociaLeFrasiTraDiloro, pianetiScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> posizioniAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> alCentroList = new ArrayList<>();
+        alCentroList.add("Dietro");
+        alCentroList.add("alCentro");
+        alCentroList.add("Sotto");
+        alCentroList.add(("Davanti"));
+        posizioniAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Geografia/Posizioni/alCentro.png", alCentroList, 1));
+        ArrayList<ScriviLaparolaCorretta> posizioniScriviLaparolaCorretta = new ArrayList<>();
+        posizioniScriviLaparolaCorretta.add(new ScriviLaparolaCorretta(("./ImmaginiCard/Geografia/Posizioni/sopra.png"), "Sopra"));
+        ArrayList<AssociaLeFrasiTraDiloro> posizioniAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> davantiList1 = new ArrayList<>();
+        davantiList1.add("La posizione è: ");
+        davantiList1.add("La civiltà è: ");
+        ArrayList<String> davantiList2 = new ArrayList<>();
+        davantiList2.add(" davanti");
+        davantiList2.add(" vicino");
+        posizioniAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Geografia/Posizioni/davanti.png", davantiList1, davantiList2, 0, 0));
+        geografia.add((new EserciziPerArgomento("Posizioni", posizioniAssociaImmagineConParola,posizioniAssociaLeFrasiTraDiloro,posizioniScriviLaparolaCorretta)));
     }
 
     public void creaEserciziArte(){
