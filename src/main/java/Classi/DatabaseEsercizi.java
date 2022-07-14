@@ -489,7 +489,7 @@ public class DatabaseEsercizi {
         musicaAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Musica/pianoforte.png",pianoforteList1,pianoforteList2,0,1));
         ArrayList<ScriviLaparolaCorretta> musicaScriviLaParolaCorretta = new ArrayList<>();
         musicaScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Arte/Musica/arpa.png","Arpa"));
-        arte.add(new EserciziPerArgomento("Musica",musicaAssociaImmagineConParola,musicaAssociaLeFrasiTraDiloro,musicaScriviLaParolaCorretta));
+        arte.add(new EserciziPerArgomento("Strumenti musicali",musicaAssociaImmagineConParola,musicaAssociaLeFrasiTraDiloro,musicaScriviLaParolaCorretta));
 
         ArrayList<AssociaImmagineConParola> vestitiAssociaImmagineConParola = new ArrayList<>();
         ArrayList<String> felpaList = new ArrayList<>();
