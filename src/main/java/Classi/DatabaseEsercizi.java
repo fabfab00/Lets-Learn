@@ -1,5 +1,6 @@
 package Classi;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class DatabaseEsercizi {
@@ -99,9 +100,168 @@ public class DatabaseEsercizi {
         italiano.add(new EserciziPerArgomento("Verbi", verbiAssociaImmagineConParola, verbiAssociaLeFrasiTraDiloro, verbiScriviLaparolaCorretta));
     }
 
-    public void creaEserciziMatematica(){}
+    public void creaEserciziMatematica(){
 
-    public void creaEserciziScienze(){}
+        ArrayList<AssociaImmagineConParola> formeGeoAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> quadratoString = new ArrayList<>();
+        quadratoString.add("Ettagono");
+        quadratoString.add("Pentagono");
+        quadratoString.add("Ottagono");
+        quadratoString.add("Quadrato");
+        formeGeoAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Matematica/FormeGeometrice/quadrato.png",quadratoString,3));
+        ArrayList<AssociaLeFrasiTraDiloro> formeGeoAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> ottagonoList1 = new ArrayList<>();
+        ottagonoList1.add("La forma geometrica è");
+        ottagonoList1.add("Il numero è");
+        ArrayList<String> ottagonoList2 = new ArrayList<>();
+        ottagonoList2.add("ottagono");
+        ottagonoList2.add("esagono");
+        formeGeoAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Matematica/FormeGeometrice/ottagono.png",ottagonoList1,ottagonoList2,0,0));
+        ArrayList<ScriviLaparolaCorretta> formeGeoScriviLaparolaCorretta = new ArrayList<>();
+        formeGeoScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Matematica/FormeGeometrice/ottagono.png","Cerchio"));
+        matematica.add(new EserciziPerArgomento("Forme geometriche",formeGeoAssociaImmagineConParola,formeGeoAssociaLeFrasiTraDiloro,formeGeoScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> numeriAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> treString = new ArrayList<>();
+        treString.add("Tre");
+        treString.add("Sei");
+        treString.add("Otto");
+        treString.add("Due");
+        numeriAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Matematica/Numeri/tre.png",treString,0));
+        ArrayList<AssociaLeFrasiTraDiloro> numeriAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> setteList1 = new ArrayList<>();
+        ArrayList<String> setteList2 = new ArrayList<>();
+        setteList1.add("Il numero è");
+        setteList1.add("La forma geometrica è");
+        setteList2.add("Cinque");
+        setteList2.add("Sette");
+        numeriAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Matematica/Numeri/sette.png",setteList1,setteList2,0,1));
+        ArrayList<ScriviLaparolaCorretta> numeriScriviLaparolaCorretta = new ArrayList<>();
+        numeriScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Matematica/Numeri/nove.png","Nove"));
+        matematica.add(new EserciziPerArgomento("I numeri",numeriAssociaImmagineConParola,numeriAssociaLeFrasiTraDiloro,numeriScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> simboliAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> menoString = new ArrayList<>();
+        menoString.add("Infinito");
+        menoString.add("Meno");
+        menoString.add("Più");
+        menoString.add("Per");
+        simboliAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Matematica/Simboli/meno.png",menoString,1));
+        ArrayList<AssociaLeFrasiTraDiloro> simboliAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> minoreList1 = new ArrayList<>();
+        ArrayList<String> minoreList2 = new ArrayList<>();
+        minoreList1.add("Il numero è");
+        minoreList1.add("Il simbolo è");
+        minoreList2.add("minore");
+        minoreList2.add("maggiore");
+        simboliAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Matematica/Simboli/minore.png",minoreList1,minoreList2,1,0));
+        ArrayList<ScriviLaparolaCorretta> simboliScriviLaparolaCorretta = new ArrayList<>();
+        simboliScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Matematica/Simboli/euro.png","Euro"));
+        matematica.add(new EserciziPerArgomento("Simboli",simboliAssociaImmagineConParola,simboliAssociaLeFrasiTraDiloro,simboliScriviLaparolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> tecnologiaAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> motoString = new ArrayList<>();
+        motoString.add("Sveglia");
+        motoString.add("Automobile");
+        motoString.add("Moto");
+        motoString.add("Cuffie");
+        tecnologiaAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Matematica/Tecnologie/moto.png",motoString,2));
+        ArrayList<AssociaLeFrasiTraDiloro> tecnologiaAssociaLeFrasiTraDiloro = new ArrayList<>();
+        ArrayList<String> tastieraList1 = new ArrayList<>();
+        ArrayList<String> tastieraList2 = new ArrayList<>();
+        tastieraList1.add("Il numero è ");
+        tastieraList1.add("L'oggetto tecnologico è ");
+        tastieraList2.add("vespa");
+        tastieraList2.add("tastiera");
+        tecnologiaAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Matematica/Tecnologie/tastiera.png",tastieraList1,tastieraList2,1,1));
+        ArrayList<ScriviLaparolaCorretta> tecnologiaScriviLaparolaCorretta = new ArrayList<>();
+        tecnologiaScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Matematica/Tecnologie/cuffie.png","Cuffie"));
+        matematica.add(new EserciziPerArgomento("Tecnologia",tecnologiaAssociaImmagineConParola,tecnologiaAssociaLeFrasiTraDiloro,tecnologiaScriviLaparolaCorretta));
+
+
+
+
+
+    }
+
+    public void creaEserciziScienze(){
+        ArrayList<AssociaImmagineConParola> animaliAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> volpeList = new ArrayList<>();
+        volpeList.add("Volpe");
+        volpeList.add("Gatto");
+        volpeList.add("Pulcino");
+        volpeList.add("Rana");
+        animaliAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Scienze/Animali/volpe.png",volpeList,0));
+        ArrayList<AssociaLeFrasiTraDiloro> animaliAssociaLeFrasiTraDiloro =new ArrayList<>();
+        ArrayList<String> tartarugaList1 = new ArrayList<>();
+        tartarugaList1.add("L'animale e': ");
+        tartarugaList1.add("L'alimento Ã¨: ");
+        ArrayList<String> tartarugaList2 = new ArrayList<>();
+        tartarugaList2.add("la tartaruga");
+        tartarugaList2.add("il serpente");
+        animaliAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Scienze/Animali/tartaruga.png",tartarugaList1,tartarugaList2,0,0));
+        ArrayList<ScriviLaparolaCorretta> animaliScriviLaParolaCorretta = new ArrayList<>();
+        animaliScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Scienze/Animali/gallo.png","Gallo"));
+        scienze.add(new EserciziPerArgomento("Animali",animaliAssociaImmagineConParola,animaliAssociaLeFrasiTraDiloro,animaliScriviLaParolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> corpoAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> labbraList = new ArrayList<>();
+        labbraList.add("Gamba");
+        labbraList.add("Labbra");
+        labbraList.add("Pancia");
+        labbraList.add("Fronte");
+        corpoAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Scienze/PartiCorpo/labbra.png",labbraList,1));
+        ArrayList<AssociaLeFrasiTraDiloro> corpoAssociaLeFrasiTraDiloro =new ArrayList<>();
+        ArrayList<String> spallaList1 = new ArrayList<>();
+        spallaList1.add("Lo sport e': ");
+        spallaList1.add("La parte del corpo e': ");
+        ArrayList<String> spallaList2 = new ArrayList<>();
+        spallaList2.add(" la spalla");
+        spallaList2.add(" l'orecchio");
+        corpoAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Scienze/PartiCorpo/spalla.png",spallaList1,spallaList2,1,0));
+        ArrayList<ScriviLaparolaCorretta> corpoScriviLaParolaCorretta = new ArrayList<>();
+        corpoScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Scienze/PartiCorpo/dita.png","Dita"));
+        scienze.add(new EserciziPerArgomento("Parti del corpo",corpoAssociaImmagineConParola, corpoAssociaLeFrasiTraDiloro, corpoScriviLaParolaCorretta));
+
+        ArrayList<AssociaImmagineConParola> pianteAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> saliceList = new ArrayList<>();
+        saliceList.add("Rosmarino");
+        saliceList.add("Ciliegio");
+        saliceList.add("Salice piangente");
+        saliceList.add("Tulipano");
+        pianteAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Scienze/Piante/salice.png",saliceList,2));
+        ArrayList<AssociaLeFrasiTraDiloro> pianteAssociaLeFrasiTraDiloro =new ArrayList<>();
+        ArrayList<String> margheritaList1 = new ArrayList<>();
+        margheritaList1.add("La pianta e': ");
+        margheritaList1.add("Il colore e': ");
+        ArrayList<String> margheritaList2 = new ArrayList<>();
+        margheritaList2.add(" cactus");
+        margheritaList2.add(" margherita");
+        pianteAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Scienze/Piante/margherita.png",margheritaList1,margheritaList2,0,1));
+        ArrayList<ScriviLaparolaCorretta> pianteScriviLaParolaCorretta = new ArrayList<>();
+        pianteScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Scienze/Piante/bambu.png","Bambu"));
+        scienze.add(new EserciziPerArgomento("Piante", pianteAssociaImmagineConParola, pianteAssociaLeFrasiTraDiloro, pianteScriviLaParolaCorretta ));
+
+        ArrayList<AssociaImmagineConParola> sportAssociaImmagineConParola = new ArrayList<>();
+        ArrayList<String> canestroList = new ArrayList<>();
+        canestroList.add("Tennis");
+        canestroList.add("Pallavolo");
+        canestroList.add("Ciclismo");
+        canestroList.add("Pallacanestro");
+        sportAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Scienze/Sports/pallacanestro.png",canestroList,3));
+        ArrayList<AssociaLeFrasiTraDiloro> sportAssociaLeFrasiTraDiloro =new ArrayList<>();
+        ArrayList<String> nuotoList1 = new ArrayList<>();
+        nuotoList1.add("Il vestito e': ");
+        nuotoList1.add("Lo sport e': ");
+        ArrayList<String> nuotoList2 = new ArrayList<>();
+        nuotoList2.add(" calcio");
+        nuotoList2.add(" nuoto");
+        pianteAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Scienze/Sports/nuoto.png",nuotoList1,nuotoList2,1,1));
+        ArrayList<ScriviLaparolaCorretta> sportScriviLaParolaCorretta = new ArrayList<>();
+        sportScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Scienze/Sports/danza.png","Danza"));
+        scienze.add(new EserciziPerArgomento("Sports", sportAssociaImmagineConParola, sportAssociaLeFrasiTraDiloro, sportScriviLaParolaCorretta));
+
+    }
 
     public void creaEserciziStoria(){
         ArrayList<AssociaImmagineConParola> civiltaAssociaImmagineConParola = new ArrayList<>();
@@ -329,7 +489,7 @@ public class DatabaseEsercizi {
         musicaAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Musica/pianoforte.png",pianoforteList1,pianoforteList2,0,1));
         ArrayList<ScriviLaparolaCorretta> musicaScriviLaParolaCorretta = new ArrayList<>();
         musicaScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Arte/Musica/arpa.png","Arpa"));
-        arte.add(new EserciziPerArgomento("Musica",musicaAssociaImmagineConParola,musicaAssociaLeFrasiTraDiloro,musicaScriviLaParolaCorretta));
+        arte.add(new EserciziPerArgomento("Strumenti musicali",musicaAssociaImmagineConParola,musicaAssociaLeFrasiTraDiloro,musicaScriviLaParolaCorretta));
 
         ArrayList<AssociaImmagineConParola> vestitiAssociaImmagineConParola = new ArrayList<>();
         ArrayList<String> felpaList = new ArrayList<>();
