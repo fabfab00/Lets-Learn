@@ -20,22 +20,29 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
         String EsercizioDue = request.getParameter("EsercizioDue");
         String EsercizioTre = request.getParameter("EsercizioTre");
 
-        if(EsercizioUno.equalsIgnoreCase("true") || EsercizioUno.equalsIgnoreCase("false"))
+
+        if(EsercizioUno.equalsIgnoreCase("ciao"))
         {
-            request.getSession().setAttribute("EsercizioUno", EsercizioUno);
-            request.getSession().setAttribute("EsercizioDue", EsercizioDue);
-            request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-        }
-        else{
+
             EsercizioUno = (String) request.getSession().getAttribute("EsercizioUno");
             EsercizioDue = (String) request.getSession().getAttribute("EsercizioDue");
             EsercizioTre = (String) request.getSession().getAttribute("EsercizioTre");
+            System.out.println("ifCiao");
             System.out.println(EsercizioUno);
             System.out.println(EsercizioDue);
             System.out.println(EsercizioTre);
             request.getSession().setAttribute("EsercizioUno", EsercizioUno);
             request.getSession().setAttribute("EsercizioDue", EsercizioDue);
             request.getSession().setAttribute("EsercizioTre", EsercizioTre);
+
+        }
+        else{
+
+            request.getSession().setAttribute("EsercizioUno", EsercizioUno);
+            request.getSession().setAttribute("EsercizioDue", EsercizioDue);
+            request.getSession().setAttribute("EsercizioTre", EsercizioTre);
+
+
         }
 
 
@@ -46,29 +53,47 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
         request.setAttribute("associaImmagineConParola", associaImmagineConParola);
         request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta);
 
-        if(EsercizioUno.equalsIgnoreCase("true")){
-            EsercizioUno="false";
-            request.getSession().setAttribute("EsercizioUno", EsercizioUno);
-            request.getSession().setAttribute("EsercizioDue", EsercizioDue);
-            request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioAssociaImmagineConParola.jsp");
-            dispatcher.forward(request, response);
-        }
-        if(EsercizioDue.equalsIgnoreCase("true")){
-            EsercizioDue="false";
-            request.getSession().setAttribute("EsercizioUno", EsercizioUno);
-            request.getSession().setAttribute("EsercizioDue", EsercizioDue);
-            request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioAssociaLeFrasiTraDiLoro.jsp");
-            dispatcher.forward(request, response);
-        }
-        if(EsercizioTre.equalsIgnoreCase("true")){
-            EsercizioTre="false";
-            request.getSession().setAttribute("EsercizioUno", EsercizioUno);
-            request.getSession().setAttribute("EsercizioDue", EsercizioDue);
-            request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizoScriviLaParolaCorretta.jsp");
-            dispatcher.forward(request, response);
+        for(int i=0;i<3;i++) {
+
+
+            if (EsercizioUno.equalsIgnoreCase("true")) {
+                EsercizioUno = "false";
+                request.getSession().setAttribute("EsercizioUno", EsercizioUno);
+                request.getSession().setAttribute("EsercizioDue", EsercizioDue);
+                request.getSession().setAttribute("EsercizioTre", EsercizioTre);
+                System.out.println("ifUno");
+                System.out.println(EsercizioDue);
+                System.out.println(EsercizioTre);
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioAssociaImmagineConParola.jsp");
+                dispatcher.forward(request, response);
+                break;
+
+            }
+            if (EsercizioDue.equalsIgnoreCase("true")) {
+                EsercizioDue = "false";
+                request.getSession().setAttribute("EsercizioUno", EsercizioUno);
+                request.getSession().setAttribute("EsercizioDue", EsercizioDue);
+                request.getSession().setAttribute("EsercizioTre", EsercizioTre);
+                System.out.println("ifDue");
+                System.out.println(EsercizioDue);
+                System.out.println(EsercizioTre);
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioAssociaLeFrasiTraDiLoro.jsp");
+                dispatcher.forward(request, response);
+                break;
+            }
+            if (EsercizioTre.equalsIgnoreCase("true")) {
+                EsercizioTre = "false";
+                request.getSession().setAttribute("EsercizioUno", EsercizioUno);
+                request.getSession().setAttribute("EsercizioDue", EsercizioDue);
+                request.getSession().setAttribute("EsercizioTre", EsercizioTre);
+                System.out.println("ifTre");
+                System.out.println(EsercizioDue);
+                System.out.println(EsercizioTre);
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioScriviLaParolaCorretta.jsp");
+                dispatcher.forward(request, response);
+                break;
+            }
+
         }
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/General/ConclusioneEsercizio.jsp");
         dispatcher.forward(request, response);

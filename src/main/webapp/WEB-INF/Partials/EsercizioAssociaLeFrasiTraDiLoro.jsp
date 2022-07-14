@@ -82,7 +82,7 @@
 
 <script>
     function next(){
-        window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno="+EsercizioUno+"&EsercizioDue="+EsercizioDue+"&EsercizioTre="+EsercizioTre);
+        window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao");
     }
 </script>
 
