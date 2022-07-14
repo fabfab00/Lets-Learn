@@ -19,6 +19,8 @@ String materia = argomentoClass.getNome();
     <title>letsLearn</title>
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="./customcss/general.css"/>
+    <script src="./Javascript/HeaderClick.js"></script>
+
 </head>
 <body class="text-center">
 <%@include file="/WEB-INF/Header/Header.jsp"%>

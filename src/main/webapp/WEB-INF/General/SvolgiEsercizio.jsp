@@ -13,6 +13,8 @@
         <title>SvolgiEsercizio</title>
         <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="./customcss/general.css"/>
+        <script src="./Javascript/HeaderClick.js"></script>
+
     </head>
     <%
     AssociaLeFrasiTraDiloro associaLeFrasiTraDiloro= (AssociaLeFrasiTraDiloro) request.getAttribute("associaLeFrasiTraDiloro");
