@@ -36,31 +36,48 @@ String materia = (String) request.getAttribute("argomento");
 
     <div class="contenitoreTitoloSezione"><span class="titoloSezione">Scegli Esercizi</span></div>
     <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Associa Immagine Con Parola
-        <input type="checkbox" />
+        <input type="checkbox" name="input" id="one" />
         <span class="checkmark"></span>
     </label>
     <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Associa Le Frasi Tra Di Loro
-        <input type="checkbox" />
+        <input type="checkbox" name="input" id="two" />
         <span class="checkmark"></span>
     </label>
     <label class="form-label checkMarkContainer" style="text-align: left;vertical-align: middle;">Scrivi La Parola Corretta
-        <input type="checkbox" />
+        <input type="checkbox" name="input" id="three"/>
         <span class="checkmark"></span>
     </label>
-    <form action="${pageContext.request.contextPath}/ServletAvviaPrimoEsercizio" method="get">
-    <button class="btn btn-primary btn-continua" type="submit">Inizia</button>
-    </form>
+    <button class="btn btn-primary btn-continua" type="submit" onclick="check()">Inizia</button>
+
 </div>
+
 <script>
-    function checkboxes(){
-        var inputElems = document.getElementsByTagName("input"),
-            count = 0;
-        for (var i=0; i<inputElems.length; i++) {
-            if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
-                count++;
-                alert(count);
+    function check(){
+        var x=new Array(3);
+            if (document.getElementById("one").checked===true){
+                //count++;
+                x[0]=true;
+            }else{
+                x[0]=false;
             }
-        }}
+
+        if (document.getElementById("two").checked===true){
+            //count++;
+            x[1]=true;
+        }else{
+            x[1]=false;
+        }
+
+        if (document.getElementById("three").checked===true){
+            //count++;
+            x[2]=true;
+        }else{
+            x[2]=false;
+        }
+
+        window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno="+x[0]+"&EsercizioDue="+x[1]+"&EsercizioTre="+x[2]);
+    }
 </script>
+
 </body>
 </html>
