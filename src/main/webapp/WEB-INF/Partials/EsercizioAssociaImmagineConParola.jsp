@@ -72,6 +72,7 @@
 
 <script>
     function next(){
+        
         window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao");
     }
 </script>

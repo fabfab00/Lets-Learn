@@ -14,7 +14,7 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        boolean flag = true;
+
 
         String EsercizioUno = request.getParameter("EsercizioUno");
         String EsercizioDue = request.getParameter("EsercizioDue");
