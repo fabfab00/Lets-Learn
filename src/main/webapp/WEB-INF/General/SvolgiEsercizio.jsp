@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="./customcss/general.css"/>
         <script src="./Javascript/HeaderClick.js"></script>
+        <script src ="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
     </head>
     <%

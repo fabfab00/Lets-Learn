@@ -25,9 +25,9 @@
                     <div id="Box-Dizionario" class="contenitore-box text-center" style = "display: none">
                         <div class="input-overlay">
                             <div class="contenitore-icona-registrazione"><img src="./Immagini/Recorder.svg" /></div>
-                            <input class="text-input" type="text" placeholder="Cerca" style="text-align: center;" />
-                            <div class="contenitore-icona-cerca"><img src="./Immagini/Magnifier.svg" /></div>
-                        </div><textarea id="Contenitore-Risultato-Dizionario" class="risultato-vuoto"></textarea>
+                            <input id ="Input-Dizionario" class="text-input" type="text" placeholder="Cerca" style="text-align: center;" />
+                            <div class="contenitore-icona-cerca" onclick="cerca()"><img src="./Immagini/Magnifier.svg" /></div>
+                        </div><div id="Contenitore-Risultato-Dizionario" class="risultato-vuoto"></div>
                     </div>
 
             </div>
@@ -43,7 +43,8 @@
                                     <option value="14">This is item 3</option>
                                 </optgroup>
                             </select>
-                                <div class="contenitore-traduzione"><textarea class="form-control"></textarea>
+                                <div class="contenitore-traduzione">
+                                    <textarea class="form-control" onchange="traduci(this)"></textarea>
                                     <div class="contenitore-icona-riproduzione"><img src="./Immagini/Sound.svg" /></div>
                                     <div class="contenitore-icona-registrazione"><img src="./Immagini/Recorder.svg" /></div>
                                 </div>
