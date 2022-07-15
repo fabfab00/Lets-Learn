@@ -27,10 +27,6 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
             EsercizioUno = (String) request.getSession().getAttribute("EsercizioUno");
             EsercizioDue = (String) request.getSession().getAttribute("EsercizioDue");
             EsercizioTre = (String) request.getSession().getAttribute("EsercizioTre");
-            System.out.println("ifCiao");
-            System.out.println(EsercizioUno);
-            System.out.println(EsercizioDue);
-            System.out.println(EsercizioTre);
             request.getSession().setAttribute("EsercizioUno", EsercizioUno);
             request.getSession().setAttribute("EsercizioDue", EsercizioDue);
             request.getSession().setAttribute("EsercizioTre", EsercizioTre);
@@ -53,6 +49,34 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
         request.setAttribute("associaImmagineConParola", associaImmagineConParola);
         request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta);
 
+        String Tipologia=request.getParameter("Tipologia");
+        String Risposta=request.getParameter("Risposta");
+
+        if(Tipologia!=null) {
+
+            switch (Tipologia) {
+                case "AssociaImmagineConParola":
+                    int number = associaImmagineConParola.cercaPosizioneByString(Risposta);
+                    associaImmagineConParola.setRispostaUtente(number);
+                    break;
+
+                case "AssociaLeFrasiTraDiLoro":
+                    String RispostaBis=request.getParameter("RispostaBis");
+                    int numberOne=associaLeFrasiTraDiloro.cercaPosizioneByString1(Risposta);
+                    int numberTwo=associaLeFrasiTraDiloro.cercaPosizioneByString2(RispostaBis);
+                    associaLeFrasiTraDiloro.setRispostaUtente1(numberOne);
+                    associaLeFrasiTraDiloro.setRispostaUtente1(numberTwo);
+                    break;
+
+                case "ScriviLaparolaCorretta":
+                    scriviLaparolaCorretta.setRispostaUtente(Risposta);
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
         for(int i=0;i<3;i++) {
 
 
@@ -61,9 +85,6 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
                 request.getSession().setAttribute("EsercizioUno", EsercizioUno);
                 request.getSession().setAttribute("EsercizioDue", EsercizioDue);
                 request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-                System.out.println("ifUno");
-                System.out.println(EsercizioDue);
-                System.out.println(EsercizioTre);
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioAssociaImmagineConParola.jsp");
                 dispatcher.forward(request, response);
                 break;
@@ -74,9 +95,6 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
                 request.getSession().setAttribute("EsercizioUno", EsercizioUno);
                 request.getSession().setAttribute("EsercizioDue", EsercizioDue);
                 request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-                System.out.println("ifDue");
-                System.out.println(EsercizioDue);
-                System.out.println(EsercizioTre);
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioAssociaLeFrasiTraDiLoro.jsp");
                 dispatcher.forward(request, response);
                 break;
@@ -86,9 +104,6 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
                 request.getSession().setAttribute("EsercizioUno", EsercizioUno);
                 request.getSession().setAttribute("EsercizioDue", EsercizioDue);
                 request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-                System.out.println("ifTre");
-                System.out.println(EsercizioDue);
-                System.out.println(EsercizioTre);
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioScriviLaParolaCorretta.jsp");
                 dispatcher.forward(request, response);
                 break;

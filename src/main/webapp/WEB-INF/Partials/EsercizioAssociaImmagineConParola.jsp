@@ -48,18 +48,18 @@
         <form>
             <ul class="list-group lista-domande">
                 <li class="list-group-item"><!--Inizio singola domanda-->
-                    <input class="invisible-checkbox" type="checkbox" />
+                    <input class="invisible-checkbox" type="checkbox" id="one" />
                     <div></div>
                     <span><%=associaImmagineConParola.getWord().get(0)%></span>
 
                 </li><!--Fine singola domanda-->
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" id="two" />
                     <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
                 </li>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" id="three" />
                     <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" id="four" />
                     <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
             </ul>
@@ -73,7 +73,21 @@
 <script>
     function next(){
         
-        window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao");
+        var risposta;
+        if (document.getElementById("one").checked===true){
+            risposta="<%=associaImmagineConParola.getWord().get(0)%>"
+        }
+        if (document.getElementById("two").checked===true){
+            risposta="<%=associaImmagineConParola.getWord().get(1)%>"
+        }
+        if (document.getElementById("three").checked===true){
+            risposta="<%=associaImmagineConParola.getWord().get(2)%>"
+        }
+        if (document.getElementById("four").checked===true){
+            risposta="<%=associaImmagineConParola.getWord().get(3)%>"
+        }
+
+        window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao&Tipologia=AssociaImmagineConParola&Risposta="+risposta);
     }
 </script>
 </body>

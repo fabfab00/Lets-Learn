@@ -82,7 +82,24 @@
 
 <script>
     function next(){
-        window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao");
+
+        var risposta1;
+        var risposta2;
+
+        if (document.getElementById("1").checked===true){
+            risposta1="<%=associaLeFrasiTraDiloro.getList1().get(0)%>"
+        }
+        if (document.getElementById("2").checked===true){
+            risposta1="<%=associaLeFrasiTraDiloro.getList2().get(0)%>"
+        }
+        if (document.getElementById("3").checked===true){
+            risposta2="<%=associaLeFrasiTraDiloro.getList1().get(1)%>"
+        }
+        if (document.getElementById("4").checked===true){
+            risposta2="<%=associaLeFrasiTraDiloro.getList2().get(1)%>"
+        }
+
+        window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao&Tipologia=AssociaLeFrasiTraDiLoro&Risposta="+risposta1+"&RispostaBis="+risposta2);
     }
 </script>
 
