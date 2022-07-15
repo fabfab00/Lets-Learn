@@ -55,4 +55,22 @@ public class AssociaLeFrasiTraDiloro {
     public void setRispostaUtente2(int rispostaUtente2) {
         this.rispostaUtente2 = rispostaUtente2;
     }
+
+    public int cercaPosizioneByString1(String stringa){
+        for (int i =0;i< list1.size();i++){
+            if(list1.get(i).equalsIgnoreCase(stringa)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int cercaPosizioneByString2(String stringa){
+        for (int i =0;i< list2.size();i++){
+            if(list2.get(i).equalsIgnoreCase(stringa)){
+                return i;
+            }
+        }
+        return -1;
+    }
 }
