@@ -34,4 +34,13 @@ public class AssociaImmagineConParola {
     public void setRispostaUtente(int rispostaUtente) {
         this.rispostaUtente = rispostaUtente;
     }
+
+    public int cercaPosizioneByString(String stringa){
+        for (int i =0;i< word.size();i++){
+            if(word.get(i).equalsIgnoreCase(stringa)){
+                return i;
+            }
+        }
+        return -1;
+    }
 }
