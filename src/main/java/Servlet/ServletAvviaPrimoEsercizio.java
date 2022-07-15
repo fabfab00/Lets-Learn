@@ -21,6 +21,8 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
         String EsercizioTre = request.getParameter("EsercizioTre");
 
 
+
+
         if(EsercizioUno.equalsIgnoreCase("ciao"))
         {
 
@@ -81,6 +83,8 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
 
 
             if (EsercizioUno.equalsIgnoreCase("true")) {
+                String ese1= "vero";
+                request.getSession().setAttribute("Ese1", ese1);
                 EsercizioUno = "false";
                 request.getSession().setAttribute("EsercizioUno", EsercizioUno);
                 request.getSession().setAttribute("EsercizioDue", EsercizioDue);
@@ -91,6 +95,8 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
 
             }
             if (EsercizioDue.equalsIgnoreCase("true")) {
+                String ese2= "vero";
+                request.getSession().setAttribute("Ese2", ese2);
                 EsercizioDue = "false";
                 request.getSession().setAttribute("EsercizioUno", EsercizioUno);
                 request.getSession().setAttribute("EsercizioDue", EsercizioDue);
@@ -100,6 +106,8 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
                 break;
             }
             if (EsercizioTre.equalsIgnoreCase("true")) {
+                String ese3= "vero";
+                request.getSession().setAttribute("Ese3", ese3);
                 EsercizioTre = "false";
                 request.getSession().setAttribute("EsercizioUno", EsercizioUno);
                 request.getSession().setAttribute("EsercizioDue", EsercizioDue);

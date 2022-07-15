@@ -20,7 +20,7 @@
             <span class="titoloSezione">Esercizio Concluso</span>
         </div>
         <div>
-            <form style="align-content: center;">
+            <form style="align-content: center;" method="get" action="${pageContext.request.contextPath}/ServletCorrezione">
                 <i style="display:inline-flex;width: 552px;height: 302px;margin-bottom: 78px;"><%@include file="/Immagini/CallTeacher.svg"%></i>
                 <div>
                     <button class="btn btn-primary btn-continua" type="submit">Correggi</button>
