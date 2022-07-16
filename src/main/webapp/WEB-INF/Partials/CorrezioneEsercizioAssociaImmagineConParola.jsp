@@ -54,7 +54,7 @@
                     <div></div>
                     <span><%=associaImmagineConParola.getWord().get(0)%></span>
                     <%}else{%>
-                    <input class="invisible-checkbox" type="checkbox"/>
+                    <input class="invisible-checkbox"/>
                     <div></div>
                     <span><%=associaImmagineConParola.getWord().get(0)%></span>
                     <%}%>
@@ -65,7 +65,7 @@
                     <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
                 </li>
                 <%}else {%>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <li class="list-group-item"><input class="invisible-checkbox"  />
                     <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
                 </li>
                 <%}%>
@@ -75,7 +75,7 @@
                     <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
                 <%}else {%>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <li class="list-group-item"><input class="invisible-checkbox" />
                     <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
                 <%}%>
@@ -85,7 +85,7 @@
                     <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
                 <%}else {%>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" />
+                <li class="list-group-item"><input class="invisible-checkbox"/>
                     <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
                 <%}%>

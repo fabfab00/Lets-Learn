@@ -118,7 +118,7 @@ public class DatabaseEsercizi {
         ottagonoList2.add("esagono");
         formeGeoAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Matematica/FormeGeometrice/ottagono.png",ottagonoList1,ottagonoList2,0,0));
         ArrayList<ScriviLaparolaCorretta> formeGeoScriviLaparolaCorretta = new ArrayList<>();
-        formeGeoScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Matematica/FormeGeometrice/ottagono.png","Cerchio"));
+        formeGeoScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Matematica/FormeGeometrice/cerchio.png","Cerchio"));
         matematica.add(new EserciziPerArgomento("Forme geometriche",formeGeoAssociaImmagineConParola,formeGeoAssociaLeFrasiTraDiloro,formeGeoScriviLaparolaCorretta));
 
         ArrayList<AssociaImmagineConParola> numeriAssociaImmagineConParola = new ArrayList<>();
@@ -195,7 +195,7 @@ public class DatabaseEsercizi {
         ArrayList<AssociaLeFrasiTraDiloro> animaliAssociaLeFrasiTraDiloro =new ArrayList<>();
         ArrayList<String> tartarugaList1 = new ArrayList<>();
         tartarugaList1.add("L'animale e': ");
-        tartarugaList1.add("L'alimento Ã¨: ");
+        tartarugaList1.add("L'alimento e': ");
         ArrayList<String> tartarugaList2 = new ArrayList<>();
         tartarugaList2.add("la tartaruga");
         tartarugaList2.add("il serpente");
@@ -229,7 +229,7 @@ public class DatabaseEsercizi {
         saliceList.add("Ciliegio");
         saliceList.add("Salice piangente");
         saliceList.add("Tulipano");
-        pianteAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Scienze/Piante/salice.png",saliceList,2));
+        pianteAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Scienze/Piante/salicePiangente.png",saliceList,2));
         ArrayList<AssociaLeFrasiTraDiloro> pianteAssociaLeFrasiTraDiloro =new ArrayList<>();
         ArrayList<String> margheritaList1 = new ArrayList<>();
         margheritaList1.add("La pianta e': ");
@@ -389,7 +389,7 @@ public class DatabaseEsercizi {
         ArrayList<String> collinaList2 = new ArrayList<>();
         collinaList2.add(" pianura");
         collinaList2.add(" collina");
-        paesaggiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Geografia/Pesaggi/collina.png", collinaList1, collinaList2, 0, 1));
+        paesaggiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Geografia/Paesaggi/collina.png", collinaList1, collinaList2, 0, 1));
         geografia.add(new EserciziPerArgomento("Paesaggi", paesaggiAssociaImmagineConParola, paesaggiAssociaLeFrasiTraDiloro, paesaggiScriviLaparolaCorretta));
 
         ArrayList<AssociaImmagineConParola> pianetiAssociaImmagineConParola = new ArrayList<>();
@@ -408,7 +408,7 @@ public class DatabaseEsercizi {
         ArrayList<String> marteList2 = new ArrayList<>();
         marteList2.add(" Marte");
         marteList2.add(" Urano");
-        pianetiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Geografia/Paesaggi/marte.png", marteList1, marteList2, 1, 0));
+        pianetiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Geografia/Pianeti/marte.png", marteList1, marteList2, 1, 0));
         geografia.add(new EserciziPerArgomento("Pianeti", pianetiAssociaImmagineConParola, pianetiAssociaLeFrasiTraDiloro, pianetiScriviLaparolaCorretta));
 
         ArrayList<AssociaImmagineConParola> posizioniAssociaImmagineConParola = new ArrayList<>();

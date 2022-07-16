@@ -54,7 +54,7 @@
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(0)%></span>
                             </div>
                             <%}else {%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox" type="checkbox" />
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox" />
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(0)%></span>
                             </div>
                             <%}%>
@@ -65,7 +65,7 @@
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(0)%></span>
                             </div>
                             <%}else {%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox" type="checkbox" />
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox" />
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(0)%></span>
                             </div>
                             <%}%>
@@ -78,7 +78,7 @@
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(1)%></span>
                             </div>
                             <%}else {%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox" type="checkbox" />
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox"  />
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(1)%></span>
                             </div>
                             <%}%>
@@ -89,7 +89,7 @@
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(1)%></span>
                             </div>
                             <%}else {%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox" type="checkbox" />
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox"  />
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(1)%></span>
                             </div>
                             <%}%>

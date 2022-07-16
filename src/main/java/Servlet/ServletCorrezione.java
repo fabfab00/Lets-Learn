@@ -12,9 +12,6 @@ public class ServletCorrezione extends HttpServlet {
         String ese1String = (String) request.getSession().getAttribute("Ese1");
         String ese2String = (String) request.getSession().getAttribute("Ese2");
         String ese3String = (String) request.getSession().getAttribute("Ese3");
-        System.out.println("ese3String: "+ese3String);
-        System.out.println("ese2String: "+ese2String);
-        System.out.println("ese1String: "+ese1String);
         String path;
 
         if( ese1String!=null && ese1String.equals("vero")){
@@ -36,7 +33,6 @@ public class ServletCorrezione extends HttpServlet {
             path="/WEB-INF/General/ErrorPage.jsp";
         }
 
-        System.out.println("Sono in servlet correzione");
         RequestDispatcher dispatcher = request.getRequestDispatcher(path);
         dispatcher.forward(request, response);
 

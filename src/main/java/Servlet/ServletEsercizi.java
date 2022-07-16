@@ -23,6 +23,7 @@ public class ServletEsercizi extends HttpServlet {
         switch (materiaString){
             case "Italiano" :
                 arrayList=databaseEsercizi.getItaliano();
+                System.out.println("Argomento String in servlet esercizi: "+ argomentoString);
                 eserciziPerArgomento= databaseEsercizi.getEserciziPerArgomentobyNome(argomentoString, arrayList);
                 associaImmagineConParola=eserciziPerArgomento.getEsercizioAssociaImmagineConParola();
                 associaLeFrasiTraDiloro=eserciziPerArgomento.getEsercizioAssociaLeFrasiTraDiLoro();
