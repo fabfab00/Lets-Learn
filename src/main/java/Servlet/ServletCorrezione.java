@@ -29,6 +29,9 @@ public class ServletCorrezione extends HttpServlet {
             request.getSession().setAttribute("Ese3",ese3String);
             path="/WEB-INF/Partials/CorrezioneEsercizioScriviLaParolaCorretta.jsp";
         }
+        else if(ese1String.equals("falso") && ese2String.equals("falso") && ese3String.equals("falso")){
+            path="index.jsp";
+        }
         else{
             path="/WEB-INF/General/ErrorPage.jsp";
         }

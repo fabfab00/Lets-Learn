@@ -77,7 +77,7 @@ public class DatabaseEsercizi {
         ArrayList<String> pompiereList2 = new ArrayList<>();
         pompiereList2.add(" commesso");
         pompiereList2.add(" pompiere");
-        alimentiAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Italiano/PersoneMestieri/pompiere.png", pompiereList1, pompiereList2, 0, 1));
+        personeAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Italiano/PersoneMestieri/pompiere.png", pompiereList1, pompiereList2, 0, 1));
         italiano.add(new EserciziPerArgomento("Persone e Mestieri", personeAssociaImmagineConParola, personeAssociaLeFrasiTraDiloro, personeScriviLaparolaCorretta));
 
         ArrayList<AssociaImmagineConParola> verbiAssociaImmagineConParola = new ArrayList<>();
@@ -256,10 +256,10 @@ public class DatabaseEsercizi {
         ArrayList<String> nuotoList2 = new ArrayList<>();
         nuotoList2.add(" calcio");
         nuotoList2.add(" nuoto");
-        pianteAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Scienze/Sports/nuoto.png",nuotoList1,nuotoList2,1,1));
+        sportAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Scienze/Sports/nuoto.png",nuotoList1,nuotoList2,1,1));
         ArrayList<ScriviLaparolaCorretta> sportScriviLaParolaCorretta = new ArrayList<>();
         sportScriviLaParolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Scienze/Sports/danza.png","Danza"));
-        scienze.add(new EserciziPerArgomento("Sports", sportAssociaImmagineConParola, sportAssociaLeFrasiTraDiloro, sportScriviLaParolaCorretta));
+        scienze.add(new EserciziPerArgomento("Sport", sportAssociaImmagineConParola, sportAssociaLeFrasiTraDiloro, sportScriviLaParolaCorretta));
 
     }
 
@@ -323,31 +323,22 @@ public class DatabaseEsercizi {
 
         ArrayList<AssociaImmagineConParola> tempoAssociaImmagineConParola = new ArrayList<>();
         ArrayList<String> invernoList = new ArrayList<>();
-        dueList.add("Autunno");
-        dueList.add("Estate");
-        dueList.add("Primavera");
-        dueList.add("Inverno");
+        invernoList.add("Autunno");
+        invernoList.add("Estate");
+        invernoList.add("Primavera");
+        invernoList.add("Inverno");
         tempoAssociaImmagineConParola.add(new AssociaImmagineConParola("./ImmaginiCard/Storia/Tempo/inverno.png",invernoList,3));
         ArrayList<AssociaLeFrasiTraDiloro> tempoAssociaLeFrasiTraDiloro = new ArrayList<>();
         ArrayList<String> pomeriggioList1 = new ArrayList<>();
-        treList1.add("La civiltà è");
-        treList1.add("Il tempo è");
+        pomeriggioList1.add("La civiltà è");
+        pomeriggioList1.add("Il tempo è");
         ArrayList<String> pomeriggioList2 = new ArrayList<>();
-        treList2.add("notte");
-        treList2.add("pomeriggio");
+        pomeriggioList2.add("notte");
+        pomeriggioList2.add("pomeriggio");
         tempoAssociaLeFrasiTraDiloro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Storia/Tempo/pomeriggio.png",pomeriggioList1,pomeriggioList2,1,1));
         ArrayList<ScriviLaparolaCorretta> tempoScriviLaparolaCorretta = new ArrayList<>();
         tempoScriviLaparolaCorretta.add(new ScriviLaparolaCorretta("./ImmaginiCard/Storia/Tempo/mattina.png","Mattina"));
         storia.add(new EserciziPerArgomento("Tempo",tempoAssociaImmagineConParola,tempoAssociaLeFrasiTraDiloro,tempoScriviLaparolaCorretta));
-
-
-
-
-
-
-
-
-
 
 
     }
@@ -448,7 +439,7 @@ public class DatabaseEsercizi {
         verdeList1.add("Il rumore e': ");
         ArrayList<String> verdeList2 = new ArrayList<>();
         verdeList2.add(" verde chiaro");
-        verdeList1.add(" blu ");
+        verdeList2.add(" blu ");
         coloriAssociaLeFrasiTraDiLoro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Colori/verdeChiaro.png",verdeList1,verdeList2,0,0));
         arte.add(new EserciziPerArgomento("Colori",coloriAssociaImmagineConParola,coloriAssociaLeFrasiTraDiLoro,coloriScriviLaParolaCorretta));
 

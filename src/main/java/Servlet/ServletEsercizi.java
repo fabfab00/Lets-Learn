@@ -24,10 +24,12 @@ public class ServletEsercizi extends HttpServlet {
             case "Italiano" :
                 arrayList=databaseEsercizi.getItaliano();
                 System.out.println("Argomento String in servlet esercizi: "+ argomentoString);
-                eserciziPerArgomento= databaseEsercizi.getEserciziPerArgomentobyNome(argomentoString, arrayList);
+                eserciziPerArgomento=databaseEsercizi.getEserciziPerArgomentobyNome(argomentoString, arrayList);
                 associaImmagineConParola=eserciziPerArgomento.getEsercizioAssociaImmagineConParola();
+
                 associaLeFrasiTraDiloro=eserciziPerArgomento.getEsercizioAssociaLeFrasiTraDiLoro();
-                scriviLaparolaCorretta= eserciziPerArgomento.getEsercizioScriviLaParolaCorretta();
+
+                scriviLaparolaCorretta=eserciziPerArgomento.getEsercizioScriviLaParolaCorretta();
                 request.setAttribute("associaImmagineConParola", associaImmagineConParola.get(0));
                 request.setAttribute("associaLeFrasiTraDiloro", associaLeFrasiTraDiloro.get(0));
                 request.setAttribute("scriviLaparolaCorretta", scriviLaparolaCorretta.get(0));
