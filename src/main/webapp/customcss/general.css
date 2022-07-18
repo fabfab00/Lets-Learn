@@ -493,3 +493,10 @@ input {
     z-index: 88;
 }
 
+.invisible-checkbox.wrong + div {
+    border-color: red;
+}
+
+.invisible-checkbox.correct + div {
+    border-color: green;
+}
