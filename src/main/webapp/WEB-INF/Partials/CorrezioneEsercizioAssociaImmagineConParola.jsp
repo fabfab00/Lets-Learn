@@ -50,7 +50,11 @@
             <ul class="list-group lista-domande">
                 <li class="list-group-item"><!--Inizio singola domanda-->
                     <%if(corr==0){%>
-                    <input class="invisible-checkbox" type="checkbox"  checked />
+                    <input class="invisible-checkbox correct" type="checkbox"  checked />
+                    <div></div>
+                    <span><%=associaImmagineConParola.getWord().get(0)%></span>
+                    <%}else if(utente==0){%>
+                    <input class="invisible-checkbox"/>
                     <div></div>
                     <span><%=associaImmagineConParola.getWord().get(0)%></span>
                     <%}else{%>
@@ -61,7 +65,11 @@
 
                 </li><!--Fine singola domanda-->
                 <%if(corr==1){%>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox"  checked />
+                <li class="list-group-item"><input class="invisible-checkbox correct" type="checkbox"  checked />
+                    <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
+                </li>
+                <%}if(utente==1){%>
+                <li class="list-group-item"><input class="invisible-checkbox wrong" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
                 </li>
                 <%}else {%>
@@ -71,21 +79,29 @@
                 <%}%>
 
                 <%if(corr==2){%>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox"  checked />
+                <li class="list-group-item"><input class="invisible-checkbox correct" type="checkbox"  checked />
+                    <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
+                </li>
+                <%}if(utente==2){%>
+                <li class="list-group-item"><input class="invisible-checkbox wrong" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
                 <%}else {%>
-                <li class="list-group-item"><input class="invisible-checkbox" />
+                <li class="list-group-item"><input class="invisible-checkbox"  />
                     <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
                 <%}%>
 
                 <%if(corr==3){%>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox"  checked />
+                <li class="list-group-item"><input class="invisible-checkbox correct" type="checkbox"  checked />
+                    <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
+                </li>
+                <%}if(utente==3){%>
+                <li class="list-group-item"><input class="invisible-checkbox wrong" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
                 <%}else {%>
-                <li class="list-group-item"><input class="invisible-checkbox"/>
+                <li class="list-group-item"><input class="invisible-checkbox"  />
                     <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
                 <%}%>
