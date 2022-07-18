@@ -26,6 +26,7 @@
 
 <body>
 <%@include file="/WEB-INF/Header/Header.jsp"%>
+<hidden id="HeaderOscurato"></hidden>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione">
         <i onclick="">

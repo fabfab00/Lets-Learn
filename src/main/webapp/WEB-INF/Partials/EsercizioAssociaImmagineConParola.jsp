@@ -26,6 +26,7 @@
 
 <body>
 <%@include file="/WEB-INF/Header/Header.jsp"%>
+<hidden id="HeaderOscurato"></hidden>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione">
         <i onclick="">
@@ -48,18 +49,18 @@
         <form>
             <ul class="list-group lista-domande">
                 <li class="list-group-item"><!--Inizio singola domanda-->
-                    <input class="invisible-checkbox" type="checkbox" id="one" />
+                    <input class="invisible-checkbox" type="radio" name="random" id="one" />
                     <div></div>
                     <span><%=associaImmagineConParola.getWord().get(0)%></span>
 
                 </li><!--Fine singola domanda-->
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" id="two" />
+                <li class="list-group-item"><input class="invisible-checkbox" type="radio" name="random" id="two" />
                     <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
                 </li>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" id="three" />
+                <li class="list-group-item"><input class="invisible-checkbox" type="radio" name="random" id="three" />
                     <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
-                <li class="list-group-item"><input class="invisible-checkbox" type="checkbox" id="four" />
+                <li class="list-group-item"><input class="invisible-checkbox" type="radio" name="random" id="four" />
                     <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
             </ul>
