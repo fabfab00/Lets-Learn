@@ -354,6 +354,7 @@ input {
     position: absolute;
     right: 42px;
     top: 95px;
+    overflow: scroll;
 }
 
 .contenitore-box {
@@ -417,7 +418,7 @@ input {
     height: 64%;
     resize: none;
     border: none;
-    margin-top: 18px;
+    margin: 17px;
 }
 
 #Box-Traduttore {
@@ -425,6 +426,10 @@ input {
     position: absolute;
     right: 34px;
     top: 84px;
+}
+
+#Contenitore-Risultato-Dizionario div i {
+    display: block;
 }
 
 #Traduttore1 {

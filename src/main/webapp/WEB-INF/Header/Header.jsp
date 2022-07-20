@@ -36,11 +36,12 @@
                     <div id="Box-Traduttore" class="contenitore-box text-center" style = "display: none">
 
                         <div class="contenitore">
-                            <form id="Traduttore1" class="traduttore"><select class="form-select selettore-lingua">
-                                <optgroup label="This is a group">
-                                    <option value="12" selected>This is item 1</option>
-                                    <option value="13">This is item 2</option>
-                                    <option value="14">This is item 3</option>
+                            <form id="Traduttore1" class="traduttore" name="testo">
+                                <select class="form-select selettore-lingua" name="">
+                                <optgroup label="Lingue">
+                                    <option value="ita" selected>Italiano</option>
+                                    <option value="en">English</option>
+                                    <option value="spa">Spanish</option>
                                 </optgroup>
                             </select>
                                 <div class="contenitore-traduzione">
@@ -50,10 +51,10 @@
                                 </div>
                             </form>
                             <form id="Traduttore2" class="traduttore"><select class="form-select selettore-lingua">
-                                <optgroup label="This is a group">
-                                    <option value="12" selected>This is item 1</option>
-                                    <option value="13">This is item 2</option>
-                                    <option value="14">This is item 3</option>
+                                <optgroup label="Lingue">
+                                    <option value="ita">Italiano</option>
+                                    <option value="en" selected>English</option>
+                                    <option value="spa">Spanish</option>
                                 </optgroup>
                             </select>
                                 <div class="contenitore-traduzione"><textarea class="form-control"></textarea>

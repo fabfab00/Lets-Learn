@@ -34,10 +34,26 @@ function apriOverlay(cosa){
 function cerca(){
 
     let x = document.getElementById("Input-Dizionario")
+    x.class = ""
     if(x === "")
         return
     const xhttp = new XMLHttpRequest();
     let url = "./ServletDizionario?parola="+x.value
+    xhttp.open("GET",url,true)
+    xhttp.onload = function() {
+        document.getElementById("Contenitore-Risultato-Dizionario").innerHTML=this.responseText
+    }
+
+    xhttp.send();
+}
+
+function traduci(){
+    let formData1 = new FormData(document.getElementById("Traduttore1"))
+    let formData2 = new FormData(document.getElementById("Traduttore2"))
+    var parser = new DOMParser();
+    var htmlDoc = parser.parseFromString(formData1.get(), 'text/xml');
+    const xhttp = new XMLHttpRequest();
+    let url = "./ServletTraduttore?parola="+x.value
     xhttp.open("GET",url,true)
     xhttp.onload = function() {
         document.getElementById("Contenitore-Risultato-Dizionario").innerHTML=this.responseText
