@@ -14,6 +14,16 @@ public class ServletCorrezione extends HttpServlet {
         String ese3String = (String) request.getSession().getAttribute("Ese3");
         String path;
 
+        if(request.getSession().getAttribute("counterBis")==null)
+        {
+            int counterBis=1;
+            request.getSession().setAttribute("counterBis", counterBis);
+        }else {
+            int counterBis= (int) request.getSession().getAttribute("counterBis");
+            counterBis++;
+            request.getSession().setAttribute("counterBis", counterBis);
+        }
+
         if( ese1String!=null && ese1String.equals("vero")){
             ese1String="falso";
             request.getSession().setAttribute("Ese1",ese1String);

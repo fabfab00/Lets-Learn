@@ -23,7 +23,29 @@
     int utente = associaImmagineConParola.getRispostaUtente();
 %>
 
-
+<%
+    String partOne="Correzione ";
+    String partTwo;
+    int number= (int) request.getSession().getAttribute("counterBis");
+    if(number==1)
+    {
+        partTwo="1";
+    }
+    else if (number==2)
+    {
+        partTwo="2";
+    }
+    else if(number==3)
+    {
+        partTwo="3";
+    }
+    else
+    {
+        partTwo=" ";
+    }
+    String materia=partOne+partTwo;
+    System.out.println(materia);
+%>
 
 <body>
 <%@include file="/WEB-INF/Header/Header.jsp"%>
