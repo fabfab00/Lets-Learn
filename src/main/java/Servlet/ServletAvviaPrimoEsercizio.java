@@ -15,32 +15,31 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-
         String EsercizioUno = request.getParameter("EsercizioUno");
         String EsercizioDue = request.getParameter("EsercizioDue");
         String EsercizioTre = request.getParameter("EsercizioTre");
 
 
 
-
         if(EsercizioUno.equalsIgnoreCase("ciao"))
         {
-
+            int counter= (int) request.getSession().getAttribute("counter");
+            counter++;
+            request.getSession().setAttribute("counter", counter);
             EsercizioUno = (String) request.getSession().getAttribute("EsercizioUno");
             EsercizioDue = (String) request.getSession().getAttribute("EsercizioDue");
             EsercizioTre = (String) request.getSession().getAttribute("EsercizioTre");
             request.getSession().setAttribute("EsercizioUno", EsercizioUno);
             request.getSession().setAttribute("EsercizioDue", EsercizioDue);
             request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-
         }
         else{
 
+            int counter=1;
+            request.getSession().setAttribute("counter", counter);
             request.getSession().setAttribute("EsercizioUno", EsercizioUno);
             request.getSession().setAttribute("EsercizioDue", EsercizioDue);
             request.getSession().setAttribute("EsercizioTre", EsercizioTre);
-
-
         }
 
 

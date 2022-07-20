@@ -23,7 +23,28 @@
     ScriviLaparolaCorretta scriviLaparolaCorretta= (ScriviLaparolaCorretta) request.getAttribute("scriviLaparolaCorretta");
 %>
 
-
+<%
+    String partOne="Esercizio ";
+    String partTwo;
+    int number= (int) request.getSession().getAttribute("counter");
+    if(number==1)
+    {
+        partTwo="1";
+    }
+    else if (number==2)
+    {
+        partTwo="2";
+    }
+    else if(number==3)
+    {
+        partTwo="3";
+    }
+    else
+    {
+        partTwo=" ";
+    }
+    String materia=partOne+partTwo;
+%>
 
 <body>
 <%@include file="/WEB-INF/Header/Header.jsp"%>

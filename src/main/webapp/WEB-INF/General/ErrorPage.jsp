@@ -10,6 +10,11 @@
 <head>
     <title>ErrorPage</title>
 </head>
+
+<%
+    String materia="Error Page";
+%>
+
 <body>
 
 </body>

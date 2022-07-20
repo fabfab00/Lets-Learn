@@ -14,6 +14,11 @@
     <script src="./Javascript/HeaderClick.js"></script>
 
 </head>
+
+<%
+    String materia="Fine Esercizio";
+%>
+
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 
 <body class="text-center">
