@@ -52,6 +52,7 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
 
         String Tipologia=request.getParameter("Tipologia");
         String Risposta=request.getParameter("Risposta");
+        System.out.println("Risposta in Servlet: "+Risposta);
 
         if(Tipologia!=null) {
 
