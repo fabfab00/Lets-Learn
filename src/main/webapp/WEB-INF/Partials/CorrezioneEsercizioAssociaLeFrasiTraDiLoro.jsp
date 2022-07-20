@@ -43,17 +43,22 @@
     <canvas id="canvas" height="100%" width="100%" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;"></canvas>
     <div class="pageContenent">
         <div class="contenitoreTitoloSezione"><span class="titoloSezione">Scegli Esercizi</span></div>
-
+        <%System.out.println("Risposta List 1: "+associaLeFrasiTraDiloro.getRispostaUtente1());
+            System.out.println("Risposta List 2: "+associaLeFrasiTraDiloro.getRispostaUtente2());%>
         <form>
             <div><img style="width: 552px;height: 302px;margin-bottom: 78px;" src="<%=associaLeFrasiTraDiloro.getImage()%>"/>
                 <ul class="list-unstyled">
                     <li>
                         <div class="float-start" style="width: 50%;">
                             <%if(associaLeFrasiTraDiloro.getCorrettaList1()==0){%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox" type="checkbox" checked/>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox correct" type="checkbox" checked/>
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(0)%></span>
                             </div>
-                            <%}else {%>
+                            <%}else if(associaLeFrasiTraDiloro.getRispostaUtente1()==0) {%>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox wrong" type="checkbox" checked />
+                                <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(0)%></span>
+                            </div>
+                            <%}else{%>
                             <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox" />
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(0)%></span>
                             </div>
@@ -61,11 +66,15 @@
                         </div>
                         <div class="float-start" style="width: 50%;">
                             <%if(associaLeFrasiTraDiloro.getCorrettaList2()==0){%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox" type="checkbox" checked/>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox correct" type="checkbox" checked/>
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(0)%></span>
                             </div>
-                            <%}else {%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox" />
+                            <%}else if(associaLeFrasiTraDiloro.getRispostaUtente2()==0){%>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox wrong" type="checkbox" checked />
+                                <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(0)%></span>
+                            </div>
+                            <%}else{%>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input class="invisible-checkbox"  />
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(0)%></span>
                             </div>
                             <%}%>
@@ -74,10 +83,14 @@
                     <li>
                         <div class="float-start" style="width: 50%;">
                             <%if(associaLeFrasiTraDiloro.getCorrettaList1()==1){%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox" type="checkbox" checked/>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox correct" type="checkbox" checked/>
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(1)%></span>
                             </div>
-                            <%}else {%>
+                            <%}else if(associaLeFrasiTraDiloro.getRispostaUtente1()==1){%>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox wrong" type="checkbox" checked  />
+                                <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(1)%></span>
+                            </div>
+                            <%}else{%>
                             <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox"  />
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList1().get(1)%></span>
                             </div>
@@ -85,10 +98,14 @@
                         </div>
                         <div class="float-start" style="width: 50%;">
                             <%if(associaLeFrasiTraDiloro.getCorrettaList2()==1){%>
-                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox" type="checkbox" checked/>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox correct" type="checkbox" checked/>
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(1)%></span>
                             </div>
-                            <%}else {%>
+                            <%}else if (associaLeFrasiTraDiloro.getRispostaUtente2()==1){%>
+                            <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox wrong" type="checkbox" checked  />
+                                <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(1)%></span>
+                            </div>
+                            <%} else {%>
                             <div class="colonna-frasi colonna-sinistra" onclick="select(this)"><input  class="invisible-checkbox"  />
                                 <div></div><span><%=associaLeFrasiTraDiloro.getList2().get(1)%></span>
                             </div>
