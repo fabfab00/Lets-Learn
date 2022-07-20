@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="./customcss/general.css"/>
     <script src="./Javascript/HeaderClick.js"></script>
+    <script src="./Javascript/EsercizioAssociaParole.js"></script>
 
 </head>
 <%
@@ -26,6 +27,7 @@
 
 <body>
 <%@include file="/WEB-INF/Header/Header.jsp"%>
+<hidden id="HeaderOscurato"></hidden>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione">
         <i onclick="">

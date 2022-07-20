@@ -9,11 +9,13 @@
 <html>
 <head>
     <title>ConclusioneEsercizio</title>
-    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../../customcss/general.css"/>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./customcss/general.css"/>
     <script src="./Javascript/HeaderClick.js"></script>
 
 </head>
+<%@include file="/WEB-INF/Header/Header.jsp"%>
+
 <body class="text-center">
     <div class="pageContenent">
         <div class="contenitoreTitoloSezione" style="text-align: center">

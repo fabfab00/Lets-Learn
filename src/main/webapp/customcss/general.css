@@ -245,6 +245,7 @@ input {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 64px;
+    height: 150px;
 }
 .card{
     float:left;
@@ -254,11 +255,9 @@ input {
     background: #99C7D9;
 }
 .btn-continua {
-    position: absolute;
-    bottom: 10%;
+    margin-top: 66px;
     width: 265px;
     height: 70px;
-    left: 41%;
     font-size: 40px;
     font-weight: 450;
     align-items: center;
