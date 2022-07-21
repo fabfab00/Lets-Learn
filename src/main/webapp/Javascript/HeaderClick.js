@@ -50,14 +50,26 @@ function cerca(){
 function traduci(){
     let formData1 = new FormData(document.getElementById("Traduttore1"))
     let formData2 = new FormData(document.getElementById("Traduttore2"))
-    var parser = new DOMParser();
-    var htmlDoc = parser.parseFromString(formData1.get(), 'text/xml');
+
+    let htmlDoc = escape(formData1.get("testo"))
+    console.log(htmlDoc)
     const xhttp = new XMLHttpRequest();
-    let url = "./ServletTraduttore?parola="+x.value
+    let url = "./ServletTraduttore?lingua1="+formData1.get("lingua")+"&lingua2="+formData2.get("lingua")+
+        "&testo="+htmlDoc
+    console.log(url)
     xhttp.open("GET",url,true)
     xhttp.onload = function() {
-        document.getElementById("Contenitore-Risultato-Dizionario").innerHTML=this.responseText
+        formData2.set("testo",this.responseText);
     }
 
     xhttp.send();
+}
+
+function riproduciAudio(testo){
+
+        const xhttp = new XMLHttpRequest();
+    let url = "http://api.voicerss.org/?key=93041108365e4f7fb0668e56cacb380d&hl=it-it&f=16khz_16bit_stereo&src="+testo
+
+    let x =document.getElementById("Riproduci-Audio").src = url;
+
 }
