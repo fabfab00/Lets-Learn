@@ -29,7 +29,8 @@
 <body class="text-center">
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 
-<div class="pageContenent">
+<div class="pageContenent" style="position: relative; z-index: 1">
+    <img src="${pageContext.request.contextPath}/Immagini/C_Argomenti.png" id="img" style="display: none; position: absolute; z-index: 3; opacity: 0.6">
     <div class="contenitoreTitoloSezione"><i onclick="riproduciAudio('<%=materia%>',this)"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
     <ul class="list-unstyled">
         <li></li>
