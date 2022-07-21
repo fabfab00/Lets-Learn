@@ -80,6 +80,7 @@ String materia = (String) request.getAttribute("argomento");
         window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno="+x[0]+"&EsercizioDue="+x[1]+"&EsercizioTre="+x[2]);
     }
 </script>
+<%@include file="/WEB-INF/Footer/Footer.jsp"%>
 
 </body>
 </html>

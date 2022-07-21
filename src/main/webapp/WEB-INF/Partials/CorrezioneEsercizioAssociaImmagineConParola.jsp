@@ -140,5 +140,7 @@
         window.location.replace("./ServletCorrezione");
     }
 </script>
+<%@include file="/WEB-INF/Footer/Footer.jsp"%>
+
 </body>
 </html>

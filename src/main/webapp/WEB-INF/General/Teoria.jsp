@@ -37,5 +37,7 @@ String materia = argomentoClass.getNome();
         <%}%>
     </div>
 </div>
+<%@include file="/WEB-INF/Footer/Footer.jsp"%>
+
 </body>
 </html>

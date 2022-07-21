@@ -124,6 +124,7 @@
         window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao&Tipologia=AssociaLeFrasiTraDiLoro&Risposta="+risposta1+"&RispostaBis="+risposta2);
     }
 </script>
+<%@include file="/WEB-INF/Footer/Footer.jsp"%>
 
 </body>
 </html>
