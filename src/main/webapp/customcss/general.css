@@ -510,3 +510,13 @@ input {
     bottom: 18px;
     right: 18px;
 }
+
+.transparente{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.opaco{
+    opacity: 1;
+    transition: opacity 1s;
+}

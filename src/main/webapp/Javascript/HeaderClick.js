@@ -65,11 +65,16 @@ function traduci(){
     xhttp.send();
 }
 
-function riproduciAudio(testo){
-
-        const xhttp = new XMLHttpRequest();
+function riproduciAudio(testo, oggetto){
+    const xhttp = new XMLHttpRequest();
     let url = "http://api.voicerss.org/?key=93041108365e4f7fb0668e56cacb380d&hl=it-it&f=16khz_16bit_stereo&src="+testo
-
     let x =document.getElementById("Riproduci-Audio").src = url;
-
+    let sound=oggetto.firstChild.nextSibling.childNodes[1]
+    let play = oggetto.firstChild.nextSibling.childNodes[3]
+    sound.classList.toggle("transparente")
+    play.classList.toggle("transparente")
+    setTimeout(function () {
+        sound.classList.toggle("transparente")
+        play.classList.toggle("transparente")
+        },2000)
 }
