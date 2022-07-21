@@ -112,5 +112,7 @@
         window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao&Tipologia=AssociaImmagineConParola&Risposta="+risposta);
     }
 </script>
+<%@include file="/WEB-INF/Footer/Footer.jsp"%>
+
 </body>
 </html>

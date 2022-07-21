@@ -72,4 +72,5 @@
 <%@include file="/WEB-INF/Footer/Footer.jsp"%>
 
 </body>
+
 </html>
