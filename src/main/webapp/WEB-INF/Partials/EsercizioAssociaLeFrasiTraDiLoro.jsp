@@ -110,22 +110,17 @@
         var risposta2;
 
         if (document.getElementById("1").checked===true){
-            <%associaLeFrasiTraDiloro.setRispostaUtente1(0);%>
             risposta1="<%=associaLeFrasiTraDiloro.getList1().get(0)%>"
         }
         if (document.getElementById("2").checked===true){
-            <%associaLeFrasiTraDiloro.setRispostaUtente2(0);%>
             risposta2="<%=associaLeFrasiTraDiloro.getList2().get(0)%>"
         }
         if (document.getElementById("3").checked===true){
-            <%associaLeFrasiTraDiloro.setRispostaUtente1(1);%>
             risposta1="<%=associaLeFrasiTraDiloro.getList1().get(1)%>"
         }
         if (document.getElementById("4").checked===true){
-            <%associaLeFrasiTraDiloro.setRispostaUtente2(1);%>
             risposta2="<%=associaLeFrasiTraDiloro.getList2().get(1)%>"
         }
-
         window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao&Tipologia=AssociaLeFrasiTraDiLoro&Risposta="+risposta1+"&RispostaBis="+risposta2);
     }
 </script>

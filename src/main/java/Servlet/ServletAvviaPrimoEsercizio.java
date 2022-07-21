@@ -52,6 +52,7 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
 
         String Tipologia=request.getParameter("Tipologia");
         String Risposta=request.getParameter("Risposta");
+        System.out.println("Risposta in Servlet: "+Risposta);
 
         if(Tipologia!=null) {
 
@@ -65,8 +66,9 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
                     String RispostaBis=request.getParameter("RispostaBis");
                     int numberOne=associaLeFrasiTraDiloro.cercaPosizioneByString1(Risposta);
                     int numberTwo=associaLeFrasiTraDiloro.cercaPosizioneByString2(RispostaBis);
+                    System.out.println("Risposta bis: "+RispostaBis);
                     associaLeFrasiTraDiloro.setRispostaUtente1(numberOne);
-                    associaLeFrasiTraDiloro.setRispostaUtente1(numberTwo);
+                    associaLeFrasiTraDiloro.setRispostaUtente2(numberTwo);
                     break;
 
                 case "ScriviLaparolaCorretta":

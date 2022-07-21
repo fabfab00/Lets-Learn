@@ -438,8 +438,8 @@ public class DatabaseEsercizi {
         verdeList1.add("Il colore e': ");
         verdeList1.add("Il rumore e': ");
         ArrayList<String> verdeList2 = new ArrayList<>();
-        verdeList2.add(" verde chiaro");
-        verdeList2.add(" blu ");
+        verdeList2.add("verde chiaro");
+        verdeList2.add("blu");
         coloriAssociaLeFrasiTraDiLoro.add(new AssociaLeFrasiTraDiloro("./ImmaginiCard/Arte/Colori/verdeChiaro.png",verdeList1,verdeList2,0,0));
         arte.add(new EserciziPerArgomento("Colori",coloriAssociaImmagineConParola,coloriAssociaLeFrasiTraDiLoro,coloriScriviLaParolaCorretta));
 
