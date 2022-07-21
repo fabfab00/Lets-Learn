@@ -36,8 +36,8 @@
                     <div id="Box-Traduttore" class="contenitore-box text-center" style = "display: none">
 
                         <div class="contenitore">
-                            <form id="Traduttore1" class="traduttore" name="testo">
-                                <select class="form-select selettore-lingua" name="">
+                            <form id="Traduttore1" class="traduttore" >
+                                <select class="form-select selettore-lingua" name="lingua">
                                 <optgroup label="Lingue">
                                     <option value="ita" selected>Italiano</option>
                                     <option value="en">English</option>
@@ -45,19 +45,21 @@
                                 </optgroup>
                             </select>
                                 <div class="contenitore-traduzione">
-                                    <textarea class="form-control" onchange="traduci(this)"></textarea>
+                                    <textarea class="form-control" onchange="traduci(this)" name="testo"></textarea>
                                     <div class="contenitore-icona-riproduzione"><img src="./Immagini/Sound.svg" /></div>
                                     <div class="contenitore-icona-registrazione"><img src="./Immagini/Recorder.svg" /></div>
                                 </div>
                             </form>
-                            <form id="Traduttore2" class="traduttore"><select class="form-select selettore-lingua">
+                            <form id="Traduttore2" class="traduttore">
+                                <select class="form-select selettore-lingua" name="lingua">
                                 <optgroup label="Lingue">
                                     <option value="ita">Italiano</option>
                                     <option value="en" selected>English</option>
                                     <option value="spa">Spanish</option>
                                 </optgroup>
                             </select>
-                                <div class="contenitore-traduzione"><textarea class="form-control"></textarea>
+                                <div class="contenitore-traduzione">
+                                    <textarea class="form-control" name="testo"></textarea>
                                     <div class="contenitore-icona-riproduzione"><img src="./Immagini/Sound.svg" /></div>
                                     <div class="contenitore-icona-registrazione"><img src="./Immagini/Recorder.svg" /></div>
                                 </div>
@@ -69,4 +71,5 @@
 
     </div>
 </nav>
+<audio id = "Riproduci-Audio" autoplay ="autoplay"></audio>
 

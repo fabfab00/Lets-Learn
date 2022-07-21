@@ -18,19 +18,22 @@ import java.util.regex.Pattern;
 @WebServlet(name = "ServletTraduttore", value = "/ServletTraduttore")
 public class ServletTraduttore extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-        String parola = request.getParameter("parola");
-        StringBuilder content;
+        String testo = request.getParameter("testo");
+        String lingua1 = request.getParameter("lingua1");
+        String lingua2 = request.getParameter("lingua2");
         resp.setContentType("plain/text");
         resp.setCharacterEncoding("UTF-8");
         String line;
-        URL url = new URL("https://www.reverso.net/traduzione-testo#sl=ita&tl=eng&text=pollo%2520sul%2520gabinetto");
+        StringBuilder content;
+
+        URL url = new URL("https://duckduckgo.com/translation.js?vqd=3-135972121648383306651520592915873137605-231243556034453055971497326002225197655&query=traduttore&from=it&to=en");
+
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
-        connection.setRequestMethod("GET");
-        Map<String, String> params = new HashMap<>();
-        params.put("query", parola.toLowerCase());
-        params.put("Cerca","cerca");
 
+        connection.setRequestMethod("POST");
+        Map<String, String> params = new HashMap<>();
+        params.put("","pane");
         StringBuilder postData = new StringBuilder();
         for (Map.Entry<String, String> param : params.entrySet()) {
             if (postData.length() != 0) {
@@ -50,7 +53,6 @@ public class ServletTraduttore extends HttpServlet {
 
             try (BufferedReader in = new BufferedReader(
                     new InputStreamReader(connection.getInputStream()))) {
-
                 content = new StringBuilder();
                 while ((line = in.readLine()) != null) {
                     content.append(line);
@@ -62,10 +64,6 @@ public class ServletTraduttore extends HttpServlet {
             connection.disconnect();
         }
 
-        String x = StringUtils.substringBetween(content.toString(),"<span class=lemma>"+parola.toLowerCase()+"</span>","<div style=\"color:#035a9c");
-        System.out.println(x);
-        if(x == null)
-            x = "Non trovato";
-        resp.getWriter().write(x);
+        resp.getWriter().write(content.toString());
     }
 }

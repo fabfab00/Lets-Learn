@@ -30,7 +30,7 @@
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 
 <div class="pageContenent">
-    <div class="contenitoreTitoloSezione"><i onclick="ciao()"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
+    <div class="contenitoreTitoloSezione"><i onclick="riproduciAudio('<%=materia%>')"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
     <ul class="list-unstyled">
         <li></li>
         <% for(int i = 0; i<arg.size();i++){%>
