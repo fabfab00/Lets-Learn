@@ -29,7 +29,8 @@
 <body class="text-center">
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 
-<div class="pageContenent">
+<div class="pageContenent" style="position: relative; z-index: 1">
+    <img src="${pageContext.request.contextPath}/Immagini/C_Argomenti.png" id="img" style="display: none; position: absolute; z-index: 3; opacity: 0.6">
     <div class="contenitoreTitoloSezione"><i onclick="riproduciAudio('<%=materia%>')"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
     <ul class="list-unstyled">
         <li></li>
@@ -58,6 +59,7 @@
         </div>
     </div>
 </div>
+
 <script>
 
     function teoria(materia,argomento){
@@ -91,6 +93,20 @@
         }else{
             alert("Nome utente o password errati")
         }
+    }
+
+    function OpenCoachmark()
+    {
+        document.getElementById("img").style.display="flex"
+        document.getElementById("Open-Coachmark").style.display="none"
+        document.getElementById("Close-Coachmark").style.display="flex"
+    }
+
+    function CloseCoachmark()
+    {
+        document.getElementById("img").style.display="none"
+        document.getElementById("Open-Coachmark").style.display="flex"
+        document.getElementById("Close-Coachmark").style.display="none"
     }
 
 </script>
