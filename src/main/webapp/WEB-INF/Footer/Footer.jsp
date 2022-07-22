@@ -1,5 +1,5 @@
 <i class="icona-coachmarks" onclick="OpenCoachmark()" id = "Open-Coachmark"><%@include file="/Immagini/Coachmarks.svg"%></i>
-<i class="icona-coachmarks" onclick="CloseCoachmark()" id = "Close-Coachmark" style="display: none"><%@include file="/Immagini/CoachmarksOff.svg"%></i>
+<i class="icona-coachmarks" onclick="CloseCoachmark()" id = "Close-Coachmark" style="display: none; z-index: 99"><%@include file="/Immagini/CoachmarksOff.svg"%></i>
 
 <script>
     function OpenCoachmark()
