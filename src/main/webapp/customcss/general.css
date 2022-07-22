@@ -73,6 +73,12 @@
     border-color: rgba(255,255,255,0);
 }
 
+.card-footer i {
+    height: 25px;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
 .footerCard span {
     margin-left: 10px;
 }
@@ -356,7 +362,6 @@ input {
     position: absolute;
     right: 42px;
     top: 95px;
-    overflow: scroll;
 }
 
 .contenitore-box {
@@ -421,6 +426,7 @@ input {
     resize: none;
     border: none;
     margin: 17px;
+    overflow: scroll;
 }
 
 #Box-Traduttore {
