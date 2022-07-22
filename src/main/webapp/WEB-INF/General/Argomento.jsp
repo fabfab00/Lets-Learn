@@ -111,9 +111,6 @@
 
 </script>
 
-
-<div></div>
-
 <%@include file="/WEB-INF/Footer/Footer.jsp"%>
 
 
