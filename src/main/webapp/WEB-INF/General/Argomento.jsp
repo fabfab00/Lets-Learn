@@ -26,12 +26,14 @@
     <script src="./Javascript/HeaderClick.js"></script>
     <script src ="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
-<body class="text-center">
+<body class="text-center ">
+<img src="${pageContext.request.contextPath}/Immagini/C_Argomenti.png" id="img" style="top: 0; left: 0; width: 100vw; height: 100vh; position: absolute; z-index: 3; opacity: 0.6; display: none">
+
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 
 <div class="pageContenent" style="position: relative; z-index: 1">
-    <img src="${pageContext.request.contextPath}/Immagini/C_Argomenti.png" id="img" style="display: none; position: absolute; z-index: 3; opacity: 0.6">
-    <div class="contenitoreTitoloSezione"><i onclick="riproduciAudio('<%=materia%>',this)"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
+
+    <div class="contenitoreTitoloSezione"><i onclick="riproduciAudio('<%=materia%>')"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
     <ul class="list-unstyled">
         <li></li>
         <% for(int i = 0; i<arg.size();i++){%>
