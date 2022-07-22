@@ -46,8 +46,10 @@
                             </select>
                                 <div class="contenitore-traduzione">
                                     <textarea class="form-control" onchange="traduci(this)" name="testo"></textarea>
-                                    <div class="contenitore-icona-riproduzione"><img src="./Immagini/Sound.svg" /></div>
-                                    <div class="contenitore-icona-registrazione"><img src="./Immagini/Recorder.svg" /></div>
+                                    <div class="contenitore-icona-riproduzione">
+                                        <i onclick="riproduciTraduzione(this)" style="height: inherit;width: inherit;"> <%@include file="/Immagini/Sound.svg"%></i></div>
+                                    <div class="contenitore-icona-registrazione">
+                                        <i style="height: inherit;width: inherit;"><%@include file="/Immagini/Recorder.svg"%></i></div>
                                 </div>
                             </form>
                             <form id="Traduttore2" class="traduttore">
@@ -60,8 +62,10 @@
                             </select>
                                 <div class="contenitore-traduzione">
                                     <textarea class="form-control" name="testo"></textarea>
-                                    <div class="contenitore-icona-riproduzione"><img src="./Immagini/Sound.svg" /></div>
-                                    <div class="contenitore-icona-registrazione"><img src="./Immagini/Recorder.svg" /></div>
+                                    <div class="contenitore-icona-riproduzione">
+                                        <i onclick="riproduciTraduzione(this)" style="height: inherit;width: inherit;"> <%@include file="/Immagini/Sound.svg"%></i></div>
+                                    <div class="contenitore-icona-registrazione">
+                                        <i style="height: inherit;width: inherit;"><%@include file="/Immagini/Recorder.svg"%></i></div>
                                 </div>
                             </form>
                         </div>

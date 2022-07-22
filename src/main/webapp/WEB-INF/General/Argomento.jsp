@@ -96,6 +96,20 @@
         }
     }
 
+    function OpenCoachmark()
+    {
+        document.getElementById("img").style.display="flex"
+        document.getElementById("Open-Coachmark").style.display="none"
+        document.getElementById("Close-Coachmark").style.display="flex"
+    }
+
+    function CloseCoachmark()
+    {
+        document.getElementById("img").style.display="none"
+        document.getElementById("Open-Coachmark").style.display="flex"
+        document.getElementById("Close-Coachmark").style.display="none"
+    }
+
 </script>
 
 <%@include file="/WEB-INF/Footer/Footer.jsp"%>

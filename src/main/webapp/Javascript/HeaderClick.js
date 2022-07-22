@@ -42,6 +42,7 @@ function cerca(){
     xhttp.open("GET",url,true)
     xhttp.onload = function() {
         document.getElementById("Contenitore-Risultato-Dizionario").innerHTML=this.responseText
+        document.getElementById("Contenitore-Risultato-Dizionario").class = ""
     }
 
     xhttp.send();
@@ -78,3 +79,7 @@ function riproduciAudio(testo, oggetto){
         play.classList.toggle("transparente")
         },2000)
 }
+function riproduciTraduzione(oggetto){
+    riproduciAudio(escape(oggetto.parentElement.parentElement.children[0].value),oggetto)
+}
+
