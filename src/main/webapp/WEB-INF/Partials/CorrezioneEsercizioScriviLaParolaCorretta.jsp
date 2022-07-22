@@ -54,9 +54,7 @@
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione">
-        <i onclick="">
-            <%@include file="/Immagini/Sound.svg"%>
-        </i>
+        <i onclick="riproduciAudio('<%=materia%>',this)"> <%@include file="/Immagini/Sound.svg"%></i>
         <span class="titoloSezione">Argomento</span>
     </div>
     <!--Includere gli esercizi-->
