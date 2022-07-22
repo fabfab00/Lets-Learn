@@ -67,7 +67,7 @@
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione">
-        <i onclick="riproduciAudio('<%=materia%>',this)"> <%@include file="/Immagini/Sound.svg"%></i>
+        <i onclick="riproduciAudio('Associa Immagine Con Parola',this)"> <%@include file="/Immagini/Sound.svg"%></i>
         <span class="titoloSezione">Associa Immagine Con Parola</span>
     </div>
 

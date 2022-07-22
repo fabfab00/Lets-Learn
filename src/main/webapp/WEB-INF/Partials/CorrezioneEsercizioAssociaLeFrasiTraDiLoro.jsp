@@ -65,7 +65,7 @@
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione">
-        <i onclick="riproduciAudio('<%=materia%>',this)"> <%@include file="/Immagini/Sound.svg"%></i>
+        <i onclick="riproduciAudio('Associa Le Frasi Tra Di Loro',this)"> <%@include file="/Immagini/Sound.svg"%></i>
         <span class="titoloSezione">Associa Le Frasi Tra Di Loro</span>
     </div>
     <!--Includere gli esercizi-->
