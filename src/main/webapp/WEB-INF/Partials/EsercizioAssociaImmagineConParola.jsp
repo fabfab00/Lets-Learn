@@ -46,6 +46,8 @@
 %>
 
 <body>
+<img src="${pageContext.request.contextPath}/Immagini/C_AssociaImmagineConParola.png" id="img" style="top: 0; left: 0; width: 100vw; height: 100vh; position: absolute; z-index: 3; opacity: 0.6; display: none">
+
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 <hidden id="HeaderOscurato"></hidden>
 <div class="pageContenent">

@@ -22,6 +22,7 @@ String materia = (String) request.getAttribute("argomento");
 
 </head>
 <body>
+<img src="${pageContext.request.contextPath}/Immagini/C_AssegnaEsercizi.png" id="img" style="top: 0; left: 0; width: 100vw; height: 100vh; position: absolute; z-index: 3; opacity: 0.6; display: none">
 
 <%
     AssociaLeFrasiTraDiloro associaLeFrasiTraDiloro= (AssociaLeFrasiTraDiloro) request.getAttribute("associaLeFrasiTraDiloro");

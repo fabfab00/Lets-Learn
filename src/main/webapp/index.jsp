@@ -40,6 +40,8 @@
     </style>
 </head>
 <body class="text-center">
+<img src="${pageContext.request.contextPath}/Immagini/C_Home.png" id="img" style="top: 0; left: 0; width: 100vw; height: 100vh; position: absolute; z-index: 3; opacity: 0.6; display: none">
+
 <div class="table-responsive pageContenent">
     <table class="table" id="contenutoIndex">
         <thead>

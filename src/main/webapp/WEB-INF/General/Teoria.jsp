@@ -24,6 +24,8 @@ String materia = argomentoClass.getNome();
 
 </head>
 <body class="text-center">
+<img src="${pageContext.request.contextPath}/Immagini/C_ArgomentoSpecifico.png" id="img" style="top: 0; left: 0; width: 100vw; height: 100vh; position: absolute; z-index: 3; opacity: 0.6; display: none">
+
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione"><%=argomentoClass.getNome()%></span></div>
