@@ -42,7 +42,7 @@ function cerca(){
     xhttp.open("GET",url,true)
     xhttp.onload = function() {
         document.getElementById("Contenitore-Risultato-Dizionario").innerHTML=this.responseText
-        document.getElementById("Contenitore-Risultato-Dizionario").class = ""
+        document.getElementById("Contenitore-Risultato-Dizionario").className =""
     }
 
     xhttp.send();

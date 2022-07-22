@@ -28,12 +28,12 @@ String materia = argomentoClass.getNome();
 
 <%@include file="/WEB-INF/Header/Header.jsp"%>
 <div class="pageContenent">
-    <div class="contenitoreTitoloSezione"><i class="far fa-star"></i><span class="titoloSezione"><%=argomentoClass.getNome()%></span></div>
+    <div class="contenitoreTitoloSezione"><i onclick="riproduciAudio('<%=argomentoClass.getNome()%>',this)"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=argomentoClass.getNome()%></span></div>
     <div class="card-columns">
         <% for (int i=0; i<lista.size();i++){%>
         <div class="card col-md-2">
             <div class="card-body"><img src="<%=lista.get(i).getPathImage()%>">
-                <div class="card-footer"><i class="far fa-star"></i><span><%=lista.get(i).getText()%></span></div>
+                <div class="card-footer"><i onclick="riproduciAudio('<%=lista.get(i).getText()%>',this)"> <%@include file="/Immagini/Sound.svg"%></i><span><%=lista.get(i).getText()%></span></div>
             </div>
         </div>
         <%}%>
