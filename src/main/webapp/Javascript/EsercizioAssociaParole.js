@@ -1,7 +1,7 @@
 var lastClick = null;
 var oggettoSinistro;
 var oggettoDestro;
-var canvas = document.getElementById("canvas");
+var canvas;
 var context ;
 var risposte;
 var body;
@@ -11,6 +11,7 @@ var primoClick= true;
 var flagClick = false;
 
 function select(oggettoCliccato){
+    canvas=document.getElementById("canvas");
     body = document.getElementsByClassName("body");
 
     canvas.width = document.body.clientWidth; //document.width is obsolete
