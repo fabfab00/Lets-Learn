@@ -20,7 +20,6 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
         String EsercizioTre = request.getParameter("EsercizioTre");
 
 
-
         if(EsercizioUno.equalsIgnoreCase("ciao"))
         {
             int counter= (int) request.getSession().getAttribute("counter");
@@ -40,6 +39,20 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
             request.getSession().setAttribute("EsercizioUno", EsercizioUno);
             request.getSession().setAttribute("EsercizioDue", EsercizioDue);
             request.getSession().setAttribute("EsercizioTre", EsercizioTre);
+            int total=0;
+            if(EsercizioUno.equalsIgnoreCase("true"))
+            {
+                total++;
+            }
+            if(EsercizioDue.equalsIgnoreCase("true"))
+            {
+                total++;
+            }
+            if(EsercizioDue.equalsIgnoreCase("true"))
+            {
+                total++;
+            }
+            request.getSession().setAttribute("total", total);
         }
 
 

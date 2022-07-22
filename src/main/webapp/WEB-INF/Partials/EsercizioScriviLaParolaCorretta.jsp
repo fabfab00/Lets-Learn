@@ -28,21 +28,36 @@
     int number= (int) request.getSession().getAttribute("counter");
     if(number==1)
     {
-        partTwo="1";
+        partTwo="1/";
     }
     else if (number==2)
     {
-        partTwo="2";
+        partTwo="2/";
     }
     else if(number==3)
     {
-        partTwo="3";
+        partTwo="3/";
     }
     else
     {
-        partTwo=" ";
+        partTwo="3/";
     }
-    String materia=partOne+partTwo;
+    String partThree;
+    int total=0;
+    total= (int) request.getSession().getAttribute("total");
+    if(total==1)
+    {
+        partThree="1";
+    }
+    else if (total==2)
+    {
+        partThree="2";
+    }
+    else
+    {
+        partThree="3";
+    }
+    String materia=partOne+partTwo+partThree;
 %>
 
 <body>
