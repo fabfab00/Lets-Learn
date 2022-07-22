@@ -92,7 +92,7 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
                 request.getSession().setAttribute("EsercizioTre", EsercizioTre);
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioAssociaImmagineConParola.jsp");
                 dispatcher.forward(request, response);
-                break;
+                return;
 
             }
             if (EsercizioDue.equalsIgnoreCase("true")) {
@@ -104,7 +104,7 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
                 request.getSession().setAttribute("EsercizioTre", EsercizioTre);
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioAssociaLeFrasiTraDiLoro.jsp");
                 dispatcher.forward(request, response);
-                break;
+                return;
             }
             if (EsercizioTre.equalsIgnoreCase("true")) {
                 String ese3= "vero";
@@ -115,7 +115,7 @@ public class ServletAvviaPrimoEsercizio extends HttpServlet {
                 request.getSession().setAttribute("EsercizioTre", EsercizioTre);
                 RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Partials/EsercizioScriviLaParolaCorretta.jsp");
                 dispatcher.forward(request, response);
-                break;
+                return;
             }
 
         }
