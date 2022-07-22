@@ -33,7 +33,7 @@
 
 <div class="pageContenent" style="position: relative; z-index: 1">
 
-    <div class="contenitoreTitoloSezione"><i onclick="riproduciAudio('<%=materia%>')"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
+    <div class="contenitoreTitoloSezione"><i onclick="riproduciAudio('<%=materia%>',this)"> <%@include file="/Immagini/Sound.svg"%></i><span class="titoloSezione"><%=materia%></span></div>
     <ul class="list-unstyled">
         <li></li>
         <% for(int i = 0; i<arg.size();i++){%>
