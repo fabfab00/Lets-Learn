@@ -53,7 +53,7 @@
 <div class="pageContenent">
     <div class="contenitoreTitoloSezione">
         <i onclick="riproduciAudio('<%=materia%>',this)"> <%@include file="/Immagini/Sound.svg"%></i>
-        <span class="titoloSezione">Argomento</span>
+        <span class="titoloSezione">Scrivi La Parola Corretta</span>
     </div>
     <!--Includere gli esercizi-->
 
