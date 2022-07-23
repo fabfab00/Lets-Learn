@@ -85,19 +85,19 @@
         <form>
             <ul class="list-group lista-domande">
                 <li class="list-group-item"><!--Inizio singola domanda-->
-                    <input class="invisible-checkbox" type="radio" name="random" id="one" />
-                    <div></div>
+                    <input class="invisible-checkbox" onclick=" unclick(this)" type="radio" name="random" id="one" />
+                    <div><i> <%@include file="/Immagini/UndoRubber.svg"%></i></div>
                     <span><%=associaImmagineConParola.getWord().get(0)%></span>
 
                 </li><!--Fine singola domanda-->
-                <li class="list-group-item"><input class="invisible-checkbox" type="radio" name="random" id="two" />
-                    <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
+                <li class="list-group-item"><input onclick=" unclick(this)" class="invisible-checkbox" type="radio" name="random" id="two" />
+                    <div><i > <%@include file="/Immagini/UndoRubber.svg"%></i></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
                 </li>
-                <li class="list-group-item"><input class="invisible-checkbox" type="radio" name="random" id="three" />
-                    <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
+                <li class="list-group-item"><input onclick=" unclick(this)" class="invisible-checkbox" type="radio" name="random" id="three" />
+                    <div><i > <%@include file="/Immagini/UndoRubber.svg"%></i></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
-                <li class="list-group-item"><input class="invisible-checkbox" type="radio" name="random" id="four" />
-                    <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
+                <li class="list-group-item"><input onclick=" unclick(this)" class="invisible-checkbox" type="radio" name="random" id="four" />
+                    <div><i> <%@include file="/Immagini/UndoRubber.svg"%></i></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
             </ul>
         </form>
@@ -125,6 +125,12 @@
         }
 
         window.location.replace("./ServletAvviaPrimoEsercizio?EsercizioUno=ciao&EsercizioDue=ciao&EsercizioTre=ciao&Tipologia=AssociaImmagineConParola&Risposta="+risposta);
+    }
+
+    function unclick(oggetto){
+        oggetto.classList.toggle("cliccato")
+        if(!oggetto.classList.contains("cliccato"))
+            oggetto.checked=false
     }
 </script>
 <%@include file="/WEB-INF/Footer/Footer.jsp"%>

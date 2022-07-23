@@ -28,7 +28,7 @@ svg{
     border: none;
 }
 #canvas{
-    z-index: 1;
+    z-index: 0;
 }
 
 .bottoneArgomento {
@@ -276,6 +276,8 @@ input {
     font-size: 40px;
     font-weight: 450;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .immaginiRispostaMultipla img {
@@ -312,16 +314,18 @@ input {
     z-index: 1;
 }
 
-.colonna-sinistra .invisible-checkbox:checked + div i{
+.colonna-sinistra .invisible-checkbox:checked + div i,.list-group-item .invisible-checkbox:checked + div i{
     height: 100%;
     float: right;
     width: 68px;
     background: yellow;
     display: initial;
 }
-.colonna-sinistra .invisible-checkbox + div i{
+.colonna-sinistra .invisible-checkbox + div i,.list-group-item .invisible-checkbox + div i{
    display: none;
 }
+
+
 
 .colonna-destra .invisible-checkbox:checked + div i{
     height: 100%;
@@ -334,7 +338,7 @@ input {
     display: none;
 }
 .navbar{
-    z-index: 99;
+    z-index: 55;
 }
 
 .colonna-frasi span {

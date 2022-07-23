@@ -92,8 +92,9 @@
         <%}%>
     </div>
 
-        <button class="btn btn-primary btn-continua" type="submit" onclick="next()">Continua</button>
+
 </div>
+<button class="btn btn-primary btn-continua" type="submit" onclick="next()">Continua</button>
 
 <script>
     function next(){
