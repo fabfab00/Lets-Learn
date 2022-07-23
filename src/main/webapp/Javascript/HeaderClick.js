@@ -23,12 +23,16 @@ function apriOverlay(cosa){
     let x
     let overlay
     if(cosa === "Overlay-Dizionario"){
+        overlay =  document.getElementById("Overlay-Traduttore")
+    }else overlay =  document.getElementById("Overlay-Dizionario")
+    if(cosa === "Overlay-Dizionario"){
          x = document.getElementById("Box-Dizionario")
+        close(overlay)
         overlay =  document.getElementById("Overlay-Dizionario")
     }else{
          x = document.getElementById("Box-Traduttore")
+        close(overlay)
         overlay =  document.getElementById("Overlay-Traduttore")
-
     }
     console.log(x)
     if(document.getElementById(cosa).style.display == "none") {

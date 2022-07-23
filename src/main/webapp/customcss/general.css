@@ -452,7 +452,7 @@ input {
     resize: none;
     border: none;
     margin: 17px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #Box-Traduttore {

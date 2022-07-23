@@ -15,7 +15,7 @@ function select(oggettoCliccato){
     body = document.getElementsByClassName("body");
 
     canvas.width = document.body.clientWidth; //document.width is obsolete
-    canvas.height = document.body.clientHeight; //document.height is obsolete
+    canvas.height = document.body.scrollHeight; //document.height is obsolete
     canvasW = canvas.width;
     canvasH = canvas.height;
 
@@ -101,10 +101,10 @@ function redrawCanvas(){
 }
 
 function draw(sinistra,destra){
-    let  xOggettoSinistro=sinistra.getBoundingClientRect().x;
-    let yOggettoSinistro=sinistra.getBoundingClientRect().y+sinistra.getBoundingClientRect().height/2;
-    let xOggettoDestro=destra.getBoundingClientRect().x+destra.getBoundingClientRect().width
-    let yOggettoDestro = destra.getBoundingClientRect().y+destra.getBoundingClientRect().height/2;
+    let  xOggettoSinistro=sinistra.getBoundingClientRect().x+ window.scrollX;
+    let yOggettoSinistro=sinistra.getBoundingClientRect().y+sinistra.getBoundingClientRect().height/2 +window.scrollY;
+    let xOggettoDestro=destra.getBoundingClientRect().x+destra.getBoundingClientRect().width+ window.scrollX
+    let yOggettoDestro = destra.getBoundingClientRect().y+destra.getBoundingClientRect().height/2 +window.scrollY;
 
     context.strokeStyle = 'black';
     context.lineWidth = 5;
