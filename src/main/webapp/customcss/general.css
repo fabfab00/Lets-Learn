@@ -9,7 +9,10 @@
     --bg-storia: #55595C;
     overflow: auto;
 }
-
+svg{
+    height: inherit;
+    width: inherit;
+}
 .bottoneHomeScreen {
     box-sizing: border-box;
     background: #FFFFFF;
@@ -228,6 +231,7 @@ input {
     display: block;
 }
 
+
 /* Style the checkmark/indicator */
 
 .checkMarkContainer .checkmark:after {
@@ -308,6 +312,31 @@ input {
     z-index: 1;
 }
 
+.colonna-sinistra .invisible-checkbox:checked + div i{
+    height: 100%;
+    float: right;
+    width: 68px;
+    background: yellow;
+    display: initial;
+}
+.colonna-sinistra .invisible-checkbox + div i{
+   display: none;
+}
+
+.colonna-destra .invisible-checkbox:checked + div i{
+    height: 100%;
+    float: left;
+    width: 68px;
+    background: yellow;
+    display: initial;
+}
+.colonna-destra .invisible-checkbox + div i{
+    display: none;
+}
+.navbar{
+    z-index: 99;
+}
+
 .colonna-frasi span {
     display: inherit;
     background: #FFFFFF;
@@ -386,15 +415,7 @@ input {
     text-align: center;
 }
 
-.contenitore-icona-registrazione img {
-    height: inherit;
-    width: inherit;
-}
 
-.contenitore-icona-cerca img {
-    height: inherit;
-    width: inherit;
-}
 
 .input-overlay .text-input {
     height: 44px;
@@ -408,6 +429,8 @@ input {
     height: 25px;
     display: block;
     float: left;
+    width: 25px;
+    margin-top: 10px;
 }
 
 .contenitore-icona-cerca {
@@ -437,6 +460,12 @@ input {
     position: absolute;
     right: 34px;
     top: 84px;
+}
+#Box-Dizionario .input-overlay div {
+    margin-top: 10px;
+}
+.contenitore-icona-cerca img{
+    height: 25px;
 }
 
 #Contenitore-Risultato-Dizionario div i {
@@ -477,6 +506,7 @@ input {
     float: right;
     display: block;
     margin-right: 0.5rem;
+    margin-top: 0;
 }
 
 .contenitore-traduzione textarea {
@@ -491,7 +521,8 @@ input {
     float: right;
     display: block;
     height: 25px;
-    margin-right: 0.5rem;
+    width: 25px;
+    margin-right: 15px;
 }
 
 
@@ -525,6 +556,10 @@ input {
 
 .transparente{
     opacity: 0;
+    transition: opacity 1s;
+}
+.semi-transparente{
+    opacity: 0.5!important;
     transition: opacity 1s;
 }
 

@@ -24,7 +24,7 @@
                 <i class="ms-auto" style="font-size: 54px;text-align: right;" onclick="apriOverlay('Overlay-Dizionario')" ><%@include file="/Immagini/Dictionary.svg"%></i>
                     <div id="Box-Dizionario" class="contenitore-box text-center" style = "display: none">
                         <div class="input-overlay">
-                            <div class="contenitore-icona-registrazione"><img src="./Immagini/Recorder.svg" /></div>
+                            <div class="contenitore-icona-registrazione"><i onclick="registraAudio(this)" style="height: inherit;width: inherit;"><%@include file="/Immagini/Recorder.svg"%></i></div>
                             <input id ="Input-Dizionario" class="text-input" type="text" placeholder="Cerca" style="text-align: center;" />
                             <div class="contenitore-icona-cerca" onclick="cerca()"><img src="./Immagini/Magnifier.svg" /></div>
                         </div><div id="Contenitore-Risultato-Dizionario" class="risultato-vuoto"></div>
@@ -49,7 +49,7 @@
                                     <div class="contenitore-icona-riproduzione">
                                         <i onclick="riproduciTraduzione(this)" style="height: inherit;width: inherit;"> <%@include file="/Immagini/Sound.svg"%></i></div>
                                     <div class="contenitore-icona-registrazione">
-                                        <i style="height: inherit;width: inherit;"><%@include file="/Immagini/Recorder.svg"%></i></div>
+                                        <i onclick="registraAudio(this)" style="height: inherit;width: inherit;"><%@include file="/Immagini/Recorder.svg"%></i></div>
                                 </div>
                             </form>
                             <form id="Traduttore2" class="traduttore">
@@ -65,7 +65,7 @@
                                     <div class="contenitore-icona-riproduzione">
                                         <i onclick="riproduciTraduzione(this)" style="height: inherit;width: inherit;"> <%@include file="/Immagini/Sound.svg"%></i></div>
                                     <div class="contenitore-icona-registrazione">
-                                        <i style="height: inherit;width: inherit;"><%@include file="/Immagini/Recorder.svg"%></i></div>
+                                        <i onclick="registraAudio(this)" style="height: inherit;width: inherit;"><%@include file="/Immagini/Recorder.svg"%></i></div>
                                 </div>
                             </form>
                         </div>

@@ -21,14 +21,22 @@ function chiudiOverlay(premuto){
 
 function apriOverlay(cosa){
     let x
+    let overlay
     if(cosa === "Overlay-Dizionario"){
          x = document.getElementById("Box-Dizionario")
+        overlay =  document.getElementById("Overlay-Dizionario")
     }else{
          x = document.getElementById("Box-Traduttore")
+        overlay =  document.getElementById("Overlay-Traduttore")
+
     }
     console.log(x)
-    document.getElementById(cosa).style.display = "";
-    x.style.display = "";
+    if(document.getElementById(cosa).style.display == "none") {
+        document.getElementById(cosa).style.display = "";
+        x.style.display = "";
+    }else{
+        chiudiOverlay(overlay)
+    }
 }
 
 function cerca(){
@@ -81,5 +89,26 @@ function riproduciAudio(testo, oggetto){
 }
 function riproduciTraduzione(oggetto){
     riproduciAudio(escape(oggetto.parentElement.parentElement.children[0].value),oggetto)
+}
+
+
+function registraAudio(oggetto){
+    let rec1 = oggetto.firstChild.childNodes[1]
+    let rec2 = oggetto.firstChild.childNodes[3]
+    let recording = oggetto.firstChild.childNodes[5]
+    rec1.classList.toggle("transparente")
+    rec2.classList.toggle("transparente")
+    recording.classList.toggle("transparente")
+    setTimeout(function () {
+        recording.classList.toggle("semi-transparente")
+        setTimeout(function () {
+            recording.classList.toggle("semi-transparente")
+            setTimeout(function () {
+                rec1.classList.toggle("transparente")
+                rec2.classList.toggle("transparente")
+                recording.classList.toggle("transparente")
+            },2000)
+        },2000)
+    },2000)
 }
 
