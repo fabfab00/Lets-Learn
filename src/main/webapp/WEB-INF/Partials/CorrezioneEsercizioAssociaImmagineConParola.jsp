@@ -104,7 +104,7 @@
                 <li class="list-group-item"><input class="invisible-checkbox correct" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
                 </li>
-                <%}if(utente==1){%>
+                <%}else if(utente==1){%>
                 <li class="list-group-item"><input class="invisible-checkbox wrong" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(1)%></span>
                 </li>
@@ -118,7 +118,7 @@
                 <li class="list-group-item"><input class="invisible-checkbox correct" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
-                <%}if(utente==2){%>
+                <%}else if(utente==2){%>
                 <li class="list-group-item"><input class="invisible-checkbox wrong" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(2)%></span>
                 </li>
@@ -132,7 +132,7 @@
                 <li class="list-group-item"><input class="invisible-checkbox correct" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
-                <%}if(utente==3){%>
+                <%}else if(utente==3){%>
                 <li class="list-group-item"><input class="invisible-checkbox wrong" type="checkbox"  checked />
                     <div></div><span><%=associaImmagineConParola.getWord().get(3)%></span>
                 </li>
