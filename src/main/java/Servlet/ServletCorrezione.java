@@ -17,10 +17,17 @@ public class ServletCorrezione extends HttpServlet {
         if(request.getSession().getAttribute("counterBis")==null)
         {
             int counterBis=1;
+            System.out.println(counterBis);
             request.getSession().setAttribute("counterBis", counterBis);
         }else {
             int counterBis= (int) request.getSession().getAttribute("counterBis");
             counterBis++;
+            if(counterBis>(int)request.getSession().getAttribute("total"))
+            {
+                counterBis=0;
+            }
+            System.out.println(counterBis);
+
             request.getSession().setAttribute("counterBis", counterBis);
         }
 
@@ -40,6 +47,7 @@ public class ServletCorrezione extends HttpServlet {
             path="/WEB-INF/Partials/CorrezioneEsercizioScriviLaParolaCorretta.jsp";
         }
         else if((ese1String==null || ese1String.equals("falso") ) && (ese2String==null || ese2String.equals("falso") ) && (ese3String==null || ese3String.equals("falso"))){
+
             path="index.jsp";
         }
         else{
