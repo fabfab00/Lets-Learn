@@ -93,8 +93,8 @@
     </div>
 
 
-</div>
-<button class="btn btn-primary btn-continua" type="submit" onclick="next()">Continua</button>
+</div><br>
+<button class="btn btn-primary btn-continua" type="submit" onclick="next()" style="left: 40%;">Continua</button>
 
 <script>
     function next(){
